@@ -108,7 +108,7 @@ always @(posedge clk or negedge rst_n) begin
 				end
 			end
 			RECV: begin
-				if (recv_cnt == 4'd9) begin
+				if ((recv_cnt == 4'd9) && (clk_cnt == BPS_CNT/2) ) begin
 					next_state <= RECV_DONE;
 				end
 				else begin
@@ -153,7 +153,9 @@ always @(posedge clk or negedge rst_n) begin
 	else begin
 		case (current_state)
 			IDLE: begin
-				// do no thing
+				data_rev  <= 8'd0;
+				data      <= 8'd0;
+				uart_done <= 1'b0;
 			end
 			RECV: begin
 				if (clk_cnt == BPS_CNT/2) begin
