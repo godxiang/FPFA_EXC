@@ -28,8 +28,8 @@ parameter  CLK_FREQ =  50000000;
 parameter  UART_BPS =  9600;
 localparam BPS_CNT  = CLK_FREQ/UART_BPS;
 
-reg current_state;			//当前状态
-reg next_state;				//下个状态
+reg [1:0]current_state;			//当前状态
+reg [1:0]next_state;				//下个状态
 
 parameter IDLE 	  = 0; 
 parameter RECV 	  = 1; 	
@@ -130,7 +130,7 @@ end
 
 
 //检测rxd的下降沿
-assign start_flag =(current_state == IDLE)?(~uart_rxd & uart_rxd1):0;
+assign start_flag =(current_state == IDLE)?(~uart_rxd & uart_rxd1):1'b0;
 
 always @(posedge clk or negedge rst_n) begin
 	if (!rst_n) begin
@@ -167,7 +167,8 @@ always @(posedge clk or negedge rst_n) begin
 					4'd5: data_rev[4] <= uart_rxd;
 					4'd6: data_rev[5] <= uart_rxd;
 					4'd7: data_rev[6] <= uart_rxd;
-					4'd8: data_rev[7] <= uart_rxd;								
+					4'd8: data_rev[7] <= uart_rxd;
+					default:;
 				 endcase
 				end
 			end
