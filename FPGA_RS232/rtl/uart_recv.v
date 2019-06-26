@@ -115,13 +115,8 @@ always @(posedge clk or negedge rst_n) begin
 					next_state <= RECV;
 				end
 			end
-			RECV_DONE: begin
-				if (uart_done) begin
-					next_state <= IDLE;
-				end
-				else begin
-					next_state <= RECV_DONE;
-				end
+			RECV_DONE: begin		
+				next_state <= IDLE;
 			end
 			default:;
 		endcase
@@ -168,13 +163,16 @@ always @(posedge clk or negedge rst_n) begin
 					4'd6: data_rev[5] <= uart_rxd;
 					4'd7: data_rev[6] <= uart_rxd;
 					4'd8: data_rev[7] <= uart_rxd;
+					4'd9: begin
+						data <= data_rev;
+						uart_done <= 1'b1;
+					end
 					default:;
 				 endcase
 				end
 			end
 			RECV_DONE: begin
-					data <= data_rev;
-					uart_done <= 1'b1;
+
 			end
 			default:;
 		endcase

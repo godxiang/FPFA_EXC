@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Wed Jun 26 11:43:15 2019
+Analysis & Synthesis Status : Successful - Wed Jun 26 18:35:38 2019
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : fpga_rs232
 Top-level Entity Name : fpga_rs232
 Family : Cyclone IV E
-Total logic elements : 134
-    Total combinational functions : 125
+Total logic elements : 138
+    Total combinational functions : 129
     Dedicated logic registers : 73
 Total registers : 73
 Total pins : 4
