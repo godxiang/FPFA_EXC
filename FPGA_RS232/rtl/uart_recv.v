@@ -16,7 +16,8 @@ module uart_recv(
 	);
 
 	
-reg  uart_rxd1;	
+reg  uart_rxd1;
+reg  uart_rxd2;		
 wire  start_flag;
 
 reg  [3:0]recv_cnt;			//接收计数
@@ -57,7 +58,7 @@ always @(posedge clk or negedge rst_n) begin
 	end
 	else begin
 		if (current_state == RECV) begin
-			if (clk_cnt < BPS_CNT) begin
+			if (clk_cnt < BPS_CNT - 1) begin
 				clk_cnt <= clk_cnt + 1'b1;
 			end
 			else begin
@@ -79,7 +80,7 @@ always @(posedge clk or negedge rst_n) begin
 	end
 	else begin
 		if (current_state == RECV) begin
-			if (clk_cnt == BPS_CNT) begin
+			if (clk_cnt == BPS_CNT - 1) begin
 				recv_cnt <= recv_cnt + 1'b1;
 			end
 			else begin
@@ -125,14 +126,16 @@ end
 
 
 //检测rxd的下降沿
-assign start_flag =(current_state == IDLE)?(~uart_rxd & uart_rxd1):1'b0;
+assign start_flag =(current_state == IDLE)?(~uart_rxd1 & uart_rxd2):1'b0;
 
 always @(posedge clk or negedge rst_n) begin
 	if (!rst_n) begin
 		uart_rxd1 <= 1'b0;
+		uart_rxd2 <= 1'b0;
 	end
 	else begin
 		uart_rxd1 <= uart_rxd;
+		uart_rxd2 <= uart_rxd1;
 	end
 end
 
@@ -155,14 +158,14 @@ always @(posedge clk or negedge rst_n) begin
 			RECV: begin
 				if (clk_cnt == BPS_CNT/2) begin
 					case (recv_cnt)
-					4'd1: data_rev[0] <= uart_rxd;
-					4'd2: data_rev[1] <= uart_rxd;
-					4'd3: data_rev[2] <= uart_rxd;
-					4'd4: data_rev[3] <= uart_rxd;
-					4'd5: data_rev[4] <= uart_rxd;
-					4'd6: data_rev[5] <= uart_rxd;
-					4'd7: data_rev[6] <= uart_rxd;
-					4'd8: data_rev[7] <= uart_rxd;
+					4'd1: data_rev[0] <= uart_rxd1;
+					4'd2: data_rev[1] <= uart_rxd1;
+					4'd3: data_rev[2] <= uart_rxd1;
+					4'd4: data_rev[3] <= uart_rxd1;
+					4'd5: data_rev[4] <= uart_rxd1;
+					4'd6: data_rev[5] <= uart_rxd1;
+					4'd7: data_rev[6] <= uart_rxd1;
+					4'd8: data_rev[7] <= uart_rxd1;
 					4'd9: begin
 						data <= data_rev;
 						uart_done <= 1'b1;

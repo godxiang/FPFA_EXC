@@ -67,7 +67,7 @@ always @(posedge clk or negedge rst_n) begin
 	end
 	else begin
 		if (current_state == SEND) begin
-			if (clk_cnt < BPS_CNT) begin
+			if (clk_cnt < BPS_CNT -1 ) begin
 				clk_cnt <= clk_cnt + 1'b1;
 			end
 			else begin
@@ -89,7 +89,7 @@ always @(posedge clk or negedge rst_n) begin
 	end
 	else begin
 		if (current_state == SEND) begin
-			if (clk_cnt == BPS_CNT) begin
+			if (clk_cnt == BPS_CNT - 1) begin
 				send_cnt <= send_cnt + 1'b1;
 			end
 			else begin
