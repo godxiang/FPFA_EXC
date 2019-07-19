@@ -48,6 +48,46 @@ module sdram_fifoctl(
 wire [9:0] wr_use;
 wire [9:0] rd_use;
 
+reg sdram_read_valid1;
+reg sdram_read_valid2;
+
+reg wr_load_r1;
+reg wr_load_r2;
+wire wr_load_flag;
+
+reg rd_load_r1;
+reg rd_load_r2;
+wire rd_load_flag;
+
+reg sdram_wr_ack_r1;
+reg sdram_wr_ack_r2;
+wire sdram_wr_ack_flag;
+
+reg sdram_rd_ack_r1;
+reg sdram_rd_ack_r2;
+wire sdram_rd_ack_flag;
+
+//- check ack falling edge
+assign sdram_wr_ack_flag = ~sdram_wr_ack_r1 & sdram_wr_ack_r2;
+assign sdram_rd_ack_flag = ~sdram_rd_ack_r1 & sdram_rd_ack_r2;
+
+//- check load signal rising edge
+assign wr_load_flag = wr_load_r1 & ~wr_load_r2;
+assign rd_load_flag = rd_load_r1 & ~rd_load_r2;
+
+
+//- 同步读使能信号
+always @(posedge clk_ref or negedge rst_n) begin
+	if (!rst_n) begin
+		sdram_read_valid1 <= 1'b0;
+		sdram_read_valid2 <= 1'b0;
+	end
+	else begin
+		sdram_read_valid1 <= sdram_read_valid;
+		sdram_read_valid2 <= sdram_read_valid1;
+	end	
+end
+
 
 //- 产生读写信号
 always @(posedge clk_ref or negedge rst_n) begin
@@ -61,12 +101,116 @@ always @(posedge clk_ref or negedge rst_n) begin
 			sdram_wr_req <= 1'b1;
 			sdram_rd_req <= 1'b0;
 		end
-		else if ((rd_use < rd_len) && )
-		
+		else if ((rd_use < rd_len) && sdram_read_valid2) begin
+			sdram_wr_req <= 1'b0;
+			sdram_rd_req <= 1'b1;
+		end		
 	end
 	else begin
 		sdram_wr_req <= 1'b0;
 		sdram_rd_req <= 1'b0;
+	end
+	
+end
+
+
+//- sync write port reset signal and capture rising edge
+always @(posedge clk_ref or negedge rst_n) begin
+	if (!rst_n) begin
+		wr_load_r1 <= 1'b0;
+		wr_load_r2 <= 1'b0;
+	end
+	else begin
+		wr_load_r1 <= wr_load;
+		wr_load_r2 <= wr_load_r1;
+	end
+end
+
+
+//- sync read port reset signal and capture rising edge
+always @(posedge clk_ref or negedge rst_n) begin
+	if (!rst_n) begin
+		rd_load_r1 <= 1'b0;
+		rd_load_r2 <= 1'b0;
+	end
+	else begin
+		rd_load_r1 <= rd_load;
+		rd_load_r2 <= rd_load_r1;
+	end
+end
+
+
+always @(posedge clk_ref or negedge rst_n) begin
+	if (!rst_n) begin
+		sdram_wr_ack_r1 <= 1'b0;
+		sdram_wr_ack_r2 <= 1'b0;
+	end
+	else begin
+		sdram_wr_ack_r1 <= sdram_wr_ack;
+		sdram_wr_ack_r2 <= sdram_wr_ack_r1;
+	end
+end
+
+
+always @(posedge clk_ref or negedge rst_n) begin
+	if (!rst_n) begin
+		sdram_rd_ack_r1 <= 1'b0;
+		sdram_rd_ack_r2 <= 1'b0;
+	end
+	else begin
+		sdram_rd_ack_r1 <= sdram_rd_ack;
+		sdram_rd_ack_r2 <= sdram_rd_ack_r1;
+	end
+end
+
+
+//- 产生写地址信号
+always @(posedge clk_ref or negedge rst_n) begin
+	if (!rst_n) begin
+		sdram_wr_addr <= 24'd0;
+	end
+	else begin
+		if (wr_load_flag) begin
+			sdram_wr_addr <= wr_minaddr;
+		end
+		else begin
+			if (sdram_wr_addr < wr_maxaddr - wr_len) begin
+				if (sdram_wr_ack_flag) begin
+					sdram_wr_addr <= sdram_wr_addr + wr_len;
+				end
+				else 
+					sdram_wr_addr <= sdram_wr_addr;
+			end
+			else begin
+					sdram_wr_addr <= wr_minaddr;
+			end
+		end
+	end
+	
+end
+
+
+//- 产生读地址信号
+always @(posedge clk_ref or negedge rst_n) begin
+	if (!rst_n) begin
+		sdram_rd_addr <= 24'd0;
+	end
+	else begin
+		if (rd_load_flag) begin
+			sdram_rd_addr <= rd_minaddr;
+		end
+		else begin
+			if (sdram_rd_addr < rd_maxaddr - rd_len) begin
+				if (sdram_rd_ack_flag) begin
+					sdram_rd_addr <= sdram_rd_addr + rd_len;
+				end
+				else 
+					sdram_rd_addr <= sdram_rd_addr;
+			end
+			else begin
+					sdram_rd_addr <= rd_minaddr;
+			end
+		end
 	end
 	
 end
