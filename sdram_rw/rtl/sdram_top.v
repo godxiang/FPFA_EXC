@@ -7,12 +7,12 @@
 
 module sdram_top(	
 	input   		ref_clk, 			//reference clk
-	output		out_clk				//output phase offset clk   
+	output		out_clk,				//output phase offset clk   
 	input    	rst_n,				//system reset
 	
 	//- user write port
 	input    	wr_clk,				// user write clk
-	input    	wr_en					// user write enable
+	input    	wr_en,				// user write enable
 	input [15:0]wr_data,				// user write data
 	input	[23:0]wr_minaddr,			// user write min addr
 	input [23:0]wr_maxaddr,			// user write max addr
@@ -21,7 +21,7 @@ module sdram_top(
 	
 	//- user read port
 	input    	rd_clk,				// user read clk
-	input    	rd_en					// user read enable
+	input    	rd_en,				// user read enable
 	output [15:0]rd_data,			// user read data
 	input	[23:0]rd_minaddr,			// user read min addr
 	input [23:0]rd_maxaddr,			// user read max addr

@@ -9,7 +9,7 @@ module sdram_fifoctl(
 
 	//- user write port
 	input    	wr_clk,					// user write clk
-	input    	wr_en						// user write enable
+	input    	wr_en,					// user write enable
 	input [15:0]wr_data,					// user write data
 	input	[23:0]wr_minaddr,				// user write min addr
 	input [23:0]wr_maxaddr,				// user write max addr
@@ -204,8 +204,9 @@ always @(posedge clk_ref or negedge rst_n) begin
 				if (sdram_rd_ack_flag) begin
 					sdram_rd_addr <= sdram_rd_addr + rd_len;
 				end
-				else 
+				else begin
 					sdram_rd_addr <= sdram_rd_addr;
+				end
 			end
 			else begin
 					sdram_rd_addr <= rd_minaddr;
@@ -216,21 +217,6 @@ always @(posedge clk_ref or negedge rst_n) begin
 end
 
 	
-	
-//- write fifo inst 
-wr_fifo	u_ wr_fifo(
-	.wrclk 	( wr_clk ),
-	.wrreq 	( wr_en ),
-	.data 	( wr_data ),
-	
-	.rdclk 	( clk_ref ),
-	.rdreq 	( sdram_wr_ack ),
-	.q 		( sdram_din ),
-	
-	.rdusedw ( wr_use ),
-	.aclr 	( ~rst_n | wr_load)
-	);
-
 //- read fifo inst 
 rd_fifo	u_rd_fifo (
 	.wrclk 	( clk_ref ),
@@ -245,6 +231,20 @@ rd_fifo	u_rd_fifo (
 	.aclr 	(  ~rst_n | rd_load )
 	);
 	
+
+//- write fifo inst 
+wr_fifo	u_wr_fifo (
+	.wrclk 	( wr_clk ),
+	.wrreq 	( wr_en ),
+	.data 	( wr_data ),
 	
+	.rdclk 	( clk_ref ),
+	.rdreq 	( sdram_wr_ack ),
+	.q 		( sdram_din ),
+	
+	.rdusedw ( wr_use ),
+	.aclr 	( ~rst_n | wr_load)
+	);
+
 	
 endmodule
