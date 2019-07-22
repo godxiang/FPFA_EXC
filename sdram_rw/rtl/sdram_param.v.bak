@@ -1,0 +1,18 @@
+
+//******************************************************
+// - sdram param define 
+// first implement at 2019-7-20
+//******************************************************
+
+'define I_NOP   3'd0
+'define I_PRE   3'd1
+'define I_TRP   3'd2
+'define I_AR    3'd3
+'define I_TRF   3'd4
+'define I_MRS   3'd5
+'define I_TRSC  3'd6
+'define I_DONE  3'd7
+
+
+
+
