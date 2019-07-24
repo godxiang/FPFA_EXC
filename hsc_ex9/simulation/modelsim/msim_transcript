@@ -1,0 +1,117 @@
+# Reading E:/ProgramFile/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do hsc_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying E:\ProgramFile\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied E:\ProgramFile\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+E:/ds/HSC/prj/hsc_ex9/ip_core/FIFO {E:/ds/HSC/prj/hsc_ex9/ip_core/FIFO/loopback_fifo.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module loopback_fifo
+# 
+# Top level modules:
+# 	loopback_fifo
+# vlog -vlog01compat -work work +incdir+E:/ds/HSC/prj/hsc_ex9/source_code {E:/ds/HSC/prj/hsc_ex9/source_code/usb_controller.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module usb_controller
+# 
+# Top level modules:
+# 	usb_controller
+# vlog -vlog01compat -work work +incdir+E:/ds/HSC/prj/hsc_ex9/ip_core/PLL {E:/ds/HSC/prj/hsc_ex9/ip_core/PLL/pll_controller.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_controller
+# 
+# Top level modules:
+# 	pll_controller
+# vlog -vlog01compat -work work +incdir+E:/ds/HSC/prj/hsc_ex9/source_code {E:/ds/HSC/prj/hsc_ex9/source_code/sys_ctrl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sys_ctrl
+# 
+# Top level modules:
+# 	sys_ctrl
+# vlog -vlog01compat -work work +incdir+E:/ds/HSC/prj/hsc_ex9/source_code {E:/ds/HSC/prj/hsc_ex9/source_code/led_controller.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module led_controller
+# 
+# Top level modules:
+# 	led_controller
+# vlog -vlog01compat -work work +incdir+E:/ds/HSC/prj/hsc_ex9/source_code {E:/ds/HSC/prj/hsc_ex9/source_code/hsc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module hsc
+# 
+# Top level modules:
+# 	hsc
+# vlog -vlog01compat -work work +incdir+E:/ds/HSC/prj/hsc_ex9/db {E:/ds/HSC/prj/hsc_ex9/db/pll_controller_altpll.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_controller_altpll
+# 
+# Top level modules:
+# 	pll_controller_altpll
+# 
+# vlog -vlog01compat -work work +incdir+E:/ds/HSC/prj/hsc_ex9/simulation/modelsim {E:/ds/HSC/prj/hsc_ex9/simulation/modelsim/tb_hsc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_hsc
+# 
+# Top level modules:
+# 	tb_hsc
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_hsc
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_hsc 
+# Loading work.tb_hsc
+# Loading work.hsc
+# Loading work.sys_ctrl
+# Loading work.pll_controller
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading work.led_controller
+# Loading work.usb_controller
+# Loading work.loopback_fifo
+# Loading altera_mf_ver.scfifo
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Simulation Start...
+# 
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: tb_hsc.uut_hsc.u1_sys_ctrl.pll_controller_inst.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 1260000  Instance: tb_hsc.uut_hsc.u1_sys_ctrl.pll_controller_inst.altpll_component.cycloneiii_pll.pll3
+# Simulation Finish.
+# 
+# Break in Module tb_hsc at E:/ds/HSC/prj/hsc_ex9/simulation/modelsim/tb_hsc.v line 98
+# Simulation Breakpoint: Break in Module tb_hsc at E:/ds/HSC/prj/hsc_ex9/simulation/modelsim/tb_hsc.v line 98
+# MACRO ./hsc_run_msim_rtl_verilog.do PAUSED at line 23
+add wave -position insertpoint  \
+sim:/tb_hsc/uut_hsc/u3_usb_controller/fifo_rdreq \
+sim:/tb_hsc/uut_hsc/u3_usb_controller/fifo_used \
+sim:/tb_hsc/uut_hsc/u3_usb_controller/fx3_rdb \
+sim:/tb_hsc/uut_hsc/u3_usb_controller/fx3_rdb_en \
+sim:/tb_hsc/uut_hsc/u3_usb_controller/fx3_wdb
+restart
+run -all
+# Simulation Start...
+# 
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: tb_hsc.uut_hsc.u1_sys_ctrl.pll_controller_inst.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 1260000  Instance: tb_hsc.uut_hsc.u1_sys_ctrl.pll_controller_inst.altpll_component.cycloneiii_pll.pll3
+# Simulation Finish.
+# 
+# Break in Module tb_hsc at E:/ds/HSC/prj/hsc_ex9/simulation/modelsim/tb_hsc.v line 98
+
+
+

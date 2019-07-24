@@ -1,0 +1,10 @@
+
+State Machine - |hsc|usb_controller:u3_usb_controller|fxstate
+Name fxstate.FXS_WSOP fxstate.FXS_WRIT fxstate.FXS_RSOP fxstate.FXS_RDLY fxstate.FXS_READ fxstate.FXS_IDLE fxstate.FXS_REST 
+fxstate.FXS_REST 0 0 0 0 0 0 0 
+fxstate.FXS_IDLE 0 0 0 0 0 1 1 
+fxstate.FXS_READ 0 0 0 0 1 0 1 
+fxstate.FXS_RDLY 0 0 0 1 0 0 1 
+fxstate.FXS_RSOP 0 0 1 0 0 0 1 
+fxstate.FXS_WRIT 0 1 0 0 0 0 1 
+fxstate.FXS_WSOP 1 0 0 0 0 0 1 

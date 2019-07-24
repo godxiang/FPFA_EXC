@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\ds\HSC\prj\hsc_ex9\simulation\modelsim
+vhsc
+IGV2GLJG4SF>c7^>:lz7TX2
+VBoFXDDLXcMKEmAZ>cZ=]P0
+Z1 dE:\ds\HSC\prj\hsc_ex9\simulation\modelsim
+w1461562956
+8E:/ds/HSC/prj/hsc_ex9/source_code/hsc.v
+FE:/ds/HSC/prj/hsc_ex9/source_code/hsc.v
+L0 11
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+E:/ds/HSC/prj/hsc_ex9/source_code -O0
+!i10b 1
+!s100 0EN[d84nR[k9e[hV2c20L2
+!s85 0
+!s108 1465274626.348000
+!s107 E:/ds/HSC/prj/hsc_ex9/source_code/hsc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/ds/HSC/prj/hsc_ex9/source_code|E:/ds/HSC/prj/hsc_ex9/source_code/hsc.v|
+!s101 -O0
+vled_controller
+IGD^mAQ1:bYC;:jc6n_O@?3
+V8dk774?g5dJCGZX8U6PLX2
+R1
+w1460946728
+8E:/ds/HSC/prj/hsc_ex9/source_code/led_controller.v
+FE:/ds/HSC/prj/hsc_ex9/source_code/led_controller.v
+L0 12
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 YakSdPEb`c4jN@h;VDgW>2
+!s85 0
+!s108 1465274626.208000
+!s107 E:/ds/HSC/prj/hsc_ex9/source_code/led_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/ds/HSC/prj/hsc_ex9/source_code|E:/ds/HSC/prj/hsc_ex9/source_code/led_controller.v|
+!s101 -O0
+vloopback_fifo
+I9BUO@hcfH<cbKUNR?XhLM2
+Vg@JBCR_`T?KegM[K2QIoO2
+R1
+w1461560936
+8E:/ds/HSC/prj/hsc_ex9/ip_core/FIFO/loopback_fifo.v
+FE:/ds/HSC/prj/hsc_ex9/ip_core/FIFO/loopback_fifo.v
+L0 39
+R2
+r1
+31
+R3
+!i10b 1
+!s100 `en^]na8UP;6T>K9Y>C972
+!s85 0
+!s108 1465274625.318000
+!s107 E:/ds/HSC/prj/hsc_ex9/ip_core/FIFO/loopback_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/ds/HSC/prj/hsc_ex9/ip_core/FIFO|E:/ds/HSC/prj/hsc_ex9/ip_core/FIFO/loopback_fifo.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+E:/ds/HSC/prj/hsc_ex9/ip_core/FIFO -O0
+vpll_controller
+Ii54;UfCNeIgWGbl:UeUfg0
+VN7RmLkd:lT;l2EJZ>5D[;1
+R1
+w1461563012
+8E:/ds/HSC/prj/hsc_ex9/ip_core/PLL/pll_controller.v
+FE:/ds/HSC/prj/hsc_ex9/ip_core/PLL/pll_controller.v
+L0 39
+R2
+r1
+31
+R3
+!i10b 1
+!s100 A14Rh:RiP;IE4OjL95Gfb3
+!s85 0
+!s108 1465274625.630000
+!s107 E:/ds/HSC/prj/hsc_ex9/ip_core/PLL/pll_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/ds/HSC/prj/hsc_ex9/ip_core/PLL|E:/ds/HSC/prj/hsc_ex9/ip_core/PLL/pll_controller.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+E:/ds/HSC/prj/hsc_ex9/ip_core/PLL -O0
+vpll_controller_altpll
+ICN9ZNoPD>DOl7=U5mOG_G3
+VL>]?f:@zk]KUVi5AeGeKU3
+R1
+w1465267973
+8E:/ds/HSC/prj/hsc_ex9/db/pll_controller_altpll.v
+FE:/ds/HSC/prj/hsc_ex9/db/pll_controller_altpll.v
+L0 30
+R2
+r1
+31
+R3
+!i10b 1
+!s100 >jQ8Qc5e3k0bDo=BfOQgV0
+!s85 0
+!s108 1465274626.504000
+!s107 E:/ds/HSC/prj/hsc_ex9/db/pll_controller_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/ds/HSC/prj/hsc_ex9/db|E:/ds/HSC/prj/hsc_ex9/db/pll_controller_altpll.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+E:/ds/HSC/prj/hsc_ex9/db -O0
+vsys_ctrl
+If9TjBj_i6NmEIC>[n;?fP3
+VMz`jFf20R[8kDG@USd]DV3
+R1
+w1461562929
+8E:/ds/HSC/prj/hsc_ex9/source_code/sys_ctrl.v
+FE:/ds/HSC/prj/hsc_ex9/source_code/sys_ctrl.v
+L0 12
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 RQPf4C@kfeJdjBj1E4S@=0
+!s85 0
+!s108 1465274626.067000
+!s107 E:/ds/HSC/prj/hsc_ex9/source_code/sys_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/ds/HSC/prj/hsc_ex9/source_code|E:/ds/HSC/prj/hsc_ex9/source_code/sys_ctrl.v|
+!s101 -O0
+vtb_hsc
+!i10b 1
+!s100 S_dFczABaM>8GWTfd_eaZ1
+IX7lS94RWaQlKfB;`X9`L81
+VlZZiZ[2KcSIf2L=3ZMCXF1
+R1
+w1465274338
+8E:/ds/HSC/prj/hsc_ex9/simulation/modelsim/tb_hsc.v
+FE:/ds/HSC/prj/hsc_ex9/simulation/modelsim/tb_hsc.v
+L0 28
+R2
+r1
+!s85 0
+31
+!s108 1465274626.660000
+!s107 E:/ds/HSC/prj/hsc_ex9/simulation/modelsim/tb_hsc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/ds/HSC/prj/hsc_ex9/simulation/modelsim|E:/ds/HSC/prj/hsc_ex9/simulation/modelsim/tb_hsc.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+E:/ds/HSC/prj/hsc_ex9/simulation/modelsim -O0
+vusb_controller
+IMJla7X;HEZPN6e]WQDCQN2
+VX>BB9ZNC]f2DR^7Q7CT0V0
+R1
+w1465274544
+8E:/ds/HSC/prj/hsc_ex9/source_code/usb_controller.v
+FE:/ds/HSC/prj/hsc_ex9/source_code/usb_controller.v
+L0 11
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 iNQAg2Ekz>gjHAka<0DI:3
+!s85 0
+!s108 1465274625.490000
+!s107 E:/ds/HSC/prj/hsc_ex9/source_code/usb_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/ds/HSC/prj/hsc_ex9/source_code|E:/ds/HSC/prj/hsc_ex9/source_code/usb_controller.v|
+!s101 -O0
