@@ -14,7 +14,6 @@ module hsc_ddr2_top(
 	input   [31:0] wr_data,			//user write data 
 	input   [23:0] wr_maxaddr,		//user write max address
 	input   [23:0]	wr_minaddr,		//user write min address
-//	input          wr_len,			//user write burst len
 	input          wr_load,			//user write port reset ,reset write address and fifo			
 	
 	//- user read port
@@ -23,7 +22,6 @@ module hsc_ddr2_top(
 	output  [31:0] rd_data,			//user read data 
 	input   [23:0] rd_maxaddr,		//user read max address
 	input   [23:0]	rd_minaddr,		//user read min address
-//	input          rd_len,			//user read burst len
 	input          rd_load,			//user read port reset ,reset read address and fifo	
 
 	input   [6:0]  wr_rd_burst,	//read/write burst length 
@@ -50,12 +48,10 @@ module hsc_ddr2_top(
 
 
 wire reset_phy_clk_n;
-//wire phy_clk;
 wire local_address;
 wire local_write_req;
 wire local_wdata;
 wire local_read_req;
-//wire local_burstbegin;
 wire local_ready;
 wire local_rdata;
 wire local_rdata_valid;
@@ -67,30 +63,27 @@ wire local_rdata_valid;
 hsc_ddr2_fifoctl u_hsc_ddr2_fifoctl (
 	.clk 			(usr_phyclk),						//ddr2 operate clk
 	.rst_n      (rst_n),								//system reset
-	.
+	
 	.wr_clk     (wr_clk),							//user write clk
 	.wr_req     (wr_req),							//user write request
 	.wr_data 	(wr_data),							//user write data 
 	.wr_maxaddr (wr_maxaddr),						//user write max address
 	.wr_minaddr (wr_minaddr),						//user write min address
-	.//wr_len	  (wr_len),							//user write burst len
 	.wr_load    (wr_load),							//user write port reset ,reset write address and fifo			
-	.
+	
 	.rd_clk     (rd_clk),							//user read clk
 	.rd_req     (rd_req),							//user read request
 	.rd_data    (rd_data),							//user read data 
 	.rd_maxaddr (rd_maxaddr),						//user read max address
 	.rd_minaddr (rd_minaddr),						//user read min address
-	.//rd_len	  (rd_len),							//user read burst len
 	.rd_load    (rd_load),							//user read port reset ,reset read address and fifo	
-	.
-	.wr_rd_burst(wr_rd_burst)						//read/write burst length 
-	.
+	
+	.wr_rd_burst(wr_rd_burst),						//read/write burst length 
+
 	.local_address     (local_address),			//DDR2 read/write addr
 	.local_write_req   (local_write_req),		//DDR2 write request 
 	.local_wdata       (local_wdata),			//DDR2 write data
-	.local_read_req    (local_read_req),		//DDR2 read request
-//	.local_burstbegin  (local_burstbegin),		//DDR2 begin to bursu 
+	.local_read_req    (local_read_req),		//DDR2 read request 
 	.local_ready       (local_ready),			//DDR2 RD/WR ACK
 	.local_rdata       (local_rdata),			//DDR2 read data
 	.local_rdata_valid (local_rdata_valid),	//DDR2 read data valid signal 
