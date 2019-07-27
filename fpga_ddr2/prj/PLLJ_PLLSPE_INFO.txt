@@ -1,0 +1,10 @@
+PLL_Name	hsc_ddr2_top:u4_hsc_ddr2_top|ddr2_controller:u_ddr2_controller|ddr2_controller_controller_phy:ddr2_controller_controller_phy_inst|ddr2_controller_phy:ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy:ddr2_controller_phy_alt_mem_phy_inst|ddr2_controller_phy_alt_mem_phy_clk_reset:clk|ddr2_controller_phy_alt_mem_phy_pll:pll|altpll:altpll_component|altpll_28l3:auto_generated|pll1
+PLLJITTER	NA
+PLLSPEmax	84
+PLLSPEmin	-53
+
+PLL_Name	sys_ctrl:u1_sys_ctrl|pll_controller:pll_controller_inst|altpll:altpll_component|pll_controller_altpll:auto_generated|pll1
+PLLJITTER	32
+PLLSPEmax	84
+PLLSPEmin	-53
+
