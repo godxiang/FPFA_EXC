@@ -48,21 +48,20 @@ module hsc_ddr2_top(
 
 
 wire reset_phy_clk_n;
-wire local_address;
+wire [23:0]local_address;
 wire local_write_req;
-wire local_wdata;
+wire [31:0]local_wdata;
 wire local_read_req;
 wire local_ready;
-wire local_rdata;
+wire [31:0]local_rdata;
 wire local_rdata_valid;
 
 
-	
 //- FIFO controller module 	
 
 hsc_ddr2_fifoctl u_hsc_ddr2_fifoctl (
 	.clk 			(usr_phyclk),						//ddr2 operate clk
-	.rst_n      (rst_n),								//system reset
+	.rst_n      (reset_phy_clk_n),				//system reset
 	
 	.wr_clk     (wr_clk),							//user write clk
 	.wr_req     (wr_req),							//user write request
@@ -90,7 +89,6 @@ hsc_ddr2_fifoctl u_hsc_ddr2_fifoctl (
 	.local_init_done   (local_init_done)	   //DDR2 init done signal 
 	
 	);
-
 
 	
 //- ddr2 controller module	

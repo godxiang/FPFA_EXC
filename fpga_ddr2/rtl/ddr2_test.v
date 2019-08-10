@@ -30,6 +30,9 @@ reg        rd_valid;                    //读数据有效标志
 //**                    main code
 //***************************************************** 
 
+
+reg [10:0] delay_cnt;
+
 //同步ddr2初始化完成信号
 always @(posedge clk or negedge rst_n) begin
     if(!rst_n) begin
@@ -43,11 +46,26 @@ always @(posedge clk or negedge rst_n) begin
 end   	
 
 
+always @(posedge clk or negedge rst_n) begin
+    if(!rst_n) begin
+		delay_cnt <= 11'd0;
+    end
+    else begin
+		if (init_done_d1) begin	
+			if (delay_cnt < 11'd1024)
+				delay_cnt <= delay_cnt +1'b1;
+		end
+		else 
+			delay_cnt <= delay_cnt;
+    end
+end  
+
+
 //ddr2初始化完成之后,写操作计数器开始计数
 always @(posedge clk or negedge rst_n) begin
     if(!rst_n) 
         wr_cnt <= 11'd0;  
-    else if(init_done_d1 && (wr_cnt <= 11'd1024))
+    else if((delay_cnt == 11'd1024) && (wr_cnt <= 11'd1024))
         wr_cnt <= wr_cnt + 1'b1;
     else
         wr_cnt <= wr_cnt;
@@ -73,7 +91,7 @@ end
 always @(posedge clk or negedge rst_n) begin
     if(!rst_n) 
         rd_en <= 1'b0;
-    else if(wr_cnt > 11'd1024)          //写数据完成
+    else if(wr_cnt > 11'd1024 )         //写数据完成
         rd_en <= 1'b1;                  //读使能拉高
 end
 
@@ -82,8 +100,12 @@ always @(posedge clk or negedge rst_n) begin
     if(!rst_n) 
         rd_cnt <= 11'd0;
     else if(rd_en) begin
-        if(rd_cnt < 11'd1024)
-            rd_cnt <= rd_cnt + 1'b1;
+        if(rd_cnt < 11'd1024) begin
+  				if (rd_cnt == 11'd64 && rd_valid == 1'b0)
+					rd_cnt <= 11'd1;
+			   else 
+					rd_cnt <= rd_cnt + 1'b1;							
+		  end
         else
             rd_cnt <= 11'd1;
     end
@@ -93,7 +115,7 @@ end
 always @(posedge clk or negedge rst_n) begin
     if(!rst_n) 
         rd_valid <= 1'b0;
-    else if(rd_cnt == 11'd1024)         //等待第一次读操作结束
+    else if(rd_cnt == 11'd64)         //等待第一次读操作结束
         rd_valid <= 1'b1;               //后续读取的数据有效
     else
         rd_valid <= rd_valid;

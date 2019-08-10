@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Sat Jul 27 23:32:27 2019
+Analysis & Synthesis Status : Successful - Sat Aug 10 14:09:16 2019
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : hsc
 Top-level Entity Name : hsc
 Family : Cyclone IV E
-Total logic elements : 7,322
-    Total combinational functions : 4,701
-    Dedicated logic registers : 4,893
-Total registers : 4983
-Total pins : 46
+Total logic elements : 11,192
+    Total combinational functions : 6,656
+    Dedicated logic registers : 7,601
+Total registers : 7691
+Total pins : 90
 Total virtual pins : 0
-Total memory bits : 221,186
+Total memory bits : 442,208
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 2

@@ -2,84 +2,88 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -3.555
-TNS   : -527.888
+Type  : Slow 1200mV 85C Model Setup 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -4.275
+TNS   : -1130.887
 
 Type  : Slow 1200mV 85C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
-Slack : -0.331
-TNS   : -5.008
-
-Type  : Slow 1200mV 85C Model Setup 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 0.084
-TNS   : 0.000
+Slack : -2.701
+TNS   : -42.572
 
 Type  : Slow 1200mV 85C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ddr_mimic'
-Slack : 0.615
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ddr_capture'
-Slack : 1.056
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_tDQSS'
-Slack : 1.064
+Slack : 0.612
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 1.077
+Slack : 0.863
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : 0.981
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_tDQSS'
+Slack : 1.085
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_tDQSS'
-Slack : 1.108
+Slack : 1.109
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ddr_capture'
+Slack : 1.200
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_tDSS'
-Slack : 1.420
+Slack : 1.441
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_tDSS'
-Slack : 1.464
+Slack : 1.465
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
-Slack : 1.865
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_ac_fall'
-Slack : 2.791
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_ac_fall'
-Slack : 2.835
+Slack : 1.864
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
-Slack : 3.045
+Slack : 2.109
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_ac_fall'
+Slack : 2.827
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_ac_fall'
+Slack : 2.851
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
-Slack : 3.382
+Slack : 3.360
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Setup 'ext_clk'
-Slack : 39.043
+Type  : Slow 1200mV 85C Model Setup 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 4.258
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 36.522
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'SYS_EXT_INCLK'
+Slack : 39.040
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Setup 'altera_reserved_tck'
-Slack : 42.038
+Slack : 42.319
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[2]'
-Slack : -1.247
-TNS   : -1.247
-
-Type  : Slow 1200mV 85C Model Hold 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.405
+Slack : 0.399
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
-Slack : 0.422
+Type  : Slow 1200mV 85C Model Hold 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 0.405
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
@@ -87,27 +91,35 @@ Slack : 0.432
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'altera_reserved_tck'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
 Slack : 0.454
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
-Slack : 0.454
+Slack : 0.455
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.465
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
 Slack : 0.466
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'ext_clk'
-Slack : 0.502
+Type  : Slow 1200mV 85C Model Hold 'SYS_EXT_INCLK'
+Slack : 0.504
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 0.502
+Slack : 0.504
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ddr_capture'
-Slack : 1.094
+Slack : 0.936
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_tDQSS'
@@ -115,99 +127,111 @@ Slack : 1.168
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_tDQSS'
-Slack : 1.215
+Slack : 1.196
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_tDSS'
-Slack : 1.401
+Slack : 1.402
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_ac_fall'
-Slack : 1.415
+Slack : 1.417
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_tDSS'
-Slack : 1.448
+Slack : 1.430
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_ac_fall'
-Slack : 1.462
+Slack : 1.445
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ddr_mimic'
-Slack : 1.560
+Slack : 1.563
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'n/a'
+Slack : 7.268
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
-Slack : -5.546
-TNS   : -1020.915
+Slack : -5.966
+TNS   : -1035.419
+
+Type  : Slow 1200mV 85C Model Recovery 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -3.175
+TNS   : -418.298
 
 Type  : Slow 1200mV 85C Model Recovery 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 2.645
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Recovery 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
-Slack : 3.324
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Recovery 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
-Slack : 3.814
+Slack : 1.702
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
-Slack : 3.829
+Slack : 2.822
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Recovery 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 5.853
+Type  : Slow 1200mV 85C Model Recovery 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 3.077
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 3.850
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 6.308
+Slack : 6.266
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[4]'
-Slack : 8.323
+Slack : 6.370
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'SYS_EXT_INCLK'
+Slack : 7.895
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'altera_reserved_tck'
-Slack : 48.160
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Removal 'altera_reserved_tck'
-Slack : 1.129
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Removal 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[4]'
-Slack : 1.159
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Removal 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
-Slack : 1.159
+Slack : 46.936
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
-Slack : 1.186
+Slack : 1.150
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 1.158
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'SYS_EXT_INCLK'
+Slack : 1.328
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
-Slack : 1.397
+Slack : 1.371
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Removal 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
-Slack : 1.625
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Removal 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 2.198
+Type  : Slow 1200mV 85C Model Removal 'altera_reserved_tck'
+Slack : 1.419
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 2.358
+Slack : 1.444
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 1.826
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 2.572
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 2.832
+Slack : 2.877
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 3.081
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
@@ -219,39 +243,43 @@ Slack : 1.785
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_ac_fall'
-Slack : 2.222
+Slack : 2.283
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_ac_rise'
-Slack : 2.222
+Slack : 2.283
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_tDQSS'
-Slack : 2.222
+Slack : 2.283
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_tDSS'
-Slack : 2.222
+Slack : 2.283
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_ac_fall'
-Slack : 2.222
+Slack : 2.283
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_ac_rise'
-Slack : 2.222
+Slack : 2.283
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_tDQSS'
-Slack : 2.222
+Slack : 2.283
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_tDSS'
-Slack : 2.222
+Slack : 2.283
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_mem_clk[0]_mimic_launch_clock'
-Slack : 2.224
+Slack : 2.285
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 2.686
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_5'
@@ -270,10 +298,6 @@ Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_contro
 Slack : 2.687
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_4'
-Slack : 2.687
-TNS   : 0.000
-
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_8'
 Slack : 2.687
 TNS   : 0.000
@@ -284,10 +308,6 @@ TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_3'
 Slack : 2.688
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
-Slack : 2.689
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_19'
@@ -326,6 +346,10 @@ Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_contro
 Slack : 2.691
 TNS   : 0.000
 
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_4'
+Slack : 2.697
+TNS   : 0.000
+
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ddr_capture'
 Slack : 2.725
 TNS   : 0.000
@@ -340,10 +364,6 @@ TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_14'
 Slack : 2.746
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_12'
-Slack : 2.747
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_16'
@@ -398,136 +418,152 @@ Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_contro
 Slack : 2.751
 TNS   : 0.000
 
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_12'
+Slack : 2.757
+TNS   : 0.000
+
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[4]'
 Slack : 4.693
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
-Slack : 4.869
+Slack : 4.922
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 9.671
+Slack : 9.660
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 19.688
+Slack : 19.691
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ext_clk'
-Slack : 19.764
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SYS_EXT_INCLK'
+Slack : 19.762
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 49.489
+Slack : 49.616
 TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -3.377
-TNS   : -510.451
-
-Type  : Slow 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
-Slack : -0.010
-TNS   : -0.060
 
 Type  : Slow 1200mV 0C Model Setup 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 0.033
-TNS   : 0.000
+Slack : -4.012
+TNS   : -1076.971
+
+Type  : Slow 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : -2.450
+TNS   : -4.008
 
 Type  : Slow 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ddr_mimic'
-Slack : 0.585
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ddr_capture'
-Slack : 1.015
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_tDQSS'
-Slack : 1.104
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_tDQSS'
-Slack : 1.129
+Slack : 0.582
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 1.294
+Slack : 1.062
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_tDQSS'
+Slack : 1.126
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_tDQSS'
+Slack : 1.127
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ddr_capture'
+Slack : 1.155
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_tDSS'
-Slack : 1.453
+Slack : 1.475
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_tDSS'
-Slack : 1.478
+Slack : 1.476
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : 1.639
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
-Slack : 1.970
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_ac_fall'
-Slack : 2.969
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_ac_fall'
-Slack : 2.994
+Slack : 1.969
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
-Slack : 3.259
+Slack : 2.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_ac_fall'
+Slack : 3.002
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_ac_fall'
+Slack : 3.003
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
-Slack : 3.509
+Slack : 3.510
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'ext_clk'
-Slack : 39.137
+Type  : Slow 1200mV 0C Model Setup 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 4.660
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 36.926
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'SYS_EXT_INCLK'
+Slack : 39.135
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'altera_reserved_tck'
-Slack : 42.510
+Slack : 42.814
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.382
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[2]'
-Slack : -1.132
-TNS   : -1.132
-
-Type  : Slow 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
 Slack : 0.383
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.389
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
-Slack : 0.402
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
-Slack : 0.402
+Type  : Slow 1200mV 0C Model Hold 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 0.390
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
 Slack : 0.403
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
-Slack : 0.417
+Type  : Slow 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 0.403
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'ext_clk'
-Slack : 0.470
+Type  : Slow 1200mV 0C Model Hold 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 0.418
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'SYS_EXT_INCLK'
+Slack : 0.473
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 0.472
+Slack : 0.473
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ddr_capture'
-Slack : 1.065
+Slack : 0.917
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_tDQSS'
@@ -535,7 +571,7 @@ Slack : 1.191
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_tDQSS'
-Slack : 1.219
+Slack : 1.195
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_ac_fall'
@@ -543,7 +579,7 @@ Slack : 1.358
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_ac_fall'
-Slack : 1.386
+Slack : 1.362
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_tDSS'
@@ -551,83 +587,95 @@ Slack : 1.435
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_tDSS'
-Slack : 1.463
+Slack : 1.439
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ddr_mimic'
-Slack : 1.617
+Slack : 1.619
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'n/a'
+Slack : 6.080
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
-Slack : -5.018
-TNS   : -924.995
+Slack : -5.405
+TNS   : -937.002
+
+Type  : Slow 1200mV 0C Model Recovery 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -2.908
+TNS   : -383.728
 
 Type  : Slow 1200mV 0C Model Recovery 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 2.837
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Recovery 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
-Slack : 3.623
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Recovery 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
-Slack : 3.953
+Slack : 1.960
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
-Slack : 3.965
+Slack : 3.009
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Recovery 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 6.206
+Type  : Slow 1200mV 0C Model Recovery 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 3.357
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 3.984
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 6.629
+Slack : 6.598
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[4]'
-Slack : 8.491
+Slack : 6.689
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'SYS_EXT_INCLK'
+Slack : 7.913
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'altera_reserved_tck'
-Slack : 48.436
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Removal 'altera_reserved_tck'
-Slack : 1.030
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Removal 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[4]'
-Slack : 1.068
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Removal 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
-Slack : 1.068
+Slack : 47.230
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
-Slack : 1.089
+Slack : 1.053
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 1.069
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'SYS_EXT_INCLK'
+Slack : 1.213
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
-Slack : 1.248
+Slack : 1.230
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Removal 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
-Slack : 1.453
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Removal 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 1.998
+Type  : Slow 1200mV 0C Model Removal 'altera_reserved_tck'
+Slack : 1.268
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 2.085
+Slack : 1.304
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 1.627
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 2.309
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 2.534
+Slack : 2.575
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 2.915
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
@@ -639,43 +687,43 @@ Slack : 1.785
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_ac_fall'
-Slack : 2.222
+Slack : 2.283
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_ac_rise'
-Slack : 2.222
+Slack : 2.283
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_tDQSS'
-Slack : 2.222
+Slack : 2.283
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_tDSS'
-Slack : 2.222
+Slack : 2.283
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_ac_fall'
-Slack : 2.222
+Slack : 2.283
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_ac_rise'
-Slack : 2.222
+Slack : 2.283
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_tDQSS'
-Slack : 2.222
+Slack : 2.283
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_tDSS'
-Slack : 2.222
+Slack : 2.283
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_mem_clk[0]_mimic_launch_clock'
-Slack : 2.224
+Slack : 2.285
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 2.689
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 2.687
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_1'
@@ -683,18 +731,6 @@ Slack : 2.689
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_3'
-Slack : 2.689
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_4'
-Slack : 2.689
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_5'
-Slack : 2.689
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_6'
 Slack : 2.689
 TNS   : 0.000
 
@@ -710,8 +746,16 @@ Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_control
 Slack : 2.690
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
-Slack : 2.693
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_5'
+Slack : 2.690
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_6'
+Slack : 2.690
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 2.691
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_17'
@@ -723,10 +767,6 @@ Slack : 2.695
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_19'
-Slack : 2.695
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_21'
 Slack : 2.695
 TNS   : 0.000
 
@@ -742,8 +782,16 @@ Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_control
 Slack : 2.696
 TNS   : 0.000
 
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_21'
+Slack : 2.696
+TNS   : 0.000
+
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_23'
 Slack : 2.696
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_4'
+Slack : 2.697
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ddr_capture'
@@ -755,18 +803,6 @@ Slack : 2.724
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_11'
-Slack : 2.735
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_12'
-Slack : 2.735
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_13'
-Slack : 2.735
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_14'
 Slack : 2.735
 TNS   : 0.000
 
@@ -786,6 +822,14 @@ Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_control
 Slack : 2.736
 TNS   : 0.000
 
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_13'
+Slack : 2.736
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_14'
+Slack : 2.736
+TNS   : 0.000
+
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_25'
 Slack : 2.741
 TNS   : 0.000
@@ -795,10 +839,6 @@ Slack : 2.741
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_27'
-Slack : 2.741
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_29'
 Slack : 2.741
 TNS   : 0.000
 
@@ -814,144 +854,168 @@ Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_control
 Slack : 2.742
 TNS   : 0.000
 
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_29'
+Slack : 2.742
+TNS   : 0.000
+
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_31'
 Slack : 2.742
 TNS   : 0.000
 
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_12'
+Slack : 2.743
+TNS   : 0.000
+
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[4]'
-Slack : 4.698
+Slack : 4.697
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
-Slack : 4.843
+Slack : 4.917
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 9.649
+Slack : 9.633
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 19.691
+Slack : 19.695
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ext_clk'
-Slack : 19.752
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SYS_EXT_INCLK'
+Slack : 19.750
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 49.340
+Slack : 49.489
 TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -1.535
-TNS   : -222.090
 
 Type  : Fast 1200mV 0C Model Setup 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 0.116
-TNS   : 0.000
+Slack : -1.798
+TNS   : -470.889
+
+Type  : Fast 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : -1.313
+TNS   : -1.313
 
 Type  : Fast 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_tDQSS'
-Slack : 1.241
+Slack : 1.247
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_tDQSS'
-Slack : 1.242
+Slack : 1.247
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_tDSS'
-Slack : 1.534
+Slack : 1.540
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_tDSS'
-Slack : 1.535
+Slack : 1.540
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ddr_mimic'
-Slack : 1.603
+Slack : 1.599
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ddr_capture'
-Slack : 2.070
+Slack : 2.139
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
-Slack : 2.484
+Slack : 2.481
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 2.898
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
-Slack : 3.215
+Slack : 2.764
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_ac_fall'
-Slack : 3.382
+Slack : 3.407
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_ac_fall'
-Slack : 3.383
+Slack : 3.407
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
-Slack : 4.682
+Slack : 4.323
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
-Slack : 4.922
+Slack : 4.898
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'ext_clk'
-Slack : 39.579
+Type  : Fast 1200mV 0C Model Setup 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 7.574
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : 8.408
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 38.452
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'SYS_EXT_INCLK'
+Slack : 39.575
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'altera_reserved_tck'
-Slack : 46.678
+Slack : 46.708
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[2]'
-Slack : -0.811
-TNS   : -0.811
+Slack : 0.128
+TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[0]'
+Type  : Fast 1200mV 0C Model Hold 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[4]'
 Slack : 0.138
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
-Slack : 0.146
+Type  : Fast 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.168
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
-Slack : 0.150
+Type  : Fast 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 0.173
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'altera_reserved_tck'
-Slack : 0.187
+Slack : 0.186
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
 Slack : 0.187
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'ext_clk'
-Slack : 0.192
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Type  : Fast 1200mV 0C Model Hold 'SYS_EXT_INCLK'
 Slack : 0.193
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Type  : Fast 1200mV 0C Model Hold 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[0]'
 Slack : 0.194
 TNS   : 0.000
 
+Type  : Fast 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.195
+TNS   : 0.000
+
 Type  : Fast 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ddr_capture'
-Slack : 0.537
+Slack : 0.484
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'n/a'
+Slack : 0.575
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ddr_mimic'
-Slack : 0.697
+Slack : 0.700
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_ac_fall'
@@ -959,11 +1023,11 @@ Slack : 1.222
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_ac_fall'
-Slack : 1.222
+Slack : 1.223
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_n_mem_clk_n[0]_tDQSS'
-Slack : 1.271
+Slack : 1.270
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_tDQSS'
@@ -975,79 +1039,87 @@ Slack : 1.569
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_ck_p_mem_clk[0]_tDSS'
-Slack : 1.569
+Slack : 1.570
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
-Slack : -2.572
-TNS   : -482.154
+Slack : -2.732
+TNS   : -479.661
+
+Type  : Fast 1200mV 0C Model Recovery 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -1.322
+TNS   : -175.215
 
 Type  : Fast 1200mV 0C Model Recovery 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 3.645
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Recovery 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
-Slack : 4.704
+Slack : 3.398
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
-Slack : 5.007
+Slack : 4.460
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 4.640
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
-Slack : 5.011
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Recovery 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 8.088
+Slack : 5.025
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 8.289
+Slack : 8.263
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[4]'
-Slack : 9.239
+Slack : 8.315
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'SYS_EXT_INCLK'
+Slack : 8.835
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'altera_reserved_tck'
-Slack : 49.362
+Slack : 48.807
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.486
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 0.489
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
 Slack : 0.491
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Removal 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[4]'
-Slack : 0.492
+Type  : Fast 1200mV 0C Model Removal 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 0.562
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'altera_reserved_tck'
-Slack : 0.495
+Slack : 0.583
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Removal 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
-Slack : 0.501
+Type  : Fast 1200mV 0C Model Removal 'SYS_EXT_INCLK'
+Slack : 0.712
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Removal 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
-Slack : 0.572
+Type  : Fast 1200mV 0C Model Removal 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 0.772
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
-Slack : 0.676
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Removal 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 0.970
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Removal 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 1.085
+Slack : 1.093
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 1.274
+Slack : 1.296
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 1.457
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
@@ -1092,6 +1164,10 @@ TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
 Slack : 2.741
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_12'
+Slack : 2.763
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_25'
@@ -1142,10 +1218,6 @@ Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_control
 Slack : 2.766
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_12'
-Slack : 2.766
-TNS   : 0.000
-
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_13'
 Slack : 2.766
 TNS   : 0.000
@@ -1178,10 +1250,6 @@ Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_control
 Slack : 2.776
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_4'
-Slack : 2.776
-TNS   : 0.000
-
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_5'
 Slack : 2.776
 TNS   : 0.000
@@ -1194,16 +1262,16 @@ Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_control
 Slack : 2.776
 TNS   : 0.000
 
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 2.777
+TNS   : 0.000
+
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_1'
 Slack : 2.777
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_8'
 Slack : 2.777
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
-Slack : 2.779
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_17'
@@ -1238,28 +1306,32 @@ Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_control
 Slack : 2.779
 TNS   : 0.000
 
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_dq_4'
+Slack : 2.779
+TNS   : 0.000
+
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[4]'
-Slack : 4.784
+Slack : 4.749
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u4_hsc_ddr2_top|u_ddr2_controller|ddr2_controller_controller_phy_inst|ddr2_controller_phy_inst|ddr2_controller_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
-Slack : 4.941
+Slack : 4.939
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[2]'
 Slack : 9.748
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ext_clk'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SYS_EXT_INCLK'
 Slack : 19.443
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u1_sys_ctrl|pll_controller_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 19.748
+Slack : 19.783
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 49.466
+Slack : 49.510
 TNS   : 0.000
 
 ------------------------------------------------------------

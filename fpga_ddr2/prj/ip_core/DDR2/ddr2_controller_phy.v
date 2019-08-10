@@ -386,7 +386,7 @@ endmodule
 // Retrieval info:      <PRIVATE name = "shared_sys_clk_source" value="XX"  type="STRING"  enable="1" />
 // Retrieval info:      <PRIVATE name = "ctl_latency" value="0"  type="STRING"  enable="1" />
 // Retrieval info:      <PRIVATE name = "tool_context" value="STANDALONE"  type="STRING"  enable="1" />
-// Retrieval info:      <PRIVATE name = "mem_addr_mapping" value="CHIP_BANK_ROW_COL"  type="STRING"  enable="1" />
+// Retrieval info:      <PRIVATE name = "mem_addr_mapping" value="CHIP_ROW_BANK_COL"  type="STRING"  enable="1" />
 // Retrieval info:      <PRIVATE name = "burst_merge_en" value="false"  type="STRING"  enable="1" />
 // Retrieval info:      <PRIVATE name = "user_refresh_en" value="false"  type="STRING"  enable="1" />
 // Retrieval info:      <PRIVATE name = "qsys_mode" value="false"  type="STRING"  enable="1" />
@@ -454,7 +454,7 @@ endmodule
 // Retrieval info:     <NAMESPACE name = "simgen2">
 // Retrieval info:      <PRIVATE name = "family" value="Cyclone IV E"  type="STRING"  enable="1" />
 // Retrieval info:      <PRIVATE name = "command" value="--simgen_arbitrary_blackbox=+ddr2_controller_phy_alt_mem_phy_seq_wrapper;+ddr2_controller_phy_alt_mem_phy_reconfig;+ddr2_controller_phy_alt_mem_phy_pll;+ddr2_controller_phy_alt_mem_phy_delay --ini=simgen_tri_bus_opt=on"  type="STRING"  enable="1" />
-// Retrieval info:      <PRIVATE name = "parameter" value="SIMGEN_INITIALIZATION_FILE=D:\FPGA\hsc\hsc_ex9\ip_core\DDR2/ddr2_controller_phy_simgen_init.txt"  type="STRING"  enable="1" />
+// Retrieval info:      <PRIVATE name = "parameter" value="SIMGEN_INITIALIZATION_FILE=D:\gitwork\FPFA_EXC\fpga_ddr2\prj\ip_core\DDR2/ddr2_controller_phy_simgen_init.txt"  type="STRING"  enable="1" />
 // Retrieval info:     </NAMESPACE>
 // Retrieval info:     <NAMESPACE name = "simgen_enable">
 // Retrieval info:      <PRIVATE name = "language" value="Verilog HDL"  type="STRING"  enable="1" />

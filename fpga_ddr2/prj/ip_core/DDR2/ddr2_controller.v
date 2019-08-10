@@ -424,7 +424,7 @@ endmodule
 // Retrieval info:     <NAMESPACE name = "simgen2">
 // Retrieval info:      <PRIVATE name = "family" value="Cyclone IV E"  type="STRING"  enable="1" />
 // Retrieval info:      <PRIVATE name = "command" value="--simgen_arbitrary_blackbox=+ddr2_controller_alt_mem_phy_seq_wrapper;+ddr2_controller_alt_mem_phy_reconfig;+ddr2_controller_alt_mem_phy_pll;+ddr2_controller_phy_alt_mem_phy_delay --ini=simgen_tri_bus_opt=on"  type="STRING"  enable="1" />
-// Retrieval info:      <PRIVATE name = "parameter" value="SIMGEN_INITIALIZATION_FILE=D:\FPGA\hsc\hsc_ex9\ip_core\DDR2/ddr2_controller_simgen_init.txt"  type="STRING"  enable="1" />
+// Retrieval info:      <PRIVATE name = "parameter" value="SIMGEN_INITIALIZATION_FILE=D:\gitwork\FPFA_EXC\fpga_ddr2\prj\ip_core\DDR2/ddr2_controller_simgen_init.txt"  type="STRING"  enable="1" />
 // Retrieval info:     </NAMESPACE>
 // Retrieval info:     <NAMESPACE name = "simgen_enable">
 // Retrieval info:      <PRIVATE name = "language" value="Verilog HDL"  type="STRING"  enable="1" />

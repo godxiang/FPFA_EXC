@@ -12,7 +12,7 @@ module hsc(
 				//外部输入时钟和复位接口
 			input ext_clk,		//外部25MHz输入时钟	
 			input ext_rst_n,	//外部低电平复位信号输入
-		/*
+		
 				//FX3 Slave FIFO接口
 			input fx3_flaga,	//地址00时，slave fifo写入满标志位
 			input fx3_flagb,	//地址00时，slave fifo写入快满标志位，该位拉低后还可以写入6个Byte数据
@@ -26,7 +26,7 @@ module hsc(
 			output fx3_pktend_n,
 			output[1:0] fx3_a,
 			inout[31:0] fx3_db,		
-	*/	
+		
 				//LED指示灯接口
 			output led,	//用于测试的LED指示灯	
 	
@@ -77,7 +77,7 @@ sys_ctrl	u1_sys_ctrl(
 				.ext_rst_n(ext_rst_n),
 				.sys_rst_n(sys_rst_n),
 				.clk_25m(clk_25m),
-//				.fx3_pclk(fx3_pclk),
+				.fx3_pclk(fx3_pclk),
 				.clk_50m(clk_50m),
 				.clk_65m(clk_65m),
 				.clk_100m(clk_100m)
@@ -95,7 +95,7 @@ led_controller		u2_led_controller(
 ////////////////////////////////////////////////////	
 //FX3 Slave FIFO读写操作控制模块
 
-/*
+
 usb_controller		u3_usb_controller(
 						.clk(clk_100m),
 						.rst_n(sys_rst_n),
@@ -113,7 +113,7 @@ usb_controller		u3_usb_controller(
 						.fx3_db(fx3_db)
 					);
 
-*/
+
 //- ddr2 top module			
 hsc_ddr2_top u4_hsc_ddr2_top(
 		.ref_clk				(clk_100m),				//ddr2 reference clk
@@ -154,6 +154,8 @@ hsc_ddr2_top u4_hsc_ddr2_top(
 			
 	);			
 
+	
+/*	
 //- ddr2 test module 	
 ddr2_test u5_ddr2_test(
 		.clk					(clk_50m),
@@ -169,7 +171,7 @@ ddr2_test u5_ddr2_test(
 
 	);
 	
-	
+*/	
 			
 			
 endmodule
