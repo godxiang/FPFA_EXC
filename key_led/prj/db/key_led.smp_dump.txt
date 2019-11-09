@@ -1,0 +1,14 @@
+
+State Machine - |key_led|key_filter:u_key_filter1|state
+Name state.FILTER_RELEASE state.DOWN state.FILTER_DOWN state.IDLE 
+state.IDLE 0 0 0 0 
+state.FILTER_DOWN 0 0 1 1 
+state.DOWN 0 1 0 1 
+state.FILTER_RELEASE 1 0 0 1 
+
+State Machine - |key_led|key_filter:u_key_filter0|state
+Name state.FILTER_RELEASE state.DOWN state.FILTER_DOWN state.IDLE 
+state.IDLE 0 0 0 0 
+state.FILTER_DOWN 0 0 1 1 
+state.DOWN 0 1 0 1 
+state.FILTER_RELEASE 1 0 0 1 
