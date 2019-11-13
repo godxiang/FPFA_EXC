@@ -1,0 +1,1748 @@
+TimeQuest Timing Analyzer report for uart_tx_byte
+Wed Nov 13 16:53:44 2019
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 85C Model Setup Summary
+  8. Slow 1200mV 85C Model Hold Summary
+  9. Slow 1200mV 85C Model Recovery Summary
+ 10. Slow 1200mV 85C Model Removal Summary
+ 11. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 12. Slow 1200mV 85C Model Setup: 'Clk'
+ 13. Slow 1200mV 85C Model Hold: 'Clk'
+ 14. Slow 1200mV 85C Model Minimum Pulse Width: 'Clk'
+ 15. Setup Times
+ 16. Hold Times
+ 17. Clock to Output Times
+ 18. Minimum Clock to Output Times
+ 19. Slow 1200mV 85C Model Metastability Report
+ 20. Slow 1200mV 0C Model Fmax Summary
+ 21. Slow 1200mV 0C Model Setup Summary
+ 22. Slow 1200mV 0C Model Hold Summary
+ 23. Slow 1200mV 0C Model Recovery Summary
+ 24. Slow 1200mV 0C Model Removal Summary
+ 25. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 26. Slow 1200mV 0C Model Setup: 'Clk'
+ 27. Slow 1200mV 0C Model Hold: 'Clk'
+ 28. Slow 1200mV 0C Model Minimum Pulse Width: 'Clk'
+ 29. Setup Times
+ 30. Hold Times
+ 31. Clock to Output Times
+ 32. Minimum Clock to Output Times
+ 33. Slow 1200mV 0C Model Metastability Report
+ 34. Fast 1200mV 0C Model Setup Summary
+ 35. Fast 1200mV 0C Model Hold Summary
+ 36. Fast 1200mV 0C Model Recovery Summary
+ 37. Fast 1200mV 0C Model Removal Summary
+ 38. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 39. Fast 1200mV 0C Model Setup: 'Clk'
+ 40. Fast 1200mV 0C Model Hold: 'Clk'
+ 41. Fast 1200mV 0C Model Minimum Pulse Width: 'Clk'
+ 42. Setup Times
+ 43. Hold Times
+ 44. Clock to Output Times
+ 45. Minimum Clock to Output Times
+ 46. Fast 1200mV 0C Model Metastability Report
+ 47. Multicorner Timing Analysis Summary
+ 48. Setup Times
+ 49. Hold Times
+ 50. Clock to Output Times
+ 51. Minimum Clock to Output Times
+ 52. Board Trace Model Assignments
+ 53. Input Transition Times
+ 54. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 55. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 56. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 57. Setup Transfers
+ 58. Hold Transfers
+ 59. Report TCCS
+ 60. Report RSKM
+ 61. Unconstrained Paths
+ 62. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                        ;
++--------------------+-----------------------------------------------------+
+; Quartus II Version ; Version 13.1.0 Build 162 10/23/2013 SJ Full Version ;
+; Revision Name      ; uart_tx_byte                                        ;
+; Device Family      ; Cyclone IV E                                        ;
+; Device Name        ; EP4CE10F17C8                                        ;
+; Timing Models      ; Final                                               ;
+; Delay Model        ; Combined                                            ;
+; Rise/Fall Delays   ; Enabled                                             ;
++--------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ; < 0.1%      ;
+;     Processors 3-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                          ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clk        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Clk } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+
+
++--------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary               ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 223.16 MHz ; 223.16 MHz      ; Clk        ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
++-------------------------------------+
+; Slow 1200mV 85C Model Setup Summary ;
++-------+--------+--------------------+
+; Clock ; Slack  ; End Point TNS      ;
++-------+--------+--------------------+
+; Clk   ; -3.481 ; -58.304            ;
++-------+--------+--------------------+
+
+
++------------------------------------+
+; Slow 1200mV 85C Model Hold Summary ;
++-------+-------+--------------------+
+; Clock ; Slack ; End Point TNS      ;
++-------+-------+--------------------+
+; Clk   ; 0.453 ; 0.000              ;
++-------+-------+--------------------+
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
++---------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
++-------+--------+----------------------------------+
+; Clock ; Slack  ; End Point TNS                    ;
++-------+--------+----------------------------------+
+; Clk   ; -3.000 ; -58.019                          ;
++-------+--------+----------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup: 'Clk'                                                                                 ;
++--------+------------------+------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+--------------+-------------+--------------+------------+------------+
+; -3.481 ; baud_cnt[4]      ; baud_div_cnt[7]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.400      ;
+; -3.481 ; baud_cnt[4]      ; baud_div_cnt[2]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.400      ;
+; -3.481 ; baud_cnt[4]      ; baud_div_cnt[0]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.400      ;
+; -3.481 ; baud_cnt[4]      ; baud_div_cnt[1]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.400      ;
+; -3.481 ; baud_cnt[4]      ; baud_div_cnt[3]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.400      ;
+; -3.481 ; baud_cnt[4]      ; baud_div_cnt[4]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.400      ;
+; -3.481 ; baud_cnt[4]      ; baud_div_cnt[9]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.400      ;
+; -3.481 ; baud_cnt[4]      ; baud_div_cnt[5]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.400      ;
+; -3.481 ; baud_cnt[4]      ; baud_div_cnt[6]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.400      ;
+; -3.481 ; baud_cnt[4]      ; baud_div_cnt[8]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.400      ;
+; -3.481 ; baud_cnt[4]      ; baud_div_cnt[10] ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.400      ;
+; -3.481 ; baud_cnt[4]      ; baud_div_cnt[11] ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.400      ;
+; -3.481 ; baud_cnt[4]      ; baud_div_cnt[12] ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.400      ;
+; -3.478 ; baud_div_cnt[10] ; baud_div_cnt[7]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.398      ;
+; -3.478 ; baud_div_cnt[10] ; baud_div_cnt[2]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.398      ;
+; -3.478 ; baud_div_cnt[10] ; baud_div_cnt[0]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.398      ;
+; -3.478 ; baud_div_cnt[10] ; baud_div_cnt[1]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.398      ;
+; -3.478 ; baud_div_cnt[10] ; baud_div_cnt[3]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.398      ;
+; -3.478 ; baud_div_cnt[10] ; baud_div_cnt[4]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.398      ;
+; -3.478 ; baud_div_cnt[10] ; baud_div_cnt[9]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.398      ;
+; -3.478 ; baud_div_cnt[10] ; baud_div_cnt[5]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.398      ;
+; -3.478 ; baud_div_cnt[10] ; baud_div_cnt[6]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.398      ;
+; -3.478 ; baud_div_cnt[10] ; baud_div_cnt[8]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.398      ;
+; -3.478 ; baud_div_cnt[10] ; baud_div_cnt[10] ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.398      ;
+; -3.478 ; baud_div_cnt[10] ; baud_div_cnt[11] ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.398      ;
+; -3.478 ; baud_div_cnt[10] ; baud_div_cnt[12] ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.398      ;
+; -3.355 ; baud_cnt[11]     ; baud_div_cnt[7]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.275      ;
+; -3.355 ; baud_cnt[11]     ; baud_div_cnt[2]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.275      ;
+; -3.355 ; baud_cnt[11]     ; baud_div_cnt[0]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.275      ;
+; -3.355 ; baud_cnt[11]     ; baud_div_cnt[1]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.275      ;
+; -3.355 ; baud_cnt[11]     ; baud_div_cnt[3]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.275      ;
+; -3.355 ; baud_cnt[11]     ; baud_div_cnt[4]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.275      ;
+; -3.355 ; baud_cnt[11]     ; baud_div_cnt[9]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.275      ;
+; -3.355 ; baud_cnt[11]     ; baud_div_cnt[5]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.275      ;
+; -3.355 ; baud_cnt[11]     ; baud_div_cnt[6]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.275      ;
+; -3.355 ; baud_cnt[11]     ; baud_div_cnt[8]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.275      ;
+; -3.355 ; baud_cnt[11]     ; baud_div_cnt[10] ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.275      ;
+; -3.355 ; baud_cnt[11]     ; baud_div_cnt[11] ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.275      ;
+; -3.355 ; baud_cnt[11]     ; baud_div_cnt[12] ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.275      ;
+; -3.300 ; baud_div_cnt[3]  ; baud_div_cnt[7]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.220      ;
+; -3.300 ; baud_div_cnt[3]  ; baud_div_cnt[2]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.220      ;
+; -3.300 ; baud_div_cnt[3]  ; baud_div_cnt[0]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.220      ;
+; -3.300 ; baud_div_cnt[3]  ; baud_div_cnt[1]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.220      ;
+; -3.300 ; baud_div_cnt[3]  ; baud_div_cnt[3]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.220      ;
+; -3.300 ; baud_div_cnt[3]  ; baud_div_cnt[4]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.220      ;
+; -3.300 ; baud_div_cnt[3]  ; baud_div_cnt[9]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.220      ;
+; -3.300 ; baud_div_cnt[3]  ; baud_div_cnt[5]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.220      ;
+; -3.300 ; baud_div_cnt[3]  ; baud_div_cnt[6]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.220      ;
+; -3.300 ; baud_div_cnt[3]  ; baud_div_cnt[8]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.220      ;
+; -3.300 ; baud_div_cnt[3]  ; baud_div_cnt[10] ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.220      ;
+; -3.300 ; baud_div_cnt[3]  ; baud_div_cnt[11] ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.220      ;
+; -3.300 ; baud_div_cnt[3]  ; baud_div_cnt[12] ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.220      ;
+; -3.239 ; baud_cnt[7]      ; baud_div_cnt[7]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.158      ;
+; -3.239 ; baud_cnt[7]      ; baud_div_cnt[2]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.158      ;
+; -3.239 ; baud_cnt[7]      ; baud_div_cnt[0]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.158      ;
+; -3.239 ; baud_cnt[7]      ; baud_div_cnt[1]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.158      ;
+; -3.239 ; baud_cnt[7]      ; baud_div_cnt[3]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.158      ;
+; -3.239 ; baud_cnt[7]      ; baud_div_cnt[4]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.158      ;
+; -3.239 ; baud_cnt[7]      ; baud_div_cnt[9]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.158      ;
+; -3.239 ; baud_cnt[7]      ; baud_div_cnt[5]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.158      ;
+; -3.239 ; baud_cnt[7]      ; baud_div_cnt[6]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.158      ;
+; -3.239 ; baud_cnt[7]      ; baud_div_cnt[8]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.158      ;
+; -3.239 ; baud_cnt[7]      ; baud_div_cnt[10] ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.158      ;
+; -3.239 ; baud_cnt[7]      ; baud_div_cnt[11] ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.158      ;
+; -3.239 ; baud_cnt[7]      ; baud_div_cnt[12] ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.158      ;
+; -3.197 ; baud_cnt[6]      ; baud_div_cnt[7]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.116      ;
+; -3.197 ; baud_cnt[6]      ; baud_div_cnt[2]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.116      ;
+; -3.197 ; baud_cnt[6]      ; baud_div_cnt[0]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.116      ;
+; -3.197 ; baud_cnt[6]      ; baud_div_cnt[1]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.116      ;
+; -3.197 ; baud_cnt[6]      ; baud_div_cnt[3]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.116      ;
+; -3.197 ; baud_cnt[6]      ; baud_div_cnt[4]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.116      ;
+; -3.197 ; baud_cnt[6]      ; baud_div_cnt[9]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.116      ;
+; -3.197 ; baud_cnt[6]      ; baud_div_cnt[5]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.116      ;
+; -3.197 ; baud_cnt[6]      ; baud_div_cnt[6]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.116      ;
+; -3.197 ; baud_cnt[6]      ; baud_div_cnt[8]  ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.116      ;
+; -3.197 ; baud_cnt[6]      ; baud_div_cnt[10] ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.116      ;
+; -3.197 ; baud_cnt[6]      ; baud_div_cnt[11] ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.116      ;
+; -3.197 ; baud_cnt[6]      ; baud_div_cnt[12] ; Clk          ; Clk         ; 1.000        ; -0.082     ; 4.116      ;
+; -3.192 ; baud_div_cnt[6]  ; baud_div_cnt[7]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.112      ;
+; -3.192 ; baud_div_cnt[6]  ; baud_div_cnt[2]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.112      ;
+; -3.192 ; baud_div_cnt[6]  ; baud_div_cnt[0]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.112      ;
+; -3.192 ; baud_div_cnt[6]  ; baud_div_cnt[1]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.112      ;
+; -3.192 ; baud_div_cnt[6]  ; baud_div_cnt[3]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.112      ;
+; -3.192 ; baud_div_cnt[6]  ; baud_div_cnt[4]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.112      ;
+; -3.192 ; baud_div_cnt[6]  ; baud_div_cnt[9]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.112      ;
+; -3.192 ; baud_div_cnt[6]  ; baud_div_cnt[5]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.112      ;
+; -3.192 ; baud_div_cnt[6]  ; baud_div_cnt[6]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.112      ;
+; -3.192 ; baud_div_cnt[6]  ; baud_div_cnt[8]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.112      ;
+; -3.192 ; baud_div_cnt[6]  ; baud_div_cnt[10] ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.112      ;
+; -3.192 ; baud_div_cnt[6]  ; baud_div_cnt[11] ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.112      ;
+; -3.192 ; baud_div_cnt[6]  ; baud_div_cnt[12] ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.112      ;
+; -3.153 ; Uart_state~reg0  ; baud_div_cnt[7]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.073      ;
+; -3.153 ; Uart_state~reg0  ; baud_div_cnt[2]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.073      ;
+; -3.153 ; Uart_state~reg0  ; baud_div_cnt[0]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.073      ;
+; -3.153 ; Uart_state~reg0  ; baud_div_cnt[1]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.073      ;
+; -3.153 ; Uart_state~reg0  ; baud_div_cnt[3]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.073      ;
+; -3.153 ; Uart_state~reg0  ; baud_div_cnt[4]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.073      ;
+; -3.153 ; Uart_state~reg0  ; baud_div_cnt[9]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.073      ;
+; -3.153 ; Uart_state~reg0  ; baud_div_cnt[5]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.073      ;
+; -3.153 ; Uart_state~reg0  ; baud_div_cnt[6]  ; Clk          ; Clk         ; 1.000        ; -0.081     ; 4.073      ;
++--------+------------------+------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Hold: 'Clk'                                                                                  ;
++-------+------------------+-------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+-------------------+--------------+-------------+--------------+------------+------------+
+; 0.453 ; Uart_state~reg0  ; Uart_state~reg0   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 0.746      ;
+; 0.508 ; baud_div_cnt[12] ; baud_div_cnt[12]  ; Clk          ; Clk         ; 0.000        ; 0.081      ; 0.801      ;
+; 0.762 ; baud_div_cnt[3]  ; baud_div_cnt[3]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.055      ;
+; 0.762 ; baud_div_cnt[11] ; baud_div_cnt[11]  ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.055      ;
+; 0.764 ; bps_cnt[1]       ; bps_cnt[1]        ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.057      ;
+; 0.764 ; baud_div_cnt[7]  ; baud_div_cnt[7]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.057      ;
+; 0.764 ; baud_div_cnt[4]  ; baud_div_cnt[4]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.057      ;
+; 0.764 ; baud_div_cnt[5]  ; baud_div_cnt[5]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.057      ;
+; 0.765 ; baud_div_cnt[2]  ; baud_div_cnt[2]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.058      ;
+; 0.766 ; baud_div_cnt[6]  ; baud_div_cnt[6]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.059      ;
+; 0.766 ; baud_div_cnt[8]  ; baud_div_cnt[8]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.059      ;
+; 0.766 ; baud_div_cnt[10] ; baud_div_cnt[10]  ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.059      ;
+; 0.779 ; bps_cnt[3]       ; bps_cnt[3]        ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.072      ;
+; 0.781 ; bps_cnt[2]       ; bps_cnt[2]        ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.074      ;
+; 0.785 ; baud_div_cnt[1]  ; baud_div_cnt[1]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.078      ;
+; 0.786 ; baud_div_cnt[9]  ; baud_div_cnt[9]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.079      ;
+; 0.811 ; baud_div_cnt[0]  ; baud_div_cnt[0]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.104      ;
+; 0.982 ; bps_cnt[0]       ; Uart_tx_done~reg0 ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.275      ;
+; 0.985 ; data_byte_r[0]   ; Uart_tx~reg0      ; Clk          ; Clk         ; 0.000        ; 0.080      ; 1.277      ;
+; 0.997 ; bps_cnt[0]       ; bps_cnt[0]        ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.290      ;
+; 1.072 ; bps_cnt[2]       ; Uart_tx~reg0      ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.365      ;
+; 1.106 ; bps_cnt[3]       ; Uart_tx_done~reg0 ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.399      ;
+; 1.117 ; baud_div_cnt[11] ; baud_div_cnt[12]  ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.410      ;
+; 1.117 ; baud_div_cnt[3]  ; baud_div_cnt[4]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.410      ;
+; 1.118 ; baud_div_cnt[5]  ; baud_div_cnt[6]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.411      ;
+; 1.118 ; baud_div_cnt[7]  ; baud_div_cnt[8]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.411      ;
+; 1.118 ; bps_cnt[1]       ; bps_cnt[2]        ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.411      ;
+; 1.125 ; baud_div_cnt[4]  ; baud_div_cnt[5]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.418      ;
+; 1.126 ; baud_div_cnt[2]  ; baud_div_cnt[3]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.419      ;
+; 1.127 ; baud_div_cnt[10] ; baud_div_cnt[11]  ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.420      ;
+; 1.127 ; baud_div_cnt[6]  ; baud_div_cnt[7]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.420      ;
+; 1.127 ; baud_div_cnt[8]  ; baud_div_cnt[9]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.420      ;
+; 1.134 ; baud_div_cnt[4]  ; baud_div_cnt[6]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.427      ;
+; 1.135 ; baud_div_cnt[2]  ; baud_div_cnt[4]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.428      ;
+; 1.136 ; baud_div_cnt[8]  ; baud_div_cnt[10]  ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.429      ;
+; 1.136 ; baud_div_cnt[10] ; baud_div_cnt[12]  ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.429      ;
+; 1.136 ; baud_div_cnt[6]  ; baud_div_cnt[8]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.429      ;
+; 1.140 ; baud_div_cnt[1]  ; baud_div_cnt[2]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.433      ;
+; 1.141 ; baud_div_cnt[9]  ; baud_div_cnt[10]  ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.434      ;
+; 1.142 ; bps_cnt[2]       ; bps_cnt[3]        ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.435      ;
+; 1.149 ; baud_div_cnt[0]  ; baud_div_cnt[1]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.442      ;
+; 1.158 ; baud_div_cnt[0]  ; baud_div_cnt[2]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.451      ;
+; 1.191 ; data_byte_r[6]   ; Uart_tx~reg0      ; Clk          ; Clk         ; 0.000        ; 0.080      ; 1.483      ;
+; 1.204 ; baud_cnt[8]      ; baud_div_clk      ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.497      ;
+; 1.234 ; bps_cnt[2]       ; Uart_tx_done~reg0 ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.527      ;
+; 1.248 ; baud_div_cnt[3]  ; baud_div_cnt[5]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.541      ;
+; 1.249 ; baud_div_cnt[5]  ; baud_div_cnt[7]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.542      ;
+; 1.249 ; baud_div_cnt[7]  ; baud_div_cnt[9]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.542      ;
+; 1.249 ; bps_cnt[1]       ; bps_cnt[3]        ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.542      ;
+; 1.257 ; baud_div_cnt[3]  ; baud_div_cnt[6]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.550      ;
+; 1.258 ; baud_div_cnt[7]  ; baud_div_cnt[10]  ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.551      ;
+; 1.258 ; baud_div_cnt[5]  ; baud_div_cnt[8]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.551      ;
+; 1.265 ; baud_div_cnt[4]  ; baud_div_cnt[7]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.558      ;
+; 1.266 ; baud_div_cnt[2]  ; baud_div_cnt[5]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.559      ;
+; 1.267 ; baud_div_cnt[8]  ; baud_div_cnt[11]  ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.560      ;
+; 1.267 ; baud_div_cnt[6]  ; baud_div_cnt[9]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.560      ;
+; 1.271 ; baud_div_cnt[1]  ; baud_div_cnt[3]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.564      ;
+; 1.272 ; baud_div_cnt[9]  ; baud_div_cnt[11]  ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.565      ;
+; 1.274 ; baud_div_cnt[4]  ; baud_div_cnt[8]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.567      ;
+; 1.275 ; baud_div_cnt[2]  ; baud_div_cnt[6]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.568      ;
+; 1.276 ; baud_div_cnt[8]  ; baud_div_cnt[12]  ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.569      ;
+; 1.276 ; baud_div_cnt[6]  ; baud_div_cnt[10]  ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.569      ;
+; 1.280 ; baud_div_cnt[1]  ; baud_div_cnt[4]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.573      ;
+; 1.281 ; bps_cnt[1]       ; Uart_tx~reg0      ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.574      ;
+; 1.281 ; baud_div_cnt[9]  ; baud_div_cnt[12]  ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.574      ;
+; 1.289 ; baud_div_cnt[0]  ; baud_div_cnt[3]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.582      ;
+; 1.298 ; baud_div_cnt[0]  ; baud_div_cnt[4]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.591      ;
+; 1.330 ; bps_cnt[0]       ; bps_cnt[1]        ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.623      ;
+; 1.335 ; baud_div_clk     ; bps_cnt[0]        ; Clk          ; Clk         ; 0.000        ; 0.077      ; 1.624      ;
+; 1.350 ; bps_cnt[3]       ; Uart_tx~reg0      ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.643      ;
+; 1.361 ; bps_cnt[0]       ; bps_cnt[2]        ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.654      ;
+; 1.362 ; bps_cnt[0]       ; bps_cnt[3]        ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.655      ;
+; 1.388 ; baud_div_cnt[3]  ; baud_div_cnt[7]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.681      ;
+; 1.389 ; baud_div_cnt[7]  ; baud_div_cnt[11]  ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.682      ;
+; 1.389 ; baud_div_cnt[5]  ; baud_div_cnt[9]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.682      ;
+; 1.390 ; data_byte_r[5]   ; Uart_tx~reg0      ; Clk          ; Clk         ; 0.000        ; 0.080      ; 1.682      ;
+; 1.397 ; baud_div_cnt[3]  ; baud_div_cnt[8]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.690      ;
+; 1.398 ; baud_div_cnt[7]  ; baud_div_cnt[12]  ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.691      ;
+; 1.398 ; baud_div_cnt[5]  ; baud_div_cnt[10]  ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.691      ;
+; 1.405 ; baud_div_cnt[4]  ; baud_div_cnt[9]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.698      ;
+; 1.406 ; baud_div_cnt[2]  ; baud_div_cnt[7]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.699      ;
+; 1.407 ; baud_div_cnt[6]  ; baud_div_cnt[11]  ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.700      ;
+; 1.410 ; bps_cnt[1]       ; Uart_tx_done~reg0 ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.703      ;
+; 1.411 ; baud_div_cnt[1]  ; baud_div_cnt[5]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.704      ;
+; 1.414 ; baud_div_cnt[4]  ; baud_div_cnt[10]  ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.707      ;
+; 1.415 ; baud_div_cnt[2]  ; baud_div_cnt[8]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.708      ;
+; 1.416 ; baud_div_cnt[6]  ; baud_div_cnt[12]  ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.709      ;
+; 1.420 ; baud_div_cnt[1]  ; baud_div_cnt[6]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.713      ;
+; 1.429 ; baud_div_cnt[0]  ; baud_div_cnt[5]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.722      ;
+; 1.432 ; baud_div_cnt[9]  ; baud_div_clk      ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.725      ;
+; 1.438 ; baud_div_cnt[0]  ; baud_div_cnt[6]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.731      ;
+; 1.444 ; data_byte_r[1]   ; Uart_tx~reg0      ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.737      ;
+; 1.477 ; bps_cnt[0]       ; Uart_state~reg0   ; Clk          ; Clk         ; 0.000        ; 0.085      ; 1.774      ;
+; 1.480 ; baud_cnt[12]     ; baud_div_clk      ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.773      ;
+; 1.486 ; bps_cnt[3]       ; bps_cnt[2]        ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.779      ;
+; 1.486 ; bps_cnt[3]       ; bps_cnt[0]        ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.779      ;
+; 1.486 ; bps_cnt[3]       ; bps_cnt[1]        ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.779      ;
+; 1.487 ; data_byte_r[7]   ; Uart_tx~reg0      ; Clk          ; Clk         ; 0.000        ; 0.080      ; 1.779      ;
+; 1.489 ; baud_div_cnt[1]  ; baud_div_clk      ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.782      ;
+; 1.528 ; baud_div_cnt[3]  ; baud_div_cnt[9]   ; Clk          ; Clk         ; 0.000        ; 0.081      ; 1.821      ;
++-------+------------------+-------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width: 'Clk'                                                   ;
++--------+--------------+----------------+------------------+-------+------------+-------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target            ;
++--------+--------------+----------------+------------------+-------+------------+-------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; Clk   ; Rise       ; Clk               ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; Uart_state~reg0   ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; Uart_tx_done~reg0 ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; Uart_tx~reg0      ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_cnt[10]      ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_cnt[11]      ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_cnt[12]      ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_cnt[1]       ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_cnt[4]       ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_cnt[6]       ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_cnt[7]       ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_cnt[8]       ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_clk      ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[0]   ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[10]  ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[11]  ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[12]  ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[1]   ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[2]   ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[3]   ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[4]   ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[5]   ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[6]   ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[7]   ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[8]   ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[9]   ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; bps_cnt[0]        ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; bps_cnt[1]        ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; bps_cnt[2]        ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; bps_cnt[3]        ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; data_byte_r[0]    ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; data_byte_r[1]    ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; data_byte_r[2]    ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; data_byte_r[3]    ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; data_byte_r[4]    ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; data_byte_r[5]    ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; data_byte_r[6]    ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; data_byte_r[7]    ;
+; 0.287  ; 0.507        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; Uart_state~reg0   ;
+; 0.287  ; 0.507        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; Uart_tx_done~reg0 ;
+; 0.287  ; 0.507        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; baud_cnt[10]      ;
+; 0.287  ; 0.507        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; baud_cnt[11]      ;
+; 0.287  ; 0.507        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; baud_cnt[12]      ;
+; 0.287  ; 0.507        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; baud_cnt[1]       ;
+; 0.287  ; 0.507        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; baud_cnt[4]       ;
+; 0.287  ; 0.507        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; baud_cnt[6]       ;
+; 0.287  ; 0.507        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; baud_cnt[7]       ;
+; 0.287  ; 0.507        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; baud_cnt[8]       ;
+; 0.287  ; 0.507        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; baud_div_clk      ;
+; 0.287  ; 0.507        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; bps_cnt[0]        ;
+; 0.287  ; 0.507        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; bps_cnt[1]        ;
+; 0.287  ; 0.507        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; bps_cnt[2]        ;
+; 0.287  ; 0.507        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; bps_cnt[3]        ;
+; 0.287  ; 0.507        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; data_byte_r[1]    ;
+; 0.287  ; 0.507        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; data_byte_r[3]    ;
+; 0.288  ; 0.508        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; Uart_tx~reg0      ;
+; 0.288  ; 0.508        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[0]   ;
+; 0.288  ; 0.508        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[10]  ;
+; 0.288  ; 0.508        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[11]  ;
+; 0.288  ; 0.508        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[12]  ;
+; 0.288  ; 0.508        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[1]   ;
+; 0.288  ; 0.508        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[2]   ;
+; 0.288  ; 0.508        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[3]   ;
+; 0.288  ; 0.508        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[4]   ;
+; 0.288  ; 0.508        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[5]   ;
+; 0.288  ; 0.508        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[6]   ;
+; 0.288  ; 0.508        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[7]   ;
+; 0.288  ; 0.508        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[8]   ;
+; 0.288  ; 0.508        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[9]   ;
+; 0.288  ; 0.508        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; data_byte_r[0]    ;
+; 0.288  ; 0.508        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; data_byte_r[2]    ;
+; 0.288  ; 0.508        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; data_byte_r[4]    ;
+; 0.288  ; 0.508        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; data_byte_r[5]    ;
+; 0.288  ; 0.508        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; data_byte_r[6]    ;
+; 0.288  ; 0.508        ; 0.220          ; High Pulse Width ; Clk   ; Rise       ; data_byte_r[7]    ;
+; 0.303  ; 0.491        ; 0.188          ; Low Pulse Width  ; Clk   ; Rise       ; Uart_state~reg0   ;
+; 0.303  ; 0.491        ; 0.188          ; Low Pulse Width  ; Clk   ; Rise       ; baud_cnt[10]      ;
+; 0.303  ; 0.491        ; 0.188          ; Low Pulse Width  ; Clk   ; Rise       ; baud_cnt[11]      ;
+; 0.303  ; 0.491        ; 0.188          ; Low Pulse Width  ; Clk   ; Rise       ; baud_cnt[12]      ;
+; 0.303  ; 0.491        ; 0.188          ; Low Pulse Width  ; Clk   ; Rise       ; baud_cnt[1]       ;
+; 0.303  ; 0.491        ; 0.188          ; Low Pulse Width  ; Clk   ; Rise       ; baud_cnt[4]       ;
+; 0.303  ; 0.491        ; 0.188          ; Low Pulse Width  ; Clk   ; Rise       ; baud_cnt[6]       ;
+; 0.303  ; 0.491        ; 0.188          ; Low Pulse Width  ; Clk   ; Rise       ; baud_cnt[7]       ;
+; 0.303  ; 0.491        ; 0.188          ; Low Pulse Width  ; Clk   ; Rise       ; baud_cnt[8]       ;
+; 0.303  ; 0.491        ; 0.188          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_clk      ;
+; 0.303  ; 0.491        ; 0.188          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[0]   ;
+; 0.303  ; 0.491        ; 0.188          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[10]  ;
+; 0.303  ; 0.491        ; 0.188          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[11]  ;
+; 0.303  ; 0.491        ; 0.188          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[12]  ;
+; 0.303  ; 0.491        ; 0.188          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[1]   ;
+; 0.303  ; 0.491        ; 0.188          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[2]   ;
+; 0.303  ; 0.491        ; 0.188          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[3]   ;
+; 0.303  ; 0.491        ; 0.188          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[4]   ;
+; 0.303  ; 0.491        ; 0.188          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[5]   ;
+; 0.303  ; 0.491        ; 0.188          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[6]   ;
+; 0.303  ; 0.491        ; 0.188          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[7]   ;
+; 0.303  ; 0.491        ; 0.188          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[8]   ;
+; 0.303  ; 0.491        ; 0.188          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[9]   ;
+; 0.304  ; 0.492        ; 0.188          ; Low Pulse Width  ; Clk   ; Rise       ; Uart_tx_done~reg0 ;
+; 0.304  ; 0.492        ; 0.188          ; Low Pulse Width  ; Clk   ; Rise       ; Uart_tx~reg0      ;
++--------+--------------+----------------+------------------+-------+------------+-------------------+
+
+
++---------------------------------------------------------------------------+
+; Setup Times                                                               ;
++---------------+------------+-------+-------+------------+-----------------+
+; Data Port     ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++---------------+------------+-------+-------+------------+-----------------+
+; Baud_sel[*]   ; Clk        ; 3.674 ; 3.936 ; Rise       ; Clk             ;
+;  Baud_sel[0]  ; Clk        ; 3.352 ; 3.594 ; Rise       ; Clk             ;
+;  Baud_sel[1]  ; Clk        ; 3.502 ; 3.717 ; Rise       ; Clk             ;
+;  Baud_sel[2]  ; Clk        ; 3.674 ; 3.936 ; Rise       ; Clk             ;
+; Data_byte[*]  ; Clk        ; 2.317 ; 2.558 ; Rise       ; Clk             ;
+;  Data_byte[0] ; Clk        ; 2.016 ; 2.271 ; Rise       ; Clk             ;
+;  Data_byte[1] ; Clk        ; 1.792 ; 2.049 ; Rise       ; Clk             ;
+;  Data_byte[2] ; Clk        ; 1.951 ; 2.229 ; Rise       ; Clk             ;
+;  Data_byte[3] ; Clk        ; 1.889 ; 2.166 ; Rise       ; Clk             ;
+;  Data_byte[4] ; Clk        ; 2.317 ; 2.558 ; Rise       ; Clk             ;
+;  Data_byte[5] ; Clk        ; 1.982 ; 2.247 ; Rise       ; Clk             ;
+;  Data_byte[6] ; Clk        ; 1.995 ; 2.261 ; Rise       ; Clk             ;
+;  Data_byte[7] ; Clk        ; 0.153 ; 0.291 ; Rise       ; Clk             ;
+; En            ; Clk        ; 0.290 ; 0.452 ; Rise       ; Clk             ;
++---------------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Hold Times                                                                  ;
++---------------+------------+--------+--------+------------+-----------------+
+; Data Port     ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++---------------+------------+--------+--------+------------+-----------------+
+; Baud_sel[*]   ; Clk        ; -1.346 ; -1.610 ; Rise       ; Clk             ;
+;  Baud_sel[0]  ; Clk        ; -1.346 ; -1.610 ; Rise       ; Clk             ;
+;  Baud_sel[1]  ; Clk        ; -1.471 ; -1.726 ; Rise       ; Clk             ;
+;  Baud_sel[2]  ; Clk        ; -1.695 ; -1.952 ; Rise       ; Clk             ;
+; Data_byte[*]  ; Clk        ; 0.208  ; 0.075  ; Rise       ; Clk             ;
+;  Data_byte[0] ; Clk        ; -1.569 ; -1.814 ; Rise       ; Clk             ;
+;  Data_byte[1] ; Clk        ; -1.338 ; -1.573 ; Rise       ; Clk             ;
+;  Data_byte[2] ; Clk        ; -1.506 ; -1.773 ; Rise       ; Clk             ;
+;  Data_byte[3] ; Clk        ; -1.426 ; -1.682 ; Rise       ; Clk             ;
+;  Data_byte[4] ; Clk        ; -1.859 ; -2.090 ; Rise       ; Clk             ;
+;  Data_byte[5] ; Clk        ; -1.536 ; -1.791 ; Rise       ; Clk             ;
+;  Data_byte[6] ; Clk        ; -1.548 ; -1.805 ; Rise       ; Clk             ;
+;  Data_byte[7] ; Clk        ; 0.208  ; 0.075  ; Rise       ; Clk             ;
+; En            ; Clk        ; 0.177  ; 0.054  ; Rise       ; Clk             ;
++---------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Clock to Output Times                                                    ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; Uart_state   ; Clk        ; 6.731 ; 6.642 ; Rise       ; Clk             ;
+; Uart_tx      ; Clk        ; 6.618 ; 6.714 ; Rise       ; Clk             ;
+; Uart_tx_done ; Clk        ; 8.134 ; 8.140 ; Rise       ; Clk             ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                            ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; Uart_state   ; Clk        ; 6.501 ; 6.414 ; Rise       ; Clk             ;
+; Uart_tx      ; Clk        ; 6.392 ; 6.486 ; Rise       ; Clk             ;
+; Uart_tx_done ; Clk        ; 7.906 ; 7.914 ; Rise       ; Clk             ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
+----------------------------------------------
+; Slow 1200mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++--------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 234.96 MHz ; 234.96 MHz      ; Clk        ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++------------------------------------+
+; Slow 1200mV 0C Model Setup Summary ;
++-------+--------+-------------------+
+; Clock ; Slack  ; End Point TNS     ;
++-------+--------+-------------------+
+; Clk   ; -3.256 ; -54.066           ;
++-------+--------+-------------------+
+
+
++-----------------------------------+
+; Slow 1200mV 0C Model Hold Summary ;
++-------+-------+-------------------+
+; Clock ; Slack ; End Point TNS     ;
++-------+-------+-------------------+
+; Clk   ; 0.401 ; 0.000             ;
++-------+-------+-------------------+
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
++-------+--------+---------------------------------+
+; Clock ; Slack  ; End Point TNS                   ;
++-------+--------+---------------------------------+
+; Clk   ; -3.000 ; -58.019                         ;
++-------+--------+---------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Setup: 'Clk'                                                                                  ;
++--------+------------------+------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+--------------+-------------+--------------+------------+------------+
+; -3.256 ; baud_div_cnt[10] ; baud_div_cnt[7]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.185      ;
+; -3.256 ; baud_div_cnt[10] ; baud_div_cnt[2]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.185      ;
+; -3.256 ; baud_div_cnt[10] ; baud_div_cnt[0]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.185      ;
+; -3.256 ; baud_div_cnt[10] ; baud_div_cnt[1]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.185      ;
+; -3.256 ; baud_div_cnt[10] ; baud_div_cnt[3]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.185      ;
+; -3.256 ; baud_div_cnt[10] ; baud_div_cnt[4]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.185      ;
+; -3.256 ; baud_div_cnt[10] ; baud_div_cnt[9]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.185      ;
+; -3.256 ; baud_div_cnt[10] ; baud_div_cnt[5]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.185      ;
+; -3.256 ; baud_div_cnt[10] ; baud_div_cnt[6]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.185      ;
+; -3.256 ; baud_div_cnt[10] ; baud_div_cnt[8]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.185      ;
+; -3.256 ; baud_div_cnt[10] ; baud_div_cnt[10] ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.185      ;
+; -3.256 ; baud_div_cnt[10] ; baud_div_cnt[11] ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.185      ;
+; -3.256 ; baud_div_cnt[10] ; baud_div_cnt[12] ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.185      ;
+; -3.191 ; baud_cnt[4]      ; baud_div_cnt[7]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.120      ;
+; -3.191 ; baud_cnt[4]      ; baud_div_cnt[2]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.120      ;
+; -3.191 ; baud_cnt[4]      ; baud_div_cnt[0]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.120      ;
+; -3.191 ; baud_cnt[4]      ; baud_div_cnt[1]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.120      ;
+; -3.191 ; baud_cnt[4]      ; baud_div_cnt[3]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.120      ;
+; -3.191 ; baud_cnt[4]      ; baud_div_cnt[4]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.120      ;
+; -3.191 ; baud_cnt[4]      ; baud_div_cnt[9]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.120      ;
+; -3.191 ; baud_cnt[4]      ; baud_div_cnt[5]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.120      ;
+; -3.191 ; baud_cnt[4]      ; baud_div_cnt[6]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.120      ;
+; -3.191 ; baud_cnt[4]      ; baud_div_cnt[8]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.120      ;
+; -3.191 ; baud_cnt[4]      ; baud_div_cnt[10] ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.120      ;
+; -3.191 ; baud_cnt[4]      ; baud_div_cnt[11] ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.120      ;
+; -3.191 ; baud_cnt[4]      ; baud_div_cnt[12] ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.120      ;
+; -3.132 ; baud_cnt[11]     ; baud_div_cnt[7]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.061      ;
+; -3.132 ; baud_cnt[11]     ; baud_div_cnt[2]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.061      ;
+; -3.132 ; baud_cnt[11]     ; baud_div_cnt[0]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.061      ;
+; -3.132 ; baud_cnt[11]     ; baud_div_cnt[1]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.061      ;
+; -3.132 ; baud_cnt[11]     ; baud_div_cnt[3]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.061      ;
+; -3.132 ; baud_cnt[11]     ; baud_div_cnt[4]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.061      ;
+; -3.132 ; baud_cnt[11]     ; baud_div_cnt[9]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.061      ;
+; -3.132 ; baud_cnt[11]     ; baud_div_cnt[5]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.061      ;
+; -3.132 ; baud_cnt[11]     ; baud_div_cnt[6]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.061      ;
+; -3.132 ; baud_cnt[11]     ; baud_div_cnt[8]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.061      ;
+; -3.132 ; baud_cnt[11]     ; baud_div_cnt[10] ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.061      ;
+; -3.132 ; baud_cnt[11]     ; baud_div_cnt[11] ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.061      ;
+; -3.132 ; baud_cnt[11]     ; baud_div_cnt[12] ; Clk          ; Clk         ; 1.000        ; -0.073     ; 4.061      ;
+; -3.007 ; baud_div_cnt[3]  ; baud_div_cnt[7]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.936      ;
+; -3.007 ; baud_div_cnt[3]  ; baud_div_cnt[2]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.936      ;
+; -3.007 ; baud_div_cnt[3]  ; baud_div_cnt[0]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.936      ;
+; -3.007 ; baud_div_cnt[3]  ; baud_div_cnt[1]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.936      ;
+; -3.007 ; baud_div_cnt[3]  ; baud_div_cnt[3]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.936      ;
+; -3.007 ; baud_div_cnt[3]  ; baud_div_cnt[4]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.936      ;
+; -3.007 ; baud_div_cnt[3]  ; baud_div_cnt[9]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.936      ;
+; -3.007 ; baud_div_cnt[3]  ; baud_div_cnt[5]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.936      ;
+; -3.007 ; baud_div_cnt[3]  ; baud_div_cnt[6]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.936      ;
+; -3.007 ; baud_div_cnt[3]  ; baud_div_cnt[8]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.936      ;
+; -3.007 ; baud_div_cnt[3]  ; baud_div_cnt[10] ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.936      ;
+; -3.007 ; baud_div_cnt[3]  ; baud_div_cnt[11] ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.936      ;
+; -3.007 ; baud_div_cnt[3]  ; baud_div_cnt[12] ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.936      ;
+; -2.961 ; baud_div_cnt[6]  ; baud_div_cnt[7]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.890      ;
+; -2.961 ; baud_div_cnt[6]  ; baud_div_cnt[2]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.890      ;
+; -2.961 ; baud_div_cnt[6]  ; baud_div_cnt[0]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.890      ;
+; -2.961 ; baud_div_cnt[6]  ; baud_div_cnt[1]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.890      ;
+; -2.961 ; baud_div_cnt[6]  ; baud_div_cnt[3]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.890      ;
+; -2.961 ; baud_div_cnt[6]  ; baud_div_cnt[4]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.890      ;
+; -2.961 ; baud_div_cnt[6]  ; baud_div_cnt[9]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.890      ;
+; -2.961 ; baud_div_cnt[6]  ; baud_div_cnt[5]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.890      ;
+; -2.961 ; baud_div_cnt[6]  ; baud_div_cnt[6]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.890      ;
+; -2.961 ; baud_div_cnt[6]  ; baud_div_cnt[8]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.890      ;
+; -2.961 ; baud_div_cnt[6]  ; baud_div_cnt[10] ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.890      ;
+; -2.961 ; baud_div_cnt[6]  ; baud_div_cnt[11] ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.890      ;
+; -2.961 ; baud_div_cnt[6]  ; baud_div_cnt[12] ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.890      ;
+; -2.956 ; baud_cnt[7]      ; baud_div_cnt[7]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.885      ;
+; -2.956 ; baud_cnt[7]      ; baud_div_cnt[2]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.885      ;
+; -2.956 ; baud_cnt[7]      ; baud_div_cnt[0]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.885      ;
+; -2.956 ; baud_cnt[7]      ; baud_div_cnt[1]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.885      ;
+; -2.956 ; baud_cnt[7]      ; baud_div_cnt[3]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.885      ;
+; -2.956 ; baud_cnt[7]      ; baud_div_cnt[4]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.885      ;
+; -2.956 ; baud_cnt[7]      ; baud_div_cnt[9]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.885      ;
+; -2.956 ; baud_cnt[7]      ; baud_div_cnt[5]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.885      ;
+; -2.956 ; baud_cnt[7]      ; baud_div_cnt[6]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.885      ;
+; -2.956 ; baud_cnt[7]      ; baud_div_cnt[8]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.885      ;
+; -2.956 ; baud_cnt[7]      ; baud_div_cnt[10] ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.885      ;
+; -2.956 ; baud_cnt[7]      ; baud_div_cnt[11] ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.885      ;
+; -2.956 ; baud_cnt[7]      ; baud_div_cnt[12] ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.885      ;
+; -2.922 ; Uart_state~reg0  ; baud_div_cnt[7]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.851      ;
+; -2.922 ; Uart_state~reg0  ; baud_div_cnt[2]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.851      ;
+; -2.922 ; Uart_state~reg0  ; baud_div_cnt[0]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.851      ;
+; -2.922 ; Uart_state~reg0  ; baud_div_cnt[1]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.851      ;
+; -2.922 ; Uart_state~reg0  ; baud_div_cnt[3]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.851      ;
+; -2.922 ; Uart_state~reg0  ; baud_div_cnt[4]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.851      ;
+; -2.922 ; Uart_state~reg0  ; baud_div_cnt[9]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.851      ;
+; -2.922 ; Uart_state~reg0  ; baud_div_cnt[5]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.851      ;
+; -2.922 ; Uart_state~reg0  ; baud_div_cnt[6]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.851      ;
+; -2.922 ; Uart_state~reg0  ; baud_div_cnt[8]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.851      ;
+; -2.922 ; Uart_state~reg0  ; baud_div_cnt[10] ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.851      ;
+; -2.922 ; Uart_state~reg0  ; baud_div_cnt[11] ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.851      ;
+; -2.922 ; Uart_state~reg0  ; baud_div_cnt[12] ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.851      ;
+; -2.922 ; baud_cnt[6]      ; baud_div_cnt[7]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.851      ;
+; -2.922 ; baud_cnt[6]      ; baud_div_cnt[2]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.851      ;
+; -2.922 ; baud_cnt[6]      ; baud_div_cnt[0]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.851      ;
+; -2.922 ; baud_cnt[6]      ; baud_div_cnt[1]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.851      ;
+; -2.922 ; baud_cnt[6]      ; baud_div_cnt[3]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.851      ;
+; -2.922 ; baud_cnt[6]      ; baud_div_cnt[4]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.851      ;
+; -2.922 ; baud_cnt[6]      ; baud_div_cnt[9]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.851      ;
+; -2.922 ; baud_cnt[6]      ; baud_div_cnt[5]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.851      ;
+; -2.922 ; baud_cnt[6]      ; baud_div_cnt[6]  ; Clk          ; Clk         ; 1.000        ; -0.073     ; 3.851      ;
++--------+------------------+------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Hold: 'Clk'                                                                                   ;
++-------+------------------+-------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+-------------------+--------------+-------------+--------------+------------+------------+
+; 0.401 ; Uart_state~reg0  ; Uart_state~reg0   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 0.669      ;
+; 0.468 ; baud_div_cnt[12] ; baud_div_cnt[12]  ; Clk          ; Clk         ; 0.000        ; 0.073      ; 0.736      ;
+; 0.705 ; baud_div_cnt[3]  ; baud_div_cnt[3]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 0.973      ;
+; 0.706 ; baud_div_cnt[11] ; baud_div_cnt[11]  ; Clk          ; Clk         ; 0.000        ; 0.073      ; 0.974      ;
+; 0.708 ; baud_div_cnt[4]  ; baud_div_cnt[4]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 0.976      ;
+; 0.709 ; baud_div_cnt[7]  ; baud_div_cnt[7]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 0.977      ;
+; 0.709 ; baud_div_cnt[5]  ; baud_div_cnt[5]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 0.977      ;
+; 0.710 ; bps_cnt[1]       ; bps_cnt[1]        ; Clk          ; Clk         ; 0.000        ; 0.072      ; 0.977      ;
+; 0.711 ; baud_div_cnt[2]  ; baud_div_cnt[2]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 0.979      ;
+; 0.711 ; baud_div_cnt[10] ; baud_div_cnt[10]  ; Clk          ; Clk         ; 0.000        ; 0.073      ; 0.979      ;
+; 0.712 ; baud_div_cnt[6]  ; baud_div_cnt[6]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 0.980      ;
+; 0.712 ; baud_div_cnt[8]  ; baud_div_cnt[8]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 0.980      ;
+; 0.723 ; bps_cnt[3]       ; bps_cnt[3]        ; Clk          ; Clk         ; 0.000        ; 0.072      ; 0.990      ;
+; 0.727 ; baud_div_cnt[1]  ; baud_div_cnt[1]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 0.995      ;
+; 0.728 ; baud_div_cnt[9]  ; baud_div_cnt[9]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 0.996      ;
+; 0.729 ; bps_cnt[2]       ; bps_cnt[2]        ; Clk          ; Clk         ; 0.000        ; 0.072      ; 0.996      ;
+; 0.756 ; baud_div_cnt[0]  ; baud_div_cnt[0]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.024      ;
+; 0.890 ; data_byte_r[0]   ; Uart_tx~reg0      ; Clk          ; Clk         ; 0.000        ; 0.072      ; 1.157      ;
+; 0.890 ; bps_cnt[0]       ; bps_cnt[0]        ; Clk          ; Clk         ; 0.000        ; 0.072      ; 1.157      ;
+; 0.897 ; bps_cnt[0]       ; Uart_tx_done~reg0 ; Clk          ; Clk         ; 0.000        ; 0.072      ; 1.164      ;
+; 0.954 ; bps_cnt[2]       ; Uart_tx~reg0      ; Clk          ; Clk         ; 0.000        ; 0.074      ; 1.223      ;
+; 1.027 ; baud_div_cnt[3]  ; baud_div_cnt[4]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.295      ;
+; 1.027 ; baud_div_cnt[4]  ; baud_div_cnt[5]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.295      ;
+; 1.028 ; baud_div_cnt[11] ; baud_div_cnt[12]  ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.296      ;
+; 1.029 ; baud_div_cnt[2]  ; baud_div_cnt[3]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.297      ;
+; 1.029 ; baud_div_cnt[10] ; baud_div_cnt[11]  ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.297      ;
+; 1.030 ; baud_div_cnt[6]  ; baud_div_cnt[7]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.298      ;
+; 1.030 ; baud_div_cnt[8]  ; baud_div_cnt[9]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.298      ;
+; 1.033 ; baud_div_cnt[5]  ; baud_div_cnt[6]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.301      ;
+; 1.033 ; baud_div_cnt[7]  ; baud_div_cnt[8]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.301      ;
+; 1.034 ; bps_cnt[1]       ; bps_cnt[2]        ; Clk          ; Clk         ; 0.000        ; 0.072      ; 1.301      ;
+; 1.037 ; bps_cnt[3]       ; Uart_tx_done~reg0 ; Clk          ; Clk         ; 0.000        ; 0.072      ; 1.304      ;
+; 1.042 ; baud_div_cnt[4]  ; baud_div_cnt[6]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.310      ;
+; 1.045 ; baud_div_cnt[2]  ; baud_div_cnt[4]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.313      ;
+; 1.045 ; baud_div_cnt[10] ; baud_div_cnt[12]  ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.313      ;
+; 1.046 ; baud_div_cnt[8]  ; baud_div_cnt[10]  ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.314      ;
+; 1.046 ; baud_div_cnt[6]  ; baud_div_cnt[8]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.314      ;
+; 1.048 ; bps_cnt[2]       ; bps_cnt[3]        ; Clk          ; Clk         ; 0.000        ; 0.072      ; 1.315      ;
+; 1.049 ; baud_div_cnt[1]  ; baud_div_cnt[2]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.317      ;
+; 1.050 ; baud_div_cnt[0]  ; baud_div_cnt[1]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.318      ;
+; 1.050 ; baud_div_cnt[9]  ; baud_div_cnt[10]  ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.318      ;
+; 1.062 ; data_byte_r[6]   ; Uart_tx~reg0      ; Clk          ; Clk         ; 0.000        ; 0.072      ; 1.329      ;
+; 1.066 ; baud_div_cnt[0]  ; baud_div_cnt[2]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.334      ;
+; 1.070 ; baud_cnt[8]      ; baud_div_clk      ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.338      ;
+; 1.121 ; baud_div_cnt[3]  ; baud_div_cnt[5]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.389      ;
+; 1.128 ; baud_div_cnt[5]  ; baud_div_cnt[7]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.396      ;
+; 1.128 ; baud_div_cnt[7]  ; baud_div_cnt[9]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.396      ;
+; 1.129 ; bps_cnt[1]       ; bps_cnt[3]        ; Clk          ; Clk         ; 0.000        ; 0.072      ; 1.396      ;
+; 1.135 ; bps_cnt[2]       ; Uart_tx_done~reg0 ; Clk          ; Clk         ; 0.000        ; 0.072      ; 1.402      ;
+; 1.142 ; baud_div_cnt[1]  ; baud_div_cnt[3]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.410      ;
+; 1.143 ; baud_div_cnt[9]  ; baud_div_cnt[11]  ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.411      ;
+; 1.149 ; baud_div_cnt[3]  ; baud_div_cnt[6]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.417      ;
+; 1.149 ; baud_div_cnt[4]  ; baud_div_cnt[7]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.417      ;
+; 1.151 ; baud_div_cnt[2]  ; baud_div_cnt[5]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.419      ;
+; 1.152 ; baud_div_cnt[6]  ; baud_div_cnt[9]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.420      ;
+; 1.152 ; baud_div_cnt[8]  ; baud_div_cnt[11]  ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.420      ;
+; 1.155 ; baud_div_cnt[7]  ; baud_div_cnt[10]  ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.423      ;
+; 1.155 ; baud_div_cnt[5]  ; baud_div_cnt[8]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.423      ;
+; 1.164 ; baud_div_cnt[4]  ; baud_div_cnt[8]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.432      ;
+; 1.167 ; baud_div_cnt[2]  ; baud_div_cnt[6]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.435      ;
+; 1.168 ; baud_div_cnt[8]  ; baud_div_cnt[12]  ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.436      ;
+; 1.168 ; baud_div_cnt[6]  ; baud_div_cnt[10]  ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.436      ;
+; 1.171 ; baud_div_cnt[1]  ; baud_div_cnt[4]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.439      ;
+; 1.172 ; baud_div_cnt[0]  ; baud_div_cnt[3]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.440      ;
+; 1.172 ; baud_div_cnt[9]  ; baud_div_cnt[12]  ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.440      ;
+; 1.188 ; baud_div_cnt[0]  ; baud_div_cnt[4]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.456      ;
+; 1.189 ; baud_div_clk     ; bps_cnt[0]        ; Clk          ; Clk         ; 0.000        ; 0.066      ; 1.450      ;
+; 1.192 ; bps_cnt[1]       ; Uart_tx~reg0      ; Clk          ; Clk         ; 0.000        ; 0.074      ; 1.461      ;
+; 1.194 ; bps_cnt[0]       ; bps_cnt[1]        ; Clk          ; Clk         ; 0.000        ; 0.072      ; 1.461      ;
+; 1.243 ; baud_div_cnt[3]  ; baud_div_cnt[7]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.511      ;
+; 1.250 ; baud_div_cnt[5]  ; baud_div_cnt[9]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.518      ;
+; 1.250 ; baud_div_cnt[7]  ; baud_div_cnt[11]  ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.518      ;
+; 1.259 ; bps_cnt[1]       ; Uart_tx_done~reg0 ; Clk          ; Clk         ; 0.000        ; 0.072      ; 1.526      ;
+; 1.264 ; bps_cnt[3]       ; Uart_tx~reg0      ; Clk          ; Clk         ; 0.000        ; 0.074      ; 1.533      ;
+; 1.264 ; baud_div_cnt[1]  ; baud_div_cnt[5]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.532      ;
+; 1.271 ; bps_cnt[0]       ; bps_cnt[2]        ; Clk          ; Clk         ; 0.000        ; 0.072      ; 1.538      ;
+; 1.271 ; baud_div_cnt[3]  ; baud_div_cnt[8]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.539      ;
+; 1.271 ; baud_div_cnt[4]  ; baud_div_cnt[9]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.539      ;
+; 1.273 ; data_byte_r[5]   ; Uart_tx~reg0      ; Clk          ; Clk         ; 0.000        ; 0.072      ; 1.540      ;
+; 1.273 ; baud_div_cnt[2]  ; baud_div_cnt[7]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.541      ;
+; 1.274 ; baud_div_cnt[6]  ; baud_div_cnt[11]  ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.542      ;
+; 1.277 ; baud_div_cnt[7]  ; baud_div_cnt[12]  ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.545      ;
+; 1.277 ; baud_div_cnt[5]  ; baud_div_cnt[10]  ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.545      ;
+; 1.279 ; bps_cnt[0]       ; bps_cnt[3]        ; Clk          ; Clk         ; 0.000        ; 0.072      ; 1.546      ;
+; 1.284 ; data_byte_r[1]   ; Uart_tx~reg0      ; Clk          ; Clk         ; 0.000        ; 0.074      ; 1.553      ;
+; 1.286 ; baud_div_cnt[4]  ; baud_div_cnt[10]  ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.554      ;
+; 1.289 ; baud_div_cnt[9]  ; baud_div_clk      ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.557      ;
+; 1.289 ; baud_div_cnt[2]  ; baud_div_cnt[8]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.557      ;
+; 1.290 ; baud_div_cnt[6]  ; baud_div_cnt[12]  ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.558      ;
+; 1.293 ; baud_div_cnt[1]  ; baud_div_cnt[6]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.561      ;
+; 1.294 ; baud_div_cnt[0]  ; baud_div_cnt[5]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.562      ;
+; 1.310 ; baud_div_cnt[0]  ; baud_div_cnt[6]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.578      ;
+; 1.313 ; baud_cnt[12]     ; baud_div_clk      ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.581      ;
+; 1.323 ; bps_cnt[0]       ; Uart_state~reg0   ; Clk          ; Clk         ; 0.000        ; 0.079      ; 1.597      ;
+; 1.330 ; baud_div_cnt[1]  ; baud_div_clk      ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.598      ;
+; 1.365 ; baud_div_cnt[3]  ; baud_div_cnt[9]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.633      ;
+; 1.372 ; baud_div_cnt[5]  ; baud_div_cnt[11]  ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.640      ;
+; 1.376 ; data_byte_r[7]   ; Uart_tx~reg0      ; Clk          ; Clk         ; 0.000        ; 0.072      ; 1.643      ;
+; 1.386 ; baud_div_cnt[1]  ; baud_div_cnt[7]   ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.654      ;
+; 1.393 ; baud_div_cnt[3]  ; baud_div_cnt[10]  ; Clk          ; Clk         ; 0.000        ; 0.073      ; 1.661      ;
++-------+------------------+-------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width: 'Clk'                                                    ;
++--------+--------------+----------------+------------------+-------+------------+-------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target            ;
++--------+--------------+----------------+------------------+-------+------------+-------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; Clk   ; Rise       ; Clk               ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; Uart_state~reg0   ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; Uart_tx_done~reg0 ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; Uart_tx~reg0      ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_cnt[10]      ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_cnt[11]      ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_cnt[12]      ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_cnt[1]       ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_cnt[4]       ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_cnt[6]       ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_cnt[7]       ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_cnt[8]       ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_clk      ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[0]   ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[10]  ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[11]  ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[12]  ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[1]   ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[2]   ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[3]   ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[4]   ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[5]   ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[6]   ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[7]   ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[8]   ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; baud_div_cnt[9]   ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; bps_cnt[0]        ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; bps_cnt[1]        ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; bps_cnt[2]        ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; bps_cnt[3]        ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; data_byte_r[0]    ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; data_byte_r[1]    ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; data_byte_r[2]    ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; data_byte_r[3]    ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; data_byte_r[4]    ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; data_byte_r[5]    ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; data_byte_r[6]    ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; Clk   ; Rise       ; data_byte_r[7]    ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; Uart_state~reg0   ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; Uart_tx~reg0      ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; baud_cnt[10]      ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; baud_cnt[11]      ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; baud_cnt[12]      ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; baud_cnt[1]       ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; baud_cnt[4]       ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; baud_cnt[6]       ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; baud_cnt[7]       ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; baud_cnt[8]       ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; baud_div_clk      ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[0]   ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[10]  ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[11]  ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[12]  ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[1]   ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[2]   ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[3]   ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[4]   ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[5]   ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[6]   ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[7]   ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[8]   ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; baud_div_cnt[9]   ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; data_byte_r[0]    ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; data_byte_r[2]    ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; data_byte_r[4]    ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; data_byte_r[5]    ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; data_byte_r[6]    ;
+; 0.275  ; 0.491        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; data_byte_r[7]    ;
+; 0.277  ; 0.493        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; Uart_tx_done~reg0 ;
+; 0.277  ; 0.493        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; bps_cnt[0]        ;
+; 0.277  ; 0.493        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; bps_cnt[1]        ;
+; 0.277  ; 0.493        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; bps_cnt[2]        ;
+; 0.277  ; 0.493        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; bps_cnt[3]        ;
+; 0.277  ; 0.493        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; data_byte_r[1]    ;
+; 0.277  ; 0.493        ; 0.216          ; High Pulse Width ; Clk   ; Rise       ; data_byte_r[3]    ;
+; 0.322  ; 0.506        ; 0.184          ; Low Pulse Width  ; Clk   ; Rise       ; Uart_tx_done~reg0 ;
+; 0.322  ; 0.506        ; 0.184          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[0]   ;
+; 0.322  ; 0.506        ; 0.184          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[10]  ;
+; 0.322  ; 0.506        ; 0.184          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[11]  ;
+; 0.322  ; 0.506        ; 0.184          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[12]  ;
+; 0.322  ; 0.506        ; 0.184          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[1]   ;
+; 0.322  ; 0.506        ; 0.184          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[2]   ;
+; 0.322  ; 0.506        ; 0.184          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[3]   ;
+; 0.322  ; 0.506        ; 0.184          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[4]   ;
+; 0.322  ; 0.506        ; 0.184          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[5]   ;
+; 0.322  ; 0.506        ; 0.184          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[6]   ;
+; 0.322  ; 0.506        ; 0.184          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[7]   ;
+; 0.322  ; 0.506        ; 0.184          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[8]   ;
+; 0.322  ; 0.506        ; 0.184          ; Low Pulse Width  ; Clk   ; Rise       ; baud_div_cnt[9]   ;
+; 0.322  ; 0.506        ; 0.184          ; Low Pulse Width  ; Clk   ; Rise       ; bps_cnt[0]        ;
+; 0.322  ; 0.506        ; 0.184          ; Low Pulse Width  ; Clk   ; Rise       ; bps_cnt[1]        ;
+; 0.322  ; 0.506        ; 0.184          ; Low Pulse Width  ; Clk   ; Rise       ; bps_cnt[2]        ;
+; 0.322  ; 0.506        ; 0.184          ; Low Pulse Width  ; Clk   ; Rise       ; bps_cnt[3]        ;
+; 0.322  ; 0.506        ; 0.184          ; Low Pulse Width  ; Clk   ; Rise       ; data_byte_r[1]    ;
+; 0.322  ; 0.506        ; 0.184          ; Low Pulse Width  ; Clk   ; Rise       ; data_byte_r[3]    ;
+; 0.323  ; 0.507        ; 0.184          ; Low Pulse Width  ; Clk   ; Rise       ; Uart_state~reg0   ;
+; 0.323  ; 0.507        ; 0.184          ; Low Pulse Width  ; Clk   ; Rise       ; Uart_tx~reg0      ;
+; 0.323  ; 0.507        ; 0.184          ; Low Pulse Width  ; Clk   ; Rise       ; baud_cnt[10]      ;
+; 0.323  ; 0.507        ; 0.184          ; Low Pulse Width  ; Clk   ; Rise       ; baud_cnt[11]      ;
+; 0.323  ; 0.507        ; 0.184          ; Low Pulse Width  ; Clk   ; Rise       ; baud_cnt[12]      ;
++--------+--------------+----------------+------------------+-------+------------+-------------------+
+
+
++---------------------------------------------------------------------------+
+; Setup Times                                                               ;
++---------------+------------+-------+-------+------------+-----------------+
+; Data Port     ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++---------------+------------+-------+-------+------------+-----------------+
+; Baud_sel[*]   ; Clk        ; 3.337 ; 3.432 ; Rise       ; Clk             ;
+;  Baud_sel[0]  ; Clk        ; 3.039 ; 3.132 ; Rise       ; Clk             ;
+;  Baud_sel[1]  ; Clk        ; 3.178 ; 3.246 ; Rise       ; Clk             ;
+;  Baud_sel[2]  ; Clk        ; 3.337 ; 3.432 ; Rise       ; Clk             ;
+; Data_byte[*]  ; Clk        ; 2.039 ; 2.147 ; Rise       ; Clk             ;
+;  Data_byte[0] ; Clk        ; 1.747 ; 1.891 ; Rise       ; Clk             ;
+;  Data_byte[1] ; Clk        ; 1.541 ; 1.675 ; Rise       ; Clk             ;
+;  Data_byte[2] ; Clk        ; 1.677 ; 1.852 ; Rise       ; Clk             ;
+;  Data_byte[3] ; Clk        ; 1.630 ; 1.781 ; Rise       ; Clk             ;
+;  Data_byte[4] ; Clk        ; 2.039 ; 2.147 ; Rise       ; Clk             ;
+;  Data_byte[5] ; Clk        ; 1.713 ; 1.866 ; Rise       ; Clk             ;
+;  Data_byte[6] ; Clk        ; 1.727 ; 1.877 ; Rise       ; Clk             ;
+;  Data_byte[7] ; Clk        ; 0.130 ; 0.373 ; Rise       ; Clk             ;
+; En            ; Clk        ; 0.260 ; 0.504 ; Rise       ; Clk             ;
++---------------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Hold Times                                                                  ;
++---------------+------------+--------+--------+------------+-----------------+
+; Data Port     ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++---------------+------------+--------+--------+------------+-----------------+
+; Baud_sel[*]   ; Clk        ; -1.137 ; -1.279 ; Rise       ; Clk             ;
+;  Baud_sel[0]  ; Clk        ; -1.137 ; -1.279 ; Rise       ; Clk             ;
+;  Baud_sel[1]  ; Clk        ; -1.259 ; -1.394 ; Rise       ; Clk             ;
+;  Baud_sel[2]  ; Clk        ; -1.484 ; -1.587 ; Rise       ; Clk             ;
+; Data_byte[*]  ; Clk        ; 0.196  ; -0.038 ; Rise       ; Clk             ;
+;  Data_byte[0] ; Clk        ; -1.348 ; -1.487 ; Rise       ; Clk             ;
+;  Data_byte[1] ; Clk        ; -1.135 ; -1.255 ; Rise       ; Clk             ;
+;  Data_byte[2] ; Clk        ; -1.280 ; -1.450 ; Rise       ; Clk             ;
+;  Data_byte[3] ; Clk        ; -1.216 ; -1.355 ; Rise       ; Clk             ;
+;  Data_byte[4] ; Clk        ; -1.629 ; -1.734 ; Rise       ; Clk             ;
+;  Data_byte[5] ; Clk        ; -1.315 ; -1.463 ; Rise       ; Clk             ;
+;  Data_byte[6] ; Clk        ; -1.328 ; -1.474 ; Rise       ; Clk             ;
+;  Data_byte[7] ; Clk        ; 0.196  ; -0.038 ; Rise       ; Clk             ;
+; En            ; Clk        ; 0.168  ; -0.040 ; Rise       ; Clk             ;
++---------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Clock to Output Times                                                    ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; Uart_state   ; Clk        ; 6.126 ; 6.002 ; Rise       ; Clk             ;
+; Uart_tx      ; Clk        ; 5.981 ; 6.118 ; Rise       ; Clk             ;
+; Uart_tx_done ; Clk        ; 7.351 ; 7.275 ; Rise       ; Clk             ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                            ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; Uart_state   ; Clk        ; 5.898 ; 5.777 ; Rise       ; Clk             ;
+; Uart_tx      ; Clk        ; 5.757 ; 5.891 ; Rise       ; Clk             ;
+; Uart_tx_done ; Clk        ; 7.125 ; 7.052 ; Rise       ; Clk             ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
+---------------------------------------------
+; Slow 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++------------------------------------+
+; Fast 1200mV 0C Model Setup Summary ;
++-------+--------+-------------------+
+; Clock ; Slack  ; End Point TNS     ;
++-------+--------+-------------------+
+; Clk   ; -0.895 ; -12.865           ;
++-------+--------+-------------------+
+
+
++-----------------------------------+
+; Fast 1200mV 0C Model Hold Summary ;
++-------+-------+-------------------+
+; Clock ; Slack ; End Point TNS     ;
++-------+-------+-------------------+
+; Clk   ; 0.186 ; 0.000             ;
++-------+-------+-------------------+
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
++-------+--------+---------------------------------+
+; Clock ; Slack  ; End Point TNS                   ;
++-------+--------+---------------------------------+
+; Clk   ; -3.000 ; -42.342                         ;
++-------+--------+---------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Setup: 'Clk'                                                                                  ;
++--------+------------------+------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+--------------+-------------+--------------+------------+------------+
+; -0.895 ; baud_div_cnt[10] ; baud_div_cnt[7]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.846      ;
+; -0.895 ; baud_div_cnt[10] ; baud_div_cnt[2]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.846      ;
+; -0.895 ; baud_div_cnt[10] ; baud_div_cnt[0]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.846      ;
+; -0.895 ; baud_div_cnt[10] ; baud_div_cnt[1]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.846      ;
+; -0.895 ; baud_div_cnt[10] ; baud_div_cnt[3]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.846      ;
+; -0.895 ; baud_div_cnt[10] ; baud_div_cnt[4]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.846      ;
+; -0.895 ; baud_div_cnt[10] ; baud_div_cnt[9]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.846      ;
+; -0.895 ; baud_div_cnt[10] ; baud_div_cnt[5]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.846      ;
+; -0.895 ; baud_div_cnt[10] ; baud_div_cnt[6]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.846      ;
+; -0.895 ; baud_div_cnt[10] ; baud_div_cnt[8]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.846      ;
+; -0.895 ; baud_div_cnt[10] ; baud_div_cnt[10] ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.846      ;
+; -0.895 ; baud_div_cnt[10] ; baud_div_cnt[11] ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.846      ;
+; -0.895 ; baud_div_cnt[10] ; baud_div_cnt[12] ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.846      ;
+; -0.871 ; baud_cnt[4]      ; baud_div_cnt[7]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.822      ;
+; -0.871 ; baud_cnt[4]      ; baud_div_cnt[2]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.822      ;
+; -0.871 ; baud_cnt[4]      ; baud_div_cnt[0]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.822      ;
+; -0.871 ; baud_cnt[4]      ; baud_div_cnt[1]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.822      ;
+; -0.871 ; baud_cnt[4]      ; baud_div_cnt[3]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.822      ;
+; -0.871 ; baud_cnt[4]      ; baud_div_cnt[4]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.822      ;
+; -0.871 ; baud_cnt[4]      ; baud_div_cnt[9]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.822      ;
+; -0.871 ; baud_cnt[4]      ; baud_div_cnt[5]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.822      ;
+; -0.871 ; baud_cnt[4]      ; baud_div_cnt[6]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.822      ;
+; -0.871 ; baud_cnt[4]      ; baud_div_cnt[8]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.822      ;
+; -0.871 ; baud_cnt[4]      ; baud_div_cnt[10] ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.822      ;
+; -0.871 ; baud_cnt[4]      ; baud_div_cnt[11] ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.822      ;
+; -0.871 ; baud_cnt[4]      ; baud_div_cnt[12] ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.822      ;
+; -0.828 ; baud_cnt[11]     ; baud_div_cnt[7]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.779      ;
+; -0.828 ; baud_cnt[11]     ; baud_div_cnt[2]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.779      ;
+; -0.828 ; baud_cnt[11]     ; baud_div_cnt[0]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.779      ;
+; -0.828 ; baud_cnt[11]     ; baud_div_cnt[1]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.779      ;
+; -0.828 ; baud_cnt[11]     ; baud_div_cnt[3]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.779      ;
+; -0.828 ; baud_cnt[11]     ; baud_div_cnt[4]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.779      ;
+; -0.828 ; baud_cnt[11]     ; baud_div_cnt[9]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.779      ;
+; -0.828 ; baud_cnt[11]     ; baud_div_cnt[5]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.779      ;
+; -0.828 ; baud_cnt[11]     ; baud_div_cnt[6]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.779      ;
+; -0.828 ; baud_cnt[11]     ; baud_div_cnt[8]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.779      ;
+; -0.828 ; baud_cnt[11]     ; baud_div_cnt[10] ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.779      ;
+; -0.828 ; baud_cnt[11]     ; baud_div_cnt[11] ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.779      ;
+; -0.828 ; baud_cnt[11]     ; baud_div_cnt[12] ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.779      ;
+; -0.802 ; baud_div_cnt[3]  ; baud_div_cnt[7]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.753      ;
+; -0.802 ; baud_div_cnt[3]  ; baud_div_cnt[2]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.753      ;
+; -0.802 ; baud_div_cnt[3]  ; baud_div_cnt[0]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.753      ;
+; -0.802 ; baud_div_cnt[3]  ; baud_div_cnt[1]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.753      ;
+; -0.802 ; baud_div_cnt[3]  ; baud_div_cnt[3]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.753      ;
+; -0.802 ; baud_div_cnt[3]  ; baud_div_cnt[4]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.753      ;
+; -0.802 ; baud_div_cnt[3]  ; baud_div_cnt[9]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.753      ;
+; -0.802 ; baud_div_cnt[3]  ; baud_div_cnt[5]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.753      ;
+; -0.802 ; baud_div_cnt[3]  ; baud_div_cnt[6]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.753      ;
+; -0.802 ; baud_div_cnt[3]  ; baud_div_cnt[8]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.753      ;
+; -0.802 ; baud_div_cnt[3]  ; baud_div_cnt[10] ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.753      ;
+; -0.802 ; baud_div_cnt[3]  ; baud_div_cnt[11] ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.753      ;
+; -0.802 ; baud_div_cnt[3]  ; baud_div_cnt[12] ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.753      ;
+; -0.780 ; baud_cnt[6]      ; baud_div_cnt[7]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.731      ;
+; -0.780 ; baud_cnt[6]      ; baud_div_cnt[2]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.731      ;
+; -0.780 ; baud_cnt[6]      ; baud_div_cnt[0]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.731      ;
+; -0.780 ; baud_cnt[6]      ; baud_div_cnt[1]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.731      ;
+; -0.780 ; baud_cnt[6]      ; baud_div_cnt[3]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.731      ;
+; -0.780 ; baud_cnt[6]      ; baud_div_cnt[4]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.731      ;
+; -0.780 ; baud_cnt[6]      ; baud_div_cnt[9]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.731      ;
+; -0.780 ; baud_cnt[6]      ; baud_div_cnt[5]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.731      ;
+; -0.780 ; baud_cnt[6]      ; baud_div_cnt[6]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.731      ;
+; -0.780 ; baud_cnt[6]      ; baud_div_cnt[8]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.731      ;
+; -0.780 ; baud_cnt[6]      ; baud_div_cnt[10] ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.731      ;
+; -0.780 ; baud_cnt[6]      ; baud_div_cnt[11] ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.731      ;
+; -0.780 ; baud_cnt[6]      ; baud_div_cnt[12] ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.731      ;
+; -0.779 ; baud_div_cnt[6]  ; baud_div_cnt[7]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.730      ;
+; -0.779 ; baud_div_cnt[6]  ; baud_div_cnt[2]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.730      ;
+; -0.779 ; baud_div_cnt[6]  ; baud_div_cnt[0]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.730      ;
+; -0.779 ; baud_div_cnt[6]  ; baud_div_cnt[1]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.730      ;
+; -0.779 ; baud_div_cnt[6]  ; baud_div_cnt[3]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.730      ;
+; -0.779 ; baud_div_cnt[6]  ; baud_div_cnt[4]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.730      ;
+; -0.779 ; baud_div_cnt[6]  ; baud_div_cnt[9]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.730      ;
+; -0.779 ; baud_div_cnt[6]  ; baud_div_cnt[5]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.730      ;
+; -0.779 ; baud_div_cnt[6]  ; baud_div_cnt[6]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.730      ;
+; -0.779 ; baud_div_cnt[6]  ; baud_div_cnt[8]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.730      ;
+; -0.779 ; baud_div_cnt[6]  ; baud_div_cnt[10] ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.730      ;
+; -0.779 ; baud_div_cnt[6]  ; baud_div_cnt[11] ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.730      ;
+; -0.779 ; baud_div_cnt[6]  ; baud_div_cnt[12] ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.730      ;
+; -0.763 ; Uart_state~reg0  ; baud_div_cnt[7]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.714      ;
+; -0.763 ; Uart_state~reg0  ; baud_div_cnt[2]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.714      ;
+; -0.763 ; Uart_state~reg0  ; baud_div_cnt[0]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.714      ;
+; -0.763 ; Uart_state~reg0  ; baud_div_cnt[1]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.714      ;
+; -0.763 ; Uart_state~reg0  ; baud_div_cnt[3]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.714      ;
+; -0.763 ; Uart_state~reg0  ; baud_div_cnt[4]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.714      ;
+; -0.763 ; Uart_state~reg0  ; baud_div_cnt[9]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.714      ;
+; -0.763 ; Uart_state~reg0  ; baud_div_cnt[5]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.714      ;
+; -0.763 ; Uart_state~reg0  ; baud_div_cnt[6]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.714      ;
+; -0.763 ; Uart_state~reg0  ; baud_div_cnt[8]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.714      ;
+; -0.763 ; Uart_state~reg0  ; baud_div_cnt[10] ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.714      ;
+; -0.763 ; Uart_state~reg0  ; baud_div_cnt[11] ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.714      ;
+; -0.763 ; Uart_state~reg0  ; baud_div_cnt[12] ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.714      ;
+; -0.756 ; baud_cnt[7]      ; baud_div_cnt[7]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.707      ;
+; -0.756 ; baud_cnt[7]      ; baud_div_cnt[2]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.707      ;
+; -0.756 ; baud_cnt[7]      ; baud_div_cnt[0]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.707      ;
+; -0.756 ; baud_cnt[7]      ; baud_div_cnt[1]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.707      ;
+; -0.756 ; baud_cnt[7]      ; baud_div_cnt[3]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.707      ;
+; -0.756 ; baud_cnt[7]      ; baud_div_cnt[4]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.707      ;
+; -0.756 ; baud_cnt[7]      ; baud_div_cnt[9]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.707      ;
+; -0.756 ; baud_cnt[7]      ; baud_div_cnt[5]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.707      ;
+; -0.756 ; baud_cnt[7]      ; baud_div_cnt[6]  ; Clk          ; Clk         ; 1.000        ; -0.036     ; 1.707      ;
++--------+------------------+------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold: 'Clk'                                                                                   ;
++-------+------------------+-------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+-------------------+--------------+-------------+--------------+------------+------------+
+; 0.186 ; Uart_state~reg0  ; Uart_state~reg0   ; Clk          ; Clk         ; 0.000        ; 0.037      ; 0.307      ;
+; 0.204 ; baud_div_cnt[12] ; baud_div_cnt[12]  ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.324      ;
+; 0.305 ; baud_div_cnt[3]  ; baud_div_cnt[3]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.425      ;
+; 0.305 ; baud_div_cnt[11] ; baud_div_cnt[11]  ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.425      ;
+; 0.306 ; baud_div_cnt[7]  ; baud_div_cnt[7]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.426      ;
+; 0.306 ; baud_div_cnt[4]  ; baud_div_cnt[4]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.426      ;
+; 0.306 ; baud_div_cnt[5]  ; baud_div_cnt[5]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.426      ;
+; 0.307 ; bps_cnt[1]       ; bps_cnt[1]        ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.427      ;
+; 0.307 ; baud_div_cnt[2]  ; baud_div_cnt[2]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.427      ;
+; 0.307 ; baud_div_cnt[6]  ; baud_div_cnt[6]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.427      ;
+; 0.308 ; baud_div_cnt[8]  ; baud_div_cnt[8]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.428      ;
+; 0.308 ; baud_div_cnt[10] ; baud_div_cnt[10]  ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.428      ;
+; 0.315 ; bps_cnt[3]       ; bps_cnt[3]        ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.435      ;
+; 0.316 ; baud_div_cnt[1]  ; baud_div_cnt[1]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.436      ;
+; 0.317 ; bps_cnt[2]       ; bps_cnt[2]        ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.437      ;
+; 0.317 ; baud_div_cnt[9]  ; baud_div_cnt[9]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.437      ;
+; 0.329 ; baud_div_cnt[0]  ; baud_div_cnt[0]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.449      ;
+; 0.385 ; bps_cnt[0]       ; Uart_tx_done~reg0 ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.505      ;
+; 0.391 ; bps_cnt[0]       ; bps_cnt[0]        ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.511      ;
+; 0.396 ; data_byte_r[0]   ; Uart_tx~reg0      ; Clk          ; Clk         ; 0.000        ; 0.037      ; 0.517      ;
+; 0.420 ; bps_cnt[2]       ; Uart_tx~reg0      ; Clk          ; Clk         ; 0.000        ; 0.037      ; 0.541      ;
+; 0.439 ; bps_cnt[3]       ; Uart_tx_done~reg0 ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.559      ;
+; 0.454 ; baud_div_cnt[11] ; baud_div_cnt[12]  ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.574      ;
+; 0.454 ; baud_div_cnt[3]  ; baud_div_cnt[4]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.574      ;
+; 0.455 ; baud_div_cnt[5]  ; baud_div_cnt[6]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.575      ;
+; 0.455 ; baud_div_cnt[7]  ; baud_div_cnt[8]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.575      ;
+; 0.456 ; bps_cnt[1]       ; bps_cnt[2]        ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.576      ;
+; 0.464 ; baud_div_cnt[4]  ; baud_div_cnt[5]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.584      ;
+; 0.465 ; baud_div_cnt[2]  ; baud_div_cnt[3]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.585      ;
+; 0.465 ; baud_div_cnt[6]  ; baud_div_cnt[7]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.585      ;
+; 0.465 ; baud_div_cnt[1]  ; baud_div_cnt[2]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.585      ;
+; 0.466 ; baud_div_cnt[10] ; baud_div_cnt[11]  ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.586      ;
+; 0.466 ; baud_div_cnt[9]  ; baud_div_cnt[10]  ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.586      ;
+; 0.466 ; baud_div_cnt[8]  ; baud_div_cnt[9]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.586      ;
+; 0.467 ; baud_div_cnt[4]  ; baud_div_cnt[6]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.587      ;
+; 0.468 ; baud_div_cnt[2]  ; baud_div_cnt[4]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.588      ;
+; 0.468 ; baud_div_cnt[6]  ; baud_div_cnt[8]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.588      ;
+; 0.469 ; baud_div_cnt[10] ; baud_div_cnt[12]  ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.589      ;
+; 0.469 ; baud_div_cnt[8]  ; baud_div_cnt[10]  ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.589      ;
+; 0.475 ; bps_cnt[2]       ; bps_cnt[3]        ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.595      ;
+; 0.476 ; baud_div_cnt[0]  ; baud_div_cnt[1]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.596      ;
+; 0.479 ; baud_div_cnt[0]  ; baud_div_cnt[2]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.599      ;
+; 0.480 ; baud_cnt[8]      ; baud_div_clk      ; Clk          ; Clk         ; 0.000        ; 0.037      ; 0.601      ;
+; 0.483 ; data_byte_r[6]   ; Uart_tx~reg0      ; Clk          ; Clk         ; 0.000        ; 0.037      ; 0.604      ;
+; 0.514 ; bps_cnt[1]       ; Uart_tx~reg0      ; Clk          ; Clk         ; 0.000        ; 0.037      ; 0.635      ;
+; 0.517 ; baud_div_cnt[3]  ; baud_div_cnt[5]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.637      ;
+; 0.518 ; baud_div_cnt[5]  ; baud_div_cnt[7]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.638      ;
+; 0.518 ; baud_div_cnt[7]  ; baud_div_cnt[9]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.638      ;
+; 0.519 ; bps_cnt[2]       ; Uart_tx_done~reg0 ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.639      ;
+; 0.519 ; bps_cnt[1]       ; bps_cnt[3]        ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.639      ;
+; 0.520 ; baud_div_cnt[3]  ; baud_div_cnt[6]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.640      ;
+; 0.521 ; baud_div_cnt[5]  ; baud_div_cnt[8]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.641      ;
+; 0.521 ; baud_div_cnt[7]  ; baud_div_cnt[10]  ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.641      ;
+; 0.528 ; baud_div_cnt[1]  ; baud_div_cnt[3]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.648      ;
+; 0.529 ; baud_div_cnt[9]  ; baud_div_cnt[11]  ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.649      ;
+; 0.530 ; baud_div_cnt[4]  ; baud_div_cnt[7]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.650      ;
+; 0.531 ; baud_div_cnt[1]  ; baud_div_cnt[4]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.651      ;
+; 0.531 ; baud_div_cnt[2]  ; baud_div_cnt[5]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.651      ;
+; 0.531 ; baud_div_cnt[6]  ; baud_div_cnt[9]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.651      ;
+; 0.532 ; bps_cnt[0]       ; bps_cnt[2]        ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.652      ;
+; 0.532 ; bps_cnt[0]       ; bps_cnt[3]        ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.652      ;
+; 0.532 ; bps_cnt[0]       ; bps_cnt[1]        ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.652      ;
+; 0.532 ; baud_div_cnt[9]  ; baud_div_cnt[12]  ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.652      ;
+; 0.532 ; baud_div_cnt[8]  ; baud_div_cnt[11]  ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.652      ;
+; 0.533 ; baud_div_cnt[4]  ; baud_div_cnt[8]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.653      ;
+; 0.534 ; bps_cnt[3]       ; Uart_tx~reg0      ; Clk          ; Clk         ; 0.000        ; 0.037      ; 0.655      ;
+; 0.534 ; baud_div_cnt[2]  ; baud_div_cnt[6]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.654      ;
+; 0.534 ; baud_div_cnt[6]  ; baud_div_cnt[10]  ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.654      ;
+; 0.535 ; baud_div_cnt[8]  ; baud_div_cnt[12]  ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.655      ;
+; 0.542 ; baud_div_cnt[0]  ; baud_div_cnt[3]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.662      ;
+; 0.545 ; baud_div_cnt[0]  ; baud_div_cnt[4]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.665      ;
+; 0.547 ; baud_div_clk     ; bps_cnt[0]        ; Clk          ; Clk         ; 0.000        ; 0.032      ; 0.663      ;
+; 0.552 ; data_byte_r[5]   ; Uart_tx~reg0      ; Clk          ; Clk         ; 0.000        ; 0.037      ; 0.673      ;
+; 0.554 ; baud_div_cnt[9]  ; baud_div_clk      ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.674      ;
+; 0.555 ; bps_cnt[1]       ; Uart_tx_done~reg0 ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.675      ;
+; 0.564 ; data_byte_r[1]   ; Uart_tx~reg0      ; Clk          ; Clk         ; 0.000        ; 0.037      ; 0.685      ;
+; 0.579 ; baud_div_cnt[1]  ; baud_div_clk      ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.699      ;
+; 0.583 ; baud_div_cnt[3]  ; baud_div_cnt[7]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.703      ;
+; 0.584 ; baud_div_cnt[5]  ; baud_div_cnt[9]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.704      ;
+; 0.584 ; baud_div_cnt[7]  ; baud_div_cnt[11]  ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.704      ;
+; 0.586 ; bps_cnt[3]       ; bps_cnt[2]        ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.706      ;
+; 0.586 ; bps_cnt[3]       ; bps_cnt[0]        ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.706      ;
+; 0.586 ; bps_cnt[3]       ; bps_cnt[1]        ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.706      ;
+; 0.586 ; baud_div_cnt[3]  ; baud_div_cnt[8]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.706      ;
+; 0.587 ; baud_div_cnt[5]  ; baud_div_cnt[10]  ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.707      ;
+; 0.587 ; baud_div_cnt[7]  ; baud_div_cnt[12]  ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.707      ;
+; 0.593 ; data_byte_r[7]   ; Uart_tx~reg0      ; Clk          ; Clk         ; 0.000        ; 0.037      ; 0.714      ;
+; 0.594 ; baud_div_cnt[1]  ; baud_div_cnt[5]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.714      ;
+; 0.596 ; baud_div_cnt[4]  ; baud_div_cnt[9]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.716      ;
+; 0.597 ; bps_cnt[0]       ; Uart_state~reg0   ; Clk          ; Clk         ; 0.000        ; 0.041      ; 0.722      ;
+; 0.597 ; baud_div_cnt[1]  ; baud_div_cnt[6]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.717      ;
+; 0.597 ; baud_div_cnt[2]  ; baud_div_cnt[7]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.717      ;
+; 0.597 ; baud_div_cnt[6]  ; baud_div_cnt[11]  ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.717      ;
+; 0.599 ; baud_cnt[12]     ; baud_div_clk      ; Clk          ; Clk         ; 0.000        ; 0.037      ; 0.720      ;
+; 0.599 ; baud_div_cnt[4]  ; baud_div_cnt[10]  ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.719      ;
+; 0.600 ; baud_div_cnt[2]  ; baud_div_cnt[8]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.720      ;
+; 0.600 ; baud_div_cnt[6]  ; baud_div_cnt[12]  ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.720      ;
+; 0.608 ; baud_div_cnt[0]  ; baud_div_cnt[5]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.728      ;
+; 0.611 ; baud_div_cnt[0]  ; baud_div_cnt[6]   ; Clk          ; Clk         ; 0.000        ; 0.036      ; 0.731      ;
+; 0.627 ; bps_cnt[0]       ; Uart_tx~reg0      ; Clk          ; Clk         ; 0.000        ; 0.037      ; 0.748      ;
++-------+------------------+-------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width: 'Clk'                                                       ;
++--------+--------------+----------------+-----------------+-------+------------+-----------------------+
+; Slack  ; Actual Width ; Required Width ; Type            ; Clock ; Clock Edge ; Target                ;
++--------+--------------+----------------+-----------------+-------+------------+-----------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate       ; Clk   ; Rise       ; Clk                   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; Uart_state~reg0       ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; Uart_tx_done~reg0     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; Uart_tx~reg0          ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; baud_cnt[10]          ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; baud_cnt[11]          ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; baud_cnt[12]          ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; baud_cnt[1]           ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; baud_cnt[4]           ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; baud_cnt[6]           ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; baud_cnt[7]           ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; baud_cnt[8]           ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; baud_div_clk          ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; baud_div_cnt[0]       ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; baud_div_cnt[10]      ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; baud_div_cnt[11]      ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; baud_div_cnt[12]      ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; baud_div_cnt[1]       ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; baud_div_cnt[2]       ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; baud_div_cnt[3]       ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; baud_div_cnt[4]       ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; baud_div_cnt[5]       ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; baud_div_cnt[6]       ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; baud_div_cnt[7]       ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; baud_div_cnt[8]       ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; baud_div_cnt[9]       ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; bps_cnt[0]            ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; bps_cnt[1]            ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; bps_cnt[2]            ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; bps_cnt[3]            ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; data_byte_r[0]        ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; data_byte_r[1]        ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; data_byte_r[2]        ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; data_byte_r[3]        ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; data_byte_r[4]        ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; data_byte_r[5]        ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; data_byte_r[6]        ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period      ; Clk   ; Rise       ; data_byte_r[7]        ;
+; -0.064 ; 0.120        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; baud_cnt[10]          ;
+; -0.064 ; 0.120        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; baud_cnt[1]           ;
+; -0.064 ; 0.120        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; baud_cnt[4]           ;
+; -0.064 ; 0.120        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; baud_cnt[6]           ;
+; -0.064 ; 0.120        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; baud_cnt[7]           ;
+; -0.064 ; 0.120        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[0]       ;
+; -0.064 ; 0.120        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[10]      ;
+; -0.064 ; 0.120        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[11]      ;
+; -0.064 ; 0.120        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[12]      ;
+; -0.064 ; 0.120        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[1]       ;
+; -0.064 ; 0.120        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[2]       ;
+; -0.064 ; 0.120        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[3]       ;
+; -0.064 ; 0.120        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[4]       ;
+; -0.064 ; 0.120        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[5]       ;
+; -0.064 ; 0.120        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[6]       ;
+; -0.064 ; 0.120        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[7]       ;
+; -0.064 ; 0.120        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[8]       ;
+; -0.064 ; 0.120        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[9]       ;
+; -0.063 ; 0.121        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; Uart_state~reg0       ;
+; -0.063 ; 0.121        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; Uart_tx_done~reg0     ;
+; -0.063 ; 0.121        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; baud_cnt[11]          ;
+; -0.063 ; 0.121        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; baud_cnt[12]          ;
+; -0.063 ; 0.121        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; baud_cnt[8]           ;
+; -0.063 ; 0.121        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_clk          ;
+; -0.063 ; 0.121        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; bps_cnt[0]            ;
+; -0.063 ; 0.121        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; bps_cnt[1]            ;
+; -0.063 ; 0.121        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; bps_cnt[2]            ;
+; -0.063 ; 0.121        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; bps_cnt[3]            ;
+; -0.063 ; 0.121        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; data_byte_r[1]        ;
+; -0.063 ; 0.121        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; data_byte_r[3]        ;
+; -0.062 ; 0.122        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; Uart_tx~reg0          ;
+; -0.062 ; 0.122        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; data_byte_r[0]        ;
+; -0.062 ; 0.122        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; data_byte_r[2]        ;
+; -0.062 ; 0.122        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; data_byte_r[4]        ;
+; -0.062 ; 0.122        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; data_byte_r[5]        ;
+; -0.062 ; 0.122        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; data_byte_r[6]        ;
+; -0.062 ; 0.122        ; 0.184          ; Low Pulse Width ; Clk   ; Rise       ; data_byte_r[7]        ;
+; 0.116  ; 0.116        ; 0.000          ; Low Pulse Width ; Clk   ; Rise       ; baud_cnt[10]|clk      ;
+; 0.116  ; 0.116        ; 0.000          ; Low Pulse Width ; Clk   ; Rise       ; baud_cnt[1]|clk       ;
+; 0.116  ; 0.116        ; 0.000          ; Low Pulse Width ; Clk   ; Rise       ; baud_cnt[4]|clk       ;
+; 0.116  ; 0.116        ; 0.000          ; Low Pulse Width ; Clk   ; Rise       ; baud_cnt[6]|clk       ;
+; 0.116  ; 0.116        ; 0.000          ; Low Pulse Width ; Clk   ; Rise       ; baud_cnt[7]|clk       ;
+; 0.116  ; 0.116        ; 0.000          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[0]|clk   ;
+; 0.116  ; 0.116        ; 0.000          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[10]|clk  ;
+; 0.116  ; 0.116        ; 0.000          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[11]|clk  ;
+; 0.116  ; 0.116        ; 0.000          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[12]|clk  ;
+; 0.116  ; 0.116        ; 0.000          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[1]|clk   ;
+; 0.116  ; 0.116        ; 0.000          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[2]|clk   ;
+; 0.116  ; 0.116        ; 0.000          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[3]|clk   ;
+; 0.116  ; 0.116        ; 0.000          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[4]|clk   ;
+; 0.116  ; 0.116        ; 0.000          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[5]|clk   ;
+; 0.116  ; 0.116        ; 0.000          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[6]|clk   ;
+; 0.116  ; 0.116        ; 0.000          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[7]|clk   ;
+; 0.116  ; 0.116        ; 0.000          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[8]|clk   ;
+; 0.116  ; 0.116        ; 0.000          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_cnt[9]|clk   ;
+; 0.117  ; 0.117        ; 0.000          ; Low Pulse Width ; Clk   ; Rise       ; Uart_state~reg0|clk   ;
+; 0.117  ; 0.117        ; 0.000          ; Low Pulse Width ; Clk   ; Rise       ; Uart_tx_done~reg0|clk ;
+; 0.117  ; 0.117        ; 0.000          ; Low Pulse Width ; Clk   ; Rise       ; baud_cnt[11]|clk      ;
+; 0.117  ; 0.117        ; 0.000          ; Low Pulse Width ; Clk   ; Rise       ; baud_cnt[12]|clk      ;
+; 0.117  ; 0.117        ; 0.000          ; Low Pulse Width ; Clk   ; Rise       ; baud_cnt[8]|clk       ;
+; 0.117  ; 0.117        ; 0.000          ; Low Pulse Width ; Clk   ; Rise       ; baud_div_clk|clk      ;
+; 0.117  ; 0.117        ; 0.000          ; Low Pulse Width ; Clk   ; Rise       ; bps_cnt[0]|clk        ;
++--------+--------------+----------------+-----------------+-------+------------+-----------------------+
+
+
++---------------------------------------------------------------------------+
+; Setup Times                                                               ;
++---------------+------------+-------+-------+------------+-----------------+
+; Data Port     ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++---------------+------------+-------+-------+------------+-----------------+
+; Baud_sel[*]   ; Clk        ; 1.664 ; 2.253 ; Rise       ; Clk             ;
+;  Baud_sel[0]  ; Clk        ; 1.520 ; 2.100 ; Rise       ; Clk             ;
+;  Baud_sel[1]  ; Clk        ; 1.560 ; 2.154 ; Rise       ; Clk             ;
+;  Baud_sel[2]  ; Clk        ; 1.664 ; 2.253 ; Rise       ; Clk             ;
+; Data_byte[*]  ; Clk        ; 1.086 ; 1.659 ; Rise       ; Clk             ;
+;  Data_byte[0] ; Clk        ; 0.945 ; 1.501 ; Rise       ; Clk             ;
+;  Data_byte[1] ; Clk        ; 0.870 ; 1.433 ; Rise       ; Clk             ;
+;  Data_byte[2] ; Clk        ; 0.916 ; 1.475 ; Rise       ; Clk             ;
+;  Data_byte[3] ; Clk        ; 0.887 ; 1.458 ; Rise       ; Clk             ;
+;  Data_byte[4] ; Clk        ; 1.086 ; 1.659 ; Rise       ; Clk             ;
+;  Data_byte[5] ; Clk        ; 0.923 ; 1.484 ; Rise       ; Clk             ;
+;  Data_byte[6] ; Clk        ; 0.930 ; 1.490 ; Rise       ; Clk             ;
+;  Data_byte[7] ; Clk        ; 0.080 ; 0.373 ; Rise       ; Clk             ;
+; En            ; Clk        ; 0.154 ; 0.470 ; Rise       ; Clk             ;
++---------------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Hold Times                                                                  ;
++---------------+------------+--------+--------+------------+-----------------+
+; Data Port     ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++---------------+------------+--------+--------+------------+-----------------+
+; Baud_sel[*]   ; Clk        ; -0.676 ; -1.235 ; Rise       ; Clk             ;
+;  Baud_sel[0]  ; Clk        ; -0.676 ; -1.235 ; Rise       ; Clk             ;
+;  Baud_sel[1]  ; Clk        ; -0.705 ; -1.253 ; Rise       ; Clk             ;
+;  Baud_sel[2]  ; Clk        ; -0.793 ; -1.371 ; Rise       ; Clk             ;
+; Data_byte[*]  ; Clk        ; 0.078  ; -0.218 ; Rise       ; Clk             ;
+;  Data_byte[0] ; Clk        ; -0.748 ; -1.297 ; Rise       ; Clk             ;
+;  Data_byte[1] ; Clk        ; -0.673 ; -1.222 ; Rise       ; Clk             ;
+;  Data_byte[2] ; Clk        ; -0.720 ; -1.271 ; Rise       ; Clk             ;
+;  Data_byte[3] ; Clk        ; -0.689 ; -1.244 ; Rise       ; Clk             ;
+;  Data_byte[4] ; Clk        ; -0.885 ; -1.449 ; Rise       ; Clk             ;
+;  Data_byte[5] ; Clk        ; -0.727 ; -1.280 ; Rise       ; Clk             ;
+;  Data_byte[6] ; Clk        ; -0.734 ; -1.286 ; Rise       ; Clk             ;
+;  Data_byte[7] ; Clk        ; 0.078  ; -0.218 ; Rise       ; Clk             ;
+; En            ; Clk        ; 0.045  ; -0.251 ; Rise       ; Clk             ;
++---------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Clock to Output Times                                                    ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; Uart_state   ; Clk        ; 3.148 ; 3.191 ; Rise       ; Clk             ;
+; Uart_tx      ; Clk        ; 3.182 ; 3.140 ; Rise       ; Clk             ;
+; Uart_tx_done ; Clk        ; 4.052 ; 4.150 ; Rise       ; Clk             ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                            ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; Uart_state   ; Clk        ; 3.047 ; 3.089 ; Rise       ; Clk             ;
+; Uart_tx      ; Clk        ; 3.080 ; 3.039 ; Rise       ; Clk             ;
+; Uart_tx_done ; Clk        ; 3.953 ; 4.049 ; Rise       ; Clk             ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
+---------------------------------------------
+; Fast 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++-------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                           ;
++------------------+---------+-------+----------+---------+---------------------+
+; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+---------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -3.481  ; 0.186 ; N/A      ; N/A     ; -3.000              ;
+;  Clk             ; -3.481  ; 0.186 ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS  ; -58.304 ; 0.0   ; 0.0      ; 0.0     ; -58.019             ;
+;  Clk             ; -58.304 ; 0.000 ; N/A      ; N/A     ; -58.019             ;
++------------------+---------+-------+----------+---------+---------------------+
+
+
++---------------------------------------------------------------------------+
+; Setup Times                                                               ;
++---------------+------------+-------+-------+------------+-----------------+
+; Data Port     ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++---------------+------------+-------+-------+------------+-----------------+
+; Baud_sel[*]   ; Clk        ; 3.674 ; 3.936 ; Rise       ; Clk             ;
+;  Baud_sel[0]  ; Clk        ; 3.352 ; 3.594 ; Rise       ; Clk             ;
+;  Baud_sel[1]  ; Clk        ; 3.502 ; 3.717 ; Rise       ; Clk             ;
+;  Baud_sel[2]  ; Clk        ; 3.674 ; 3.936 ; Rise       ; Clk             ;
+; Data_byte[*]  ; Clk        ; 2.317 ; 2.558 ; Rise       ; Clk             ;
+;  Data_byte[0] ; Clk        ; 2.016 ; 2.271 ; Rise       ; Clk             ;
+;  Data_byte[1] ; Clk        ; 1.792 ; 2.049 ; Rise       ; Clk             ;
+;  Data_byte[2] ; Clk        ; 1.951 ; 2.229 ; Rise       ; Clk             ;
+;  Data_byte[3] ; Clk        ; 1.889 ; 2.166 ; Rise       ; Clk             ;
+;  Data_byte[4] ; Clk        ; 2.317 ; 2.558 ; Rise       ; Clk             ;
+;  Data_byte[5] ; Clk        ; 1.982 ; 2.247 ; Rise       ; Clk             ;
+;  Data_byte[6] ; Clk        ; 1.995 ; 2.261 ; Rise       ; Clk             ;
+;  Data_byte[7] ; Clk        ; 0.153 ; 0.373 ; Rise       ; Clk             ;
+; En            ; Clk        ; 0.290 ; 0.504 ; Rise       ; Clk             ;
++---------------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Hold Times                                                                  ;
++---------------+------------+--------+--------+------------+-----------------+
+; Data Port     ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++---------------+------------+--------+--------+------------+-----------------+
+; Baud_sel[*]   ; Clk        ; -0.676 ; -1.235 ; Rise       ; Clk             ;
+;  Baud_sel[0]  ; Clk        ; -0.676 ; -1.235 ; Rise       ; Clk             ;
+;  Baud_sel[1]  ; Clk        ; -0.705 ; -1.253 ; Rise       ; Clk             ;
+;  Baud_sel[2]  ; Clk        ; -0.793 ; -1.371 ; Rise       ; Clk             ;
+; Data_byte[*]  ; Clk        ; 0.208  ; 0.075  ; Rise       ; Clk             ;
+;  Data_byte[0] ; Clk        ; -0.748 ; -1.297 ; Rise       ; Clk             ;
+;  Data_byte[1] ; Clk        ; -0.673 ; -1.222 ; Rise       ; Clk             ;
+;  Data_byte[2] ; Clk        ; -0.720 ; -1.271 ; Rise       ; Clk             ;
+;  Data_byte[3] ; Clk        ; -0.689 ; -1.244 ; Rise       ; Clk             ;
+;  Data_byte[4] ; Clk        ; -0.885 ; -1.449 ; Rise       ; Clk             ;
+;  Data_byte[5] ; Clk        ; -0.727 ; -1.280 ; Rise       ; Clk             ;
+;  Data_byte[6] ; Clk        ; -0.734 ; -1.286 ; Rise       ; Clk             ;
+;  Data_byte[7] ; Clk        ; 0.208  ; 0.075  ; Rise       ; Clk             ;
+; En            ; Clk        ; 0.177  ; 0.054  ; Rise       ; Clk             ;
++---------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Clock to Output Times                                                    ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; Uart_state   ; Clk        ; 6.731 ; 6.642 ; Rise       ; Clk             ;
+; Uart_tx      ; Clk        ; 6.618 ; 6.714 ; Rise       ; Clk             ;
+; Uart_tx_done ; Clk        ; 8.134 ; 8.140 ; Rise       ; Clk             ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                            ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; Uart_state   ; Clk        ; 3.047 ; 3.089 ; Rise       ; Clk             ;
+; Uart_tx      ; Clk        ; 3.080 ; 3.039 ; Rise       ; Clk             ;
+; Uart_tx_done ; Clk        ; 3.953 ; 4.049 ; Rise       ; Clk             ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                    ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin           ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Uart_tx       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; Uart_tx_done  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; Uart_state    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++----------------------------------------------------------------------------+
+; Input Transition Times                                                     ;
++-------------------------+--------------+-----------------+-----------------+
+; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-------------------------+--------------+-----------------+-----------------+
+; Clk                     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Rst_n                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; En                      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Data_byte[7]            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Data_byte[4]            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Data_byte[3]            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Data_byte[2]            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Data_byte[5]            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Data_byte[0]            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Data_byte[1]            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Data_byte[6]            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Baud_sel[0]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Baud_sel[2]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Baud_sel[1]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++-------------------------+--------------+-----------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Uart_tx       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.8e-09 V                    ; 2.37 V              ; -0.00373 V          ; 0.104 V                              ; 0.011 V                              ; 4.34e-10 s                  ; 3.82e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.8e-09 V                   ; 2.37 V             ; -0.00373 V         ; 0.104 V                             ; 0.011 V                             ; 4.34e-10 s                 ; 3.82e-10 s                 ; Yes                       ; Yes                       ;
+; Uart_tx_done  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.8e-09 V                    ; 2.33 V              ; -0.00425 V          ; 0.168 V                              ; 0.058 V                              ; 3.12e-09 s                  ; 2.87e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.8e-09 V                   ; 2.33 V             ; -0.00425 V         ; 0.168 V                             ; 0.058 V                             ; 3.12e-09 s                 ; 2.87e-09 s                 ; Yes                       ; Yes                       ;
+; Uart_state    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.8e-09 V                    ; 2.37 V              ; -0.00373 V          ; 0.104 V                              ; 0.011 V                              ; 4.34e-10 s                  ; 3.82e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.8e-09 V                   ; 2.37 V             ; -0.00373 V         ; 0.104 V                             ; 0.011 V                             ; 4.34e-10 s                 ; 3.82e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.74e-09 V                   ; 2.37 V              ; -0.0346 V           ; 0.198 V                              ; 0.094 V                              ; 3.14e-10 s                  ; 2.92e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.74e-09 V                  ; 2.37 V             ; -0.0346 V          ; 0.198 V                             ; 0.094 V                             ; 3.14e-10 s                 ; 2.92e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.57e-09 V                   ; 2.37 V              ; -0.00683 V          ; 0.171 V                              ; 0.018 V                              ; 4.97e-10 s                  ; 6.66e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.57e-09 V                  ; 2.37 V             ; -0.00683 V         ; 0.171 V                             ; 0.018 V                             ; 4.97e-10 s                 ; 6.66e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Uart_tx       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.85e-07 V                   ; 2.35 V              ; -0.0123 V           ; 0.144 V                              ; 0.042 V                              ; 4.81e-10 s                  ; 4.81e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.85e-07 V                  ; 2.35 V             ; -0.0123 V          ; 0.144 V                             ; 0.042 V                             ; 4.81e-10 s                 ; 4.81e-10 s                 ; Yes                       ; Yes                       ;
+; Uart_tx_done  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.85e-07 V                   ; 2.33 V              ; -0.00229 V          ; 0.111 V                              ; 0.057 V                              ; 3.78e-09 s                  ; 3.5e-09 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 2.85e-07 V                  ; 2.33 V             ; -0.00229 V         ; 0.111 V                             ; 0.057 V                             ; 3.78e-09 s                 ; 3.5e-09 s                  ; Yes                       ; Yes                       ;
+; Uart_state    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.85e-07 V                   ; 2.35 V              ; -0.0123 V           ; 0.144 V                              ; 0.042 V                              ; 4.81e-10 s                  ; 4.81e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.85e-07 V                  ; 2.35 V             ; -0.0123 V          ; 0.144 V                             ; 0.042 V                             ; 4.81e-10 s                 ; 4.81e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.55e-07 V                   ; 2.35 V              ; -0.00221 V          ; 0.097 V                              ; 0.005 V                              ; 4.49e-10 s                  ; 3.85e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.55e-07 V                  ; 2.35 V             ; -0.00221 V         ; 0.097 V                             ; 0.005 V                             ; 4.49e-10 s                 ; 3.85e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.54e-07 V                   ; 2.34 V              ; -0.00774 V          ; 0.109 V                              ; 0.026 V                              ; 6.58e-10 s                  ; 8.24e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.54e-07 V                  ; 2.34 V             ; -0.00774 V         ; 0.109 V                             ; 0.026 V                             ; 6.58e-10 s                 ; 8.24e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Uart_tx       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; Uart_tx_done  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.64 V              ; -0.0113 V           ; 0.208 V                              ; 0.179 V                              ; 2.38e-09 s                  ; 2.23e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.64 V             ; -0.0113 V          ; 0.208 V                             ; 0.179 V                             ; 2.38e-09 s                 ; 2.23e-09 s                 ; No                        ; Yes                       ;
+; Uart_state    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.22e-08 V                   ; 2.74 V              ; -0.06 V             ; 0.158 V                              ; 0.08 V                               ; 2.68e-10 s                  ; 2.19e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.22e-08 V                  ; 2.74 V             ; -0.06 V            ; 0.158 V                             ; 0.08 V                              ; 2.68e-10 s                 ; 2.19e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.54e-08 V                   ; 2.7 V               ; -0.00943 V          ; 0.276 V                              ; 0.035 V                              ; 3.19e-10 s                  ; 4.99e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.54e-08 V                  ; 2.7 V              ; -0.00943 V         ; 0.276 V                             ; 0.035 V                             ; 3.19e-10 s                 ; 4.99e-10 s                 ; No                        ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; Clk        ; Clk      ; 1139     ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; Clk        ; Clk      ; 1139     ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 13    ; 13   ;
+; Unconstrained Input Port Paths  ; 69    ; 69   ;
+; Unconstrained Output Ports      ; 3     ; 3    ;
+; Unconstrained Output Port Paths ; 3     ; 3    ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+    Info: Processing started: Wed Nov 13 16:53:41 2019
+Info: Command: quartus_sta uart_tx_byte -c uart_tx_byte
+Info: qsta_default_script.tcl version: #1
+Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
+Info (21077): Core supply voltage is 1.2V
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'uart_tx_byte.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name Clk Clk
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1200mV 85C Model
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -3.481
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.481             -58.304 Clk 
+Info (332146): Worst-case hold slack is 0.453
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.453               0.000 Clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000             -58.019 Clk 
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -3.256
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.256             -54.066 Clk 
+Info (332146): Worst-case hold slack is 0.401
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.401               0.000 Clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000             -58.019 Clk 
+Info: Analyzing Fast 1200mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -0.895
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.895             -12.865 Clk 
+Info (332146): Worst-case hold slack is 0.186
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.186               0.000 Clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000             -42.342 Clk 
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 486 megabytes
+    Info: Processing ended: Wed Nov 13 16:53:44 2019
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+
