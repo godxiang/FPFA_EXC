@@ -1,0 +1,22 @@
+
+/**********************************************************\
+	Filename		:	 uart_rx_byte.v
+	Author  	   :   eric_xiang
+	Description :   uart recv byte
+	Revision		:   2019-11-13
+	Company		:   personal
+\**********************************************************/
+
+
+module uart_rx_byte(
+	Clk,
+	Rst_n,
+	
+	Uart_tx,	
+	Baud_sel,
+	
+	Uart_rx_byte,
+	Uart_rx_done,
+	Uart_state
+);
+
