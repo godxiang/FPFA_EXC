@@ -1,6 +1,6 @@
 Flow report for uart_tx_byte
-Wed Nov 13 16:53:48 2019
-Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+Sat Nov 16 17:57:06 2019
+Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
 ---------------------
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Nov 13 16:53:48 2019       ;
-; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
+; Flow Status                        ; Successful - Sat Nov 16 17:57:06 2019       ;
+; Quartus II 32-bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; uart_tx_byte                                ;
-; Top-level Entity Name              ; uart_tx_byte                                ;
+; Top-level Entity Name              ; uart_tx_top                                 ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE10F17C8                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 68 / 10,320 ( < 1 % )                       ;
-;     Total combinational functions  ; 64 / 10,320 ( < 1 % )                       ;
-;     Dedicated logic registers      ; 37 / 10,320 ( < 1 % )                       ;
-; Total registers                    ; 37                                          ;
-; Total pins                         ; 17 / 180 ( 9 % )                            ;
+; Total logic elements               ; 249 / 10,320 ( 2 % )                        ;
+;     Total combinational functions  ; 227 / 10,320 ( 2 % )                        ;
+;     Dedicated logic registers      ; 162 / 10,320 ( 2 % )                        ;
+; Total registers                    ; 162                                         ;
+; Total pins                         ; 4 / 180 ( 2 % )                             ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 423,936 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 46 ( 0 % )                              ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/13/2019 16:53:08 ;
+; Start date & time ; 11/16/2019 17:56:51 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; uart_tx_byte        ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+-----------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id      ;
 +--------------------------------------+---------------------------------------+---------------+-------------+-----------------+
-; COMPILER_SIGNATURE_ID                ; 52848292155467.157363518713096        ; --            ; --          ; --              ;
+; COMPILER_SIGNATURE_ID                ; 71126646623957.157389821010128        ; --            ; --          ; --              ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; uart_tx_byte_tb ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; uart_tx_byte_tb                       ; --            ; --          ; eda_simulation  ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                           ; --            ; --          ; eda_simulation  ;
@@ -85,15 +85,19 @@ applicable agreement for further details.
 ; EDA_TEST_BENCH_MODULE_NAME           ; uart_tx_byte_tb                       ; --            ; --          ; uart_tx_byte_tb ;
 ; EDA_TEST_BENCH_NAME                  ; uart_tx_byte_tb                       ; --            ; --          ; eda_simulation  ;
 ; EDA_TIME_SCALE                       ; 1 ns                                  ; --            ; --          ; eda_simulation  ;
+; IP_TOOL_NAME                         ; In-System Sources and Probes          ; --            ; --          ; --              ;
+; IP_TOOL_VERSION                      ; 13.1                                  ; --            ; --          ; --              ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                    ; --            ; --          ; --              ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                     ; --            ; --          ; --              ;
+; MISC_FILE                            ; ip/issp/uart_issp_bb.v                ; --            ; --          ; --              ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE          ; 1.2V                                  ; --            ; --          ; --              ;
-; PARTITION_COLOR                      ; 16764057                              ; --            ; --          ; Top             ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top             ;
-; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --            ; --          ; Top             ;
+; PARTITION_COLOR                      ; 16764057                              ; --            ; uart_tx_top ; Top             ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --            ; uart_tx_top ; Top             ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --            ; uart_tx_top ; Top             ;
 ; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                   ; --            ; --          ; --              ;
 ; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --              ;
 ; PROJECT_OUTPUT_DIRECTORY             ; output_files                          ; --            ; --          ; --              ;
+; TOP_LEVEL_ENTITY                     ; uart_tx_top                           ; uart_tx_byte  ; --          ; --              ;
 +--------------------------------------+---------------------------------------+---------------+-------------+-----------------+
 
 
@@ -102,12 +106,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:08     ; 1.0                     ; 468 MB              ; 00:00:01                           ;
-; Fitter                    ; 00:00:15     ; 1.1                     ; 924 MB              ; 00:00:06                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 438 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 486 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 400 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:31     ; --                      ; --                  ; 00:00:11                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 447 MB              ; 00:00:02                           ;
+; Fitter                    ; 00:00:04     ; 1.0                     ; 727 MB              ; 00:00:06                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 393 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 434 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 356 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:10     ; --                      ; --                  ; 00:00:12                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -116,11 +120,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; G7BYPV26VAPGVNK  ; Windows 7 ; 6.1        ; x86_64         ;
-; Fitter                    ; G7BYPV26VAPGVNK  ; Windows 7 ; 6.1        ; x86_64         ;
-; Assembler                 ; G7BYPV26VAPGVNK  ; Windows 7 ; 6.1        ; x86_64         ;
-; TimeQuest Timing Analyzer ; G7BYPV26VAPGVNK  ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer        ; G7BYPV26VAPGVNK  ; Windows 7 ; 6.1        ; x86_64         ;
+; Analysis & Synthesis      ; PS20190526PTHV   ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; PS20190526PTHV   ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; PS20190526PTHV   ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; PS20190526PTHV   ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; PS20190526PTHV   ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

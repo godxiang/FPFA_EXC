@@ -1,8 +1,60 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="8e3cbf9bdaadecb025c5"/>
+    <hash md5_digest_80b="48c785a34a364c99958a"/>
   </project>
   <file_info>
     <file device="EP4CE10F17C8" path="uart_tx_byte.sof" usercode="0xFFFFFFFF"/>
   </file_info>
+  <hub_info hub_ir_width="4" ir_width="4" node_addr_width="1" node_count="1"/>
+  <node_info>
+    <node hpath="uart_issp:u_uart_issp|altsource_probe:altsource_probe_component" instance_id="0" mfg_id="110" node_id="9" sld_node_info="0x486E00" version="0">
+      <parameters>
+        <parameter name="lpm_type" type="string" value="altsource_probe"/>
+        <parameter name="lpm_hint" type="string" value="UNUSED"/>
+        <parameter name="sld_auto_instance_index" type="string" value="YES"/>
+        <parameter name="sld_instance_index" type="dec" value="0"/>
+        <parameter name="SLD_NODE_INFO" type="dec" value="4746752"/>
+        <parameter name="sld_ir_width" type="dec" value="4"/>
+        <parameter name="instance_id" type="string" value="NONE"/>
+        <parameter name="probe_width" type="dec" value="0"/>
+        <parameter name="source_width" type="dec" value="8"/>
+        <parameter name="source_initial_value" type="string" value=" 0"/>
+        <parameter name="enable_metastability" type="string" value="NO"/>
+      </parameters>
+      <inputs>
+        <port name="probe[0]" source="uart_issp:u_uart_issp|probe"/>
+        <port name="jtag.bp.u_uart_issp_altsource_probe_component_raw_tck" source="jtag.bp.u_uart_issp_altsource_probe_component_raw_tck"/>
+        <port name="jtag.bp.u_uart_issp_altsource_probe_component_tdi" source="jtag.bp.u_uart_issp_altsource_probe_component_tdi"/>
+        <port name="jtag.bp.u_uart_issp_altsource_probe_component_usr1" source="jtag.bp.u_uart_issp_altsource_probe_component_usr1"/>
+        <port name="jtag.bp.u_uart_issp_altsource_probe_component_jtag_state_cdr" source="jtag.bp.u_uart_issp_altsource_probe_component_jtag_state_cdr"/>
+        <port name="jtag.bp.u_uart_issp_altsource_probe_component_jtag_state_sdr" source="jtag.bp.u_uart_issp_altsource_probe_component_jtag_state_sdr"/>
+        <port name="jtag.bp.u_uart_issp_altsource_probe_component_jtag_state_e1dr" source="jtag.bp.u_uart_issp_altsource_probe_component_jtag_state_e1dr"/>
+        <port name="jtag.bp.u_uart_issp_altsource_probe_component_jtag_state_udr" source="jtag.bp.u_uart_issp_altsource_probe_component_jtag_state_udr"/>
+        <port name="jtag.bp.u_uart_issp_altsource_probe_component_jtag_state_cir" source="jtag.bp.u_uart_issp_altsource_probe_component_jtag_state_cir"/>
+        <port name="jtag.bp.u_uart_issp_altsource_probe_component_jtag_state_uir" source="jtag.bp.u_uart_issp_altsource_probe_component_jtag_state_uir"/>
+        <port name="jtag.bp.u_uart_issp_altsource_probe_component_jtag_state_tlr" source="jtag.bp.u_uart_issp_altsource_probe_component_jtag_state_tlr"/>
+        <port name="jtag.bp.u_uart_issp_altsource_probe_component_clrn" source="jtag.bp.u_uart_issp_altsource_probe_component_clrn"/>
+        <port name="jtag.bp.u_uart_issp_altsource_probe_component_ena" source="jtag.bp.u_uart_issp_altsource_probe_component_ena"/>
+        <port name="jtag.bp.u_uart_issp_altsource_probe_component_ir_in_0_" source="jtag.bp.u_uart_issp_altsource_probe_component_ir_in_0_"/>
+        <port name="jtag.bp.u_uart_issp_altsource_probe_component_ir_in_1_" source="jtag.bp.u_uart_issp_altsource_probe_component_ir_in_1_"/>
+        <port name="jtag.bp.u_uart_issp_altsource_probe_component_ir_in_2_" source="jtag.bp.u_uart_issp_altsource_probe_component_ir_in_2_"/>
+        <port name="jtag.bp.u_uart_issp_altsource_probe_component_ir_in_3_" source="jtag.bp.u_uart_issp_altsource_probe_component_ir_in_3_"/>
+      </inputs>
+      <outputs>
+        <port name="source[0]"/>
+        <port name="source[1]"/>
+        <port name="source[2]"/>
+        <port name="source[3]"/>
+        <port name="source[4]"/>
+        <port name="source[5]"/>
+        <port name="source[6]"/>
+        <port name="source[7]"/>
+        <port name="jtag.bp.u_uart_issp_altsource_probe_component_ir_out_0_"/>
+        <port name="jtag.bp.u_uart_issp_altsource_probe_component_ir_out_1_"/>
+        <port name="jtag.bp.u_uart_issp_altsource_probe_component_ir_out_2_"/>
+        <port name="jtag.bp.u_uart_issp_altsource_probe_component_ir_out_3_"/>
+        <port name="jtag.bp.u_uart_issp_altsource_probe_component_tdo"/>
+      </outputs>
+    </node>
+  </node_info>
 </sld_project_info>
