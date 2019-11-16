@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Nov 13 16:53:33 2019
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : uart_tx_byte
+Top-level Entity Name : uart_tx_byte
+Family : Cyclone IV E
+Device : EP4CE10F17C8
+Timing Models : Final
+Total logic elements : 68 / 10,320 ( < 1 % )
+    Total combinational functions : 64 / 10,320 ( < 1 % )
+    Dedicated logic registers : 37 / 10,320 ( < 1 % )
+Total registers : 37
+Total pins : 17 / 180 ( 9 % )
+Total virtual pins : 0
+Total memory bits : 0 / 423,936 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

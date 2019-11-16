@@ -1,0 +1,23 @@
+
+/**********************************************************\
+	Filename		:	 uart_tx_byte.v
+	Author  	   :   eric_xiang
+	Description :   uart send byte
+	Revision		:   2019-11-12
+	Company		:   personal
+\**********************************************************/
+	
+module uart_tx_byte();
+
+input Clk;
+input Rst_n;
+
+input En;						//uart发送使能信号
+
+output Uart_tx; 				//uart串行发送数据线
+output Uart_state;			//uart传输标志  为1，表示处于发送状态
+
+
+endmodule
+	
+	

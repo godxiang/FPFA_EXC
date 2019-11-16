@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at uart_rx_byte_tb.v(15): object "uart_state_rx" differs only in case from object "Uart_state_rx" in the same scope

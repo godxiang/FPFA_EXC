@@ -1,0 +1,60 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/gitwork/FPFA_EXC/uart_tx/prj/simulation/modelsim
+T_opt
+!s110 1573629039
+VQiE7cm5F1EG3X=XRRTCU:3
+04 15 4 work uart_tx_byte_tb fast 0
+=6-acb57d41bd53-5dcbac6f-2c5-90c
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+n@_opt
+OL;O;10.4;61
+vuart_tx_byte
+Z1 !s110 1573629035
+!i10b 1
+!s100 FL_UM8DBDbjbU3:@liQ4>0
+IBRdK3=iek=:n_WCNbBGFH0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1573627139
+8D:/gitwork/FPFA_EXC/uart_tx/rtl/uart_tx_byte.v
+FD:/gitwork/FPFA_EXC/uart_tx/rtl/uart_tx_byte.v
+L0 10
+Z3 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1573629035.690000
+!s107 D:/gitwork/FPFA_EXC/uart_tx/rtl/uart_tx_byte.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/gitwork/FPFA_EXC/uart_tx/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/gitwork/FPFA_EXC/uart_tx/rtl/uart_tx_byte.v|
+!i113 0
+Z4 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_tx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vuart_tx_byte_tb
+R1
+!i10b 1
+!s100 <c1690EzKS]Kem[YD:zZj1
+I`h`<hNVdfzH8=QT8;=ZAn1
+R2
+R0
+w1573629031
+8D:/gitwork/FPFA_EXC/uart_tx/testbench/uart_tx_byte_tb.v
+FD:/gitwork/FPFA_EXC/uart_tx/testbench/uart_tx_byte_tb.v
+L0 6
+R3
+r1
+!s85 0
+31
+!s108 1573629035.782000
+!s107 D:/gitwork/FPFA_EXC/uart_tx/testbench/uart_tx_byte_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/gitwork/FPFA_EXC/uart_tx/prj/../testbench|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/gitwork/FPFA_EXC/uart_tx/testbench/uart_tx_byte_tb.v|
+!i113 0
+R4
+!s92 -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_tx/prj/../testbench -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
