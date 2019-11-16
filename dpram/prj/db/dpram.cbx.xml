@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="dpram">
+		<CBX_INST_ENTRY INSTANCE_NAME="|uart_dpram|ip_dpram:u_ip_dpram|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ufn1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

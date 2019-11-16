@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat Nov 16 23:28:44 2019
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : dpram
+Top-level Entity Name : uart_dpram
+Family : Cyclone IV E
+Device : EP4CE10F17C8
+Timing Models : Final
+Total logic elements : 205 / 10,320 ( 2 % )
+    Total combinational functions : 189 / 10,320 ( 2 % )
+    Dedicated logic registers : 140 / 10,320 ( 1 % )
+Total registers : 140
+Total pins : 5 / 180 ( 3 % )
+Total virtual pins : 0
+Total memory bits : 2,048 / 423,936 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )
