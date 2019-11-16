@@ -9,73 +9,115 @@ z2
 cModel Technology
 Z0 dD:/gitwork/FPFA_EXC/uart_rx/prj/simulation/modelsim
 T_opt
-!s110 1573719865
-VdUMO>F0j=0V?dUoZ4SeiL1
+!s110 1573901444
+VPYoQ1i@?;M9OSzh[HhLeS3
 04 15 4 work uart_rx_byte_tb fast 0
-=13-acb57d41bd53-5dcd0f38-31d-1f08
+=1-40b076818ed5-5dcfd483-3ce-2838
 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
 n@_opt
 OL;O;10.4;61
+vissp_uart_recv
+Z1 !s110 1573901443
+!i10b 1
+!s100 G[UPo]aMZLg2PD0eCUmST0
+IQ822M?XjY1LSHb1oRB?KP3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1573900304
+8D:/gitwork/FPFA_EXC/uart_rx/prj/ip/issp/issp_uart_recv.v
+FD:/gitwork/FPFA_EXC/uart_rx/prj/ip/issp/issp_uart_recv.v
+L0 39
+Z3 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1573901443.269000
+!s107 D:/gitwork/FPFA_EXC/uart_rx/prj/ip/issp/issp_uart_recv.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/ip/issp|D:/gitwork/FPFA_EXC/uart_rx/prj/ip/issp/issp_uart_recv.v|
+!i113 0
+Z4 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/ip/issp -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 vuart_rx_byte
-!s110 1573719861
+R1
 !i10b 1
 !s100 e8Lka<T?EA;NFAGNVScEQ2
 IhC>]STIkekDVGESUH6^Tn1
-Z1 VDg1SIo80bB@j0V0VzS_@n1
+R2
 R0
-w1573719576
+Z5 w1573898933
 8D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_byte.v
 FD:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_byte.v
 L0 11
-Z2 OL;L;10.4;61
+R3
 r1
 !s85 0
 31
-!s108 1573719861.908000
+!s108 1573901443.209000
 !s107 D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_byte.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/gitwork/FPFA_EXC/uart_rx/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_byte.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/gitwork/FPFA_EXC/uart_rx/rtl|D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_byte.v|
 !i113 0
-Z3 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-!s92 -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+Z6 !s92 -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 vuart_rx_byte_tb
-!s110 1573719862
+R1
 !i10b 1
 !s100 B<k=laXE3:S99QPd4K4ja3
-I4FK@[FNA]W>a?1^RUdD[M0
-R1
-R0
-w1573719858
-8D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v
-FD:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v
-L0 6
+IoGPC_fYRB7=zF28OZikM33
 R2
+R0
+R5
+8D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench/uart_rx_byte_tb.v
+FD:/gitwork/FPFA_EXC/uart_rx/prj/../testbench/uart_rx_byte_tb.v
+L0 6
+R3
 r1
 !s85 0
 31
-!s108 1573719862.000000
-!s107 D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v|
+!s108 1573901443.388000
+!s107 D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench/uart_rx_byte_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench|D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench/uart_rx_byte_tb.v|
 !i113 0
+R4
+Z7 !s92 -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vuart_rx_top
+R1
+!i10b 1
+!s100 4[gBKK<8>YS2PIIfP8QLQ0
+I]OdLUFc5]na[gbKozn2Qf2
+R2
+R0
+w1573900867
+8D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_top.v
+FD:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_top.v
+L0 1
 R3
-Z4 !s92 -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+r1
+!s85 0
+31
+!s108 1573901443.329000
+!s107 D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/gitwork/FPFA_EXC/uart_rx/rtl|D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_top.v|
+!i113 0
+R4
+R6
 vuart_tx_byte
-!s110 1573715092
+R1
 !i10b 1
 !s100 FL_UM8DBDbjbU3:@liQ4>0
 ICRQcHoCk8f8X3]EI6[X;i0
-R1
+R2
 R0
-w1573627139
+R5
 8D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench/uart_tx_byte.v
 FD:/gitwork/FPFA_EXC/uart_rx/prj/../testbench/uart_tx_byte.v
 L0 10
-R2
+R3
 r1
 !s85 0
 31
-!s108 1573715092.745000
+!s108 1573901443.447000
 !s107 D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench/uart_tx_byte.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench|D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench/uart_tx_byte.v|
 !i113 0
-R3
 R4
+R7

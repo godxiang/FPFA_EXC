@@ -1,16 +1,16 @@
-Fitter Status : Successful - Thu Nov 14 16:27:19 2019
-Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Fitter Status : Successful - Sat Nov 16 18:55:55 2019
+Quartus II 32-bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : uart_rx_byte
-Top-level Entity Name : uart_rx_byte
+Top-level Entity Name : uart_rx_top
 Family : Cyclone IV E
 Device : EP4CE10F17C8
 Timing Models : Final
-Total logic elements : 112 / 10,320 ( 1 % )
-    Total combinational functions : 100 / 10,320 ( < 1 % )
-    Dedicated logic registers : 69 / 10,320 ( < 1 % )
-Total registers : 69
-Total pins : 16 / 180 ( 9 % )
+Total logic elements : 906 / 10,320 ( 9 % )
+    Total combinational functions : 637 / 10,320 ( 6 % )
+    Dedicated logic registers : 695 / 10,320 ( 7 % )
+Total registers : 695
+Total pins : 3 / 180 ( 2 % )
 Total virtual pins : 0
-Total memory bits : 0 / 423,936 ( 0 % )
+Total memory bits : 2,304 / 423,936 ( < 1 % )
 Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
 Total PLLs : 0 / 2 ( 0 % )

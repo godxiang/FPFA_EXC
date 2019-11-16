@@ -1,6 +1,6 @@
 Flow report for uart_rx_byte
-Thu Nov 14 16:27:33 2019
-Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+Sat Nov 16 18:56:04 2019
+Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
 ---------------------
@@ -40,20 +40,20 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Nov 14 16:27:33 2019       ;
-; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
+; Flow Status                        ; Successful - Sat Nov 16 18:56:04 2019       ;
+; Quartus II 32-bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; uart_rx_byte                                ;
-; Top-level Entity Name              ; uart_rx_byte                                ;
+; Top-level Entity Name              ; uart_rx_top                                 ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE10F17C8                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 112 / 10,320 ( 1 % )                        ;
-;     Total combinational functions  ; 100 / 10,320 ( < 1 % )                      ;
-;     Dedicated logic registers      ; 69 / 10,320 ( < 1 % )                       ;
-; Total registers                    ; 69                                          ;
-; Total pins                         ; 16 / 180 ( 9 % )                            ;
+; Total logic elements               ; 906 / 10,320 ( 9 % )                        ;
+;     Total combinational functions  ; 637 / 10,320 ( 6 % )                        ;
+;     Dedicated logic registers      ; 695 / 10,320 ( 7 % )                        ;
+; Total registers                    ; 695                                         ;
+; Total pins                         ; 3 / 180 ( 2 % )                             ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0 / 423,936 ( 0 % )                         ;
+; Total memory bits                  ; 2,304 / 423,936 ( < 1 % )                   ;
 ; Embedded Multiplier 9-bit elements ; 0 / 46 ( 0 % )                              ;
 ; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
@@ -64,38 +64,69 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/14/2019 16:26:57 ;
+; Start date & time ; 11/16/2019 18:55:42 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; uart_rx_byte        ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                             ;
-+--------------------------------------+---------------------------------------+---------------+-------------+-----------------+
-; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id      ;
-+--------------------------------------+---------------------------------------+---------------+-------------+-----------------+
-; COMPILER_SIGNATURE_ID                ; 52848292155467.157372001711236        ; --            ; --          ; --              ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; uart_rx_byte_tb ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; uart_rx_byte_tb                       ; --            ; --          ; eda_simulation  ;
-; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                           ; --            ; --          ; eda_simulation  ;
-; EDA_SIMULATION_TOOL                  ; ModelSim (Verilog)                    ; <None>        ; --          ; --              ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --            ; --          ; eda_simulation  ;
-; EDA_TEST_BENCH_FILE                  ; ../testbench/uart_rx_byte_tb.v        ; --            ; --          ; uart_rx_byte_tb ;
-; EDA_TEST_BENCH_FILE                  ; ../testbench/uart_tx_byte.v           ; --            ; --          ; uart_rx_byte_tb ;
-; EDA_TEST_BENCH_MODULE_NAME           ; uart_rx_byte_tb                       ; --            ; --          ; uart_rx_byte_tb ;
-; EDA_TEST_BENCH_NAME                  ; uart_rx_byte_tb                       ; --            ; --          ; eda_simulation  ;
-; EDA_TIME_SCALE                       ; 1 ps                                  ; --            ; --          ; eda_simulation  ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                    ; --            ; --          ; --              ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                     ; --            ; --          ; --              ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE          ; 1.2V                                  ; --            ; --          ; --              ;
-; PARTITION_COLOR                      ; 16764057                              ; --            ; --          ; Top             ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top             ;
-; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --            ; --          ; Top             ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                   ; --            ; --          ; --              ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --              ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                          ; --            ; --          ; --              ;
-+--------------------------------------+---------------------------------------+---------------+-------------+-----------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                       ;
++--------------------------------------+------------------------------------------------------------------------------------------------+---------------+-------------+------------------+
+; Assignment Name                      ; Value                                                                                          ; Default Value ; Entity Name ; Section Id       ;
++--------------------------------------+------------------------------------------------------------------------------------------------+---------------+-------------+------------------+
+; COMPILER_SIGNATURE_ID                ; 71126646623957.157390174206332                                                                 ; --            ; --          ; --               ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                                             ; --            ; --          ; uart_rx_byte_tb  ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; uart_rx_byte_tb                                                                                ; --            ; --          ; eda_simulation   ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                                                                                    ; --            ; --          ; eda_simulation   ;
+; EDA_SIMULATION_TOOL                  ; ModelSim (Verilog)                                                                             ; <None>        ; --          ; --               ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                                                                                ; --            ; --          ; eda_simulation   ;
+; EDA_TEST_BENCH_FILE                  ; ../testbench/uart_rx_byte_tb.v                                                                 ; --            ; --          ; uart_rx_byte_tb  ;
+; EDA_TEST_BENCH_FILE                  ; ../testbench/uart_tx_byte.v                                                                    ; --            ; --          ; uart_rx_byte_tb  ;
+; EDA_TEST_BENCH_MODULE_NAME           ; uart_rx_byte_tb                                                                                ; --            ; --          ; uart_rx_byte_tb  ;
+; EDA_TEST_BENCH_NAME                  ; uart_rx_byte_tb                                                                                ; --            ; --          ; eda_simulation   ;
+; EDA_TIME_SCALE                       ; 1 ps                                                                                           ; --            ; --          ; eda_simulation   ;
+; ENABLE_SIGNALTAP                     ; On                                                                                             ; --            ; --          ; --               ;
+; IP_TOOL_NAME                         ; In-System Sources and Probes                                                                   ; --            ; --          ; --               ;
+; IP_TOOL_VERSION                      ; 13.1                                                                                           ; --            ; --          ; --               ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                                                                             ; --            ; --          ; --               ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                                                                              ; --            ; --          ; --               ;
+; MISC_FILE                            ; ip/issp/issp_uart_recv_bb.v                                                                    ; --            ; --          ; --               ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE          ; 1.2V                                                                                           ; --            ; --          ; --               ;
+; PARTITION_COLOR                      ; 16764057                                                                                       ; --            ; uart_rx_top ; Top              ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                                                                          ; --            ; uart_rx_top ; Top              ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                                                                         ; --            ; uart_rx_top ; Top              ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                                                                            ; --            ; --          ; --               ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                                          ; --            ; --          ; --               ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                                                                                   ; --            ; --          ; --               ;
+; SLD_FILE                             ; db/stp1_auto_stripped.stp                                                                      ; --            ; --          ; --               ;
+; SLD_NODE_CREATOR_ID                  ; 110                                                                                            ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_ENTITY_NAME                 ; sld_signaltap                                                                                  ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_RAM_BLOCK_TYPE=AUTO                                                                        ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_NODE_INFO=805334528                                                                        ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_POWER_UP_TRIGGER=0                                                                         ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0                                                  ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_SEGMENT_SIZE=128                                                                           ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ATTRIBUTE_MEM_MODE=OFF                                                                     ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STATE_FLOW_USE_GENERATED=0                                                                 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STATE_BITS=11                                                                              ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_BUFFER_FULL_STOP=1                                                                         ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_CURRENT_RESOURCE_WIDTH=1                                                                   ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_LEVEL=1                                                                            ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_SAMPLE_DEPTH=128                                                                           ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_IN_ENABLED=0                                                                       ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ADVANCED_TRIGGER_ENTITY=basic,1,                                                           ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_LEVEL_PIPELINE=1                                                                   ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ENABLE_ADVANCED_TRIGGER=0                                                                  ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_DATA_BITS=18                                                                               ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_BITS=18                                                                            ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000000000 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INVERSION_MASK_LENGTH=75                                                                   ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_NODE_CRC_LOWORD=38674                                                                      ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_NODE_CRC_HIWORD=1681                                                                       ; --            ; --          ; auto_signaltap_0 ;
+; TOP_LEVEL_ENTITY                     ; uart_rx_top                                                                                    ; uart_rx_byte  ; --          ; --               ;
+; USE_SIGNALTAP_FILE                   ; ../../uart_tx/prj/stp1.stp                                                                     ; --            ; --          ; --               ;
++--------------------------------------+------------------------------------------------------------------------------------------------+---------------+-------------+------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -103,12 +134,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 468 MB              ; 00:00:03                           ;
-; Fitter                    ; 00:00:16     ; 1.1                     ; 928 MB              ; 00:00:06                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 457 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 498 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 407 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:23     ; --                      ; --                  ; 00:00:13                           ;
+; Analysis & Synthesis      ; 00:00:05     ; 1.0                     ; 467 MB              ; 00:00:05                           ;
+; Fitter                    ; 00:00:06     ; 1.0                     ; 736 MB              ; 00:00:07                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 397 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 449 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 362 MB              ; 00:00:02                           ;
+; Total                     ; 00:00:16     ; --                      ; --                  ; 00:00:17                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -117,11 +148,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; G7BYPV26VAPGVNK  ; Windows 7 ; 6.1        ; x86_64         ;
-; Fitter                    ; G7BYPV26VAPGVNK  ; Windows 7 ; 6.1        ; x86_64         ;
-; Assembler                 ; G7BYPV26VAPGVNK  ; Windows 7 ; 6.1        ; x86_64         ;
-; TimeQuest Timing Analyzer ; G7BYPV26VAPGVNK  ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer        ; G7BYPV26VAPGVNK  ; Windows 7 ; 6.1        ; x86_64         ;
+; Analysis & Synthesis      ; PS20190526PTHV   ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; PS20190526PTHV   ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; PS20190526PTHV   ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; PS20190526PTHV   ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; PS20190526PTHV   ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

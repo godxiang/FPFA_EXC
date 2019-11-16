@@ -1,4 +1,4 @@
-# Reading D:/modeltech64_10.4/tcl/vsim/pref.tcl
+# Reading C:/modeltech64_10.4/tcl/vsim/pref.tcl
 # //  ModelSim SE-64 10.4 Dec  3 2014 
 # //
 # //  Copyright 1991-2014 Mentor Graphics Corporation
@@ -24,14 +24,14 @@
 # vmap altera_ver ./verilog_libs/altera_ver
 # Model Technology ModelSim SE-64 vmap 10.4 Lib Mapping Utility 2014.12 Dec  3 2014
 # vmap -modelsim_quiet altera_ver ./verilog_libs/altera_ver 
-# Copying D:/modeltech64_10.4/win64/../modelsim.ini to modelsim.ini
+# Copying C:/modeltech64_10.4/win64/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# ** Warning: Copied D:/modeltech64_10.4/win64/../modelsim.ini to modelsim.ini.
+# ** Warning: Copied C:/modeltech64_10.4/win64/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
-# vlog -vlog01compat -work altera_ver {d:/altera/13.1/quartus/eda/sim_lib/altera_primitives.v}
+# vlog -vlog01compat -work altera_ver {c:/altera/13.1/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 15:04:45 on Nov 14,2019
-# vlog -reportprogress 300 -vlog01compat -work altera_ver d:/altera/13.1/quartus/eda/sim_lib/altera_primitives.v 
+# Start time: 18:50:40 on Nov 16,2019
+# vlog -reportprogress 300 -vlog01compat -work altera_ver c:/altera/13.1/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
 # -- Compiling module cascade
@@ -108,7 +108,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 15:04:45 on Nov 14,2019, Elapsed time: 0:00:00
+# End time: 18:50:40 on Nov 16,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -118,10 +118,10 @@
 # Model Technology ModelSim SE-64 vmap 10.4 Lib Mapping Utility 2014.12 Dec  3 2014
 # vmap -modelsim_quiet lpm_ver ./verilog_libs/lpm_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work lpm_ver {d:/altera/13.1/quartus/eda/sim_lib/220model.v}
+# vlog -vlog01compat -work lpm_ver {c:/altera/13.1/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 15:04:46 on Nov 14,2019
-# vlog -reportprogress 300 -vlog01compat -work lpm_ver d:/altera/13.1/quartus/eda/sim_lib/220model.v 
+# Start time: 18:50:40 on Nov 16,2019
+# vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/altera/13.1/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
 # -- Compiling module LPM_DEVICE_FAMILIES
@@ -184,7 +184,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 15:04:46 on Nov 14,2019, Elapsed time: 0:00:00
+# End time: 18:50:41 on Nov 16,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -194,10 +194,10 @@
 # Model Technology ModelSim SE-64 vmap 10.4 Lib Mapping Utility 2014.12 Dec  3 2014
 # vmap -modelsim_quiet sgate_ver ./verilog_libs/sgate_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work sgate_ver {d:/altera/13.1/quartus/eda/sim_lib/sgate.v}
+# vlog -vlog01compat -work sgate_ver {c:/altera/13.1/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 15:04:47 on Nov 14,2019
-# vlog -reportprogress 300 -vlog01compat -work sgate_ver d:/altera/13.1/quartus/eda/sim_lib/sgate.v 
+# Start time: 18:50:41 on Nov 16,2019
+# vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/altera/13.1/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
 # -- Compiling module mux21
@@ -238,7 +238,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 15:04:47 on Nov 14,2019, Elapsed time: 0:00:00
+# End time: 18:50:41 on Nov 16,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -248,10 +248,10 @@
 # Model Technology ModelSim SE-64 vmap 10.4 Lib Mapping Utility 2014.12 Dec  3 2014
 # vmap -modelsim_quiet altera_mf_ver ./verilog_libs/altera_mf_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work altera_mf_ver {d:/altera/13.1/quartus/eda/sim_lib/altera_mf.v}
+# vlog -vlog01compat -work altera_mf_ver {c:/altera/13.1/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 15:04:47 on Nov 14,2019
-# vlog -reportprogress 300 -vlog01compat -work altera_mf_ver d:/altera/13.1/quartus/eda/sim_lib/altera_mf.v 
+# Start time: 18:50:41 on Nov 16,2019
+# vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/altera/13.1/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
 # -- Compiling module ALTERA_MF_HINT_EVALUATION
@@ -375,7 +375,7 @@
 # 	altserial_flash_loader
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 15:04:49 on Nov 14,2019, Elapsed time: 0:00:02
+# End time: 18:50:42 on Nov 16,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -385,10 +385,10 @@
 # Model Technology ModelSim SE-64 vmap 10.4 Lib Mapping Utility 2014.12 Dec  3 2014
 # vmap -modelsim_quiet altera_lnsim_ver ./verilog_libs/altera_lnsim_ver 
 # Modifying modelsim.ini
-# vlog -sv -work altera_lnsim_ver {d:/altera/13.1/quartus/eda/sim_lib/altera_lnsim.sv}
+# vlog -sv -work altera_lnsim_ver {c:/altera/13.1/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 15:04:50 on Nov 14,2019
-# vlog -reportprogress 300 -sv -work altera_lnsim_ver d:/altera/13.1/quartus/eda/sim_lib/altera_lnsim.sv 
+# Start time: 18:50:42 on Nov 16,2019
+# vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/altera/13.1/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
 # -- Compiling module generic_pll
@@ -450,7 +450,7 @@
 # 	altera_pll_reconfig_tasks
 # 	altera_syncram
 # 	altera_pll
-# End time: 15:04:50 on Nov 14,2019, Elapsed time: 0:00:00
+# End time: 18:50:42 on Nov 16,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cycloneive_ver
@@ -460,10 +460,10 @@
 # Model Technology ModelSim SE-64 vmap 10.4 Lib Mapping Utility 2014.12 Dec  3 2014
 # vmap -modelsim_quiet cycloneive_ver ./verilog_libs/cycloneive_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work cycloneive_ver {d:/altera/13.1/quartus/eda/sim_lib/cycloneive_atoms.v}
+# vlog -vlog01compat -work cycloneive_ver {c:/altera/13.1/quartus/eda/sim_lib/cycloneive_atoms.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 15:04:51 on Nov 14,2019
-# vlog -reportprogress 300 -vlog01compat -work cycloneive_ver d:/altera/13.1/quartus/eda/sim_lib/cycloneive_atoms.v 
+# Start time: 18:50:42 on Nov 16,2019
+# vlog -reportprogress 300 -vlog01compat -work cycloneive_ver c:/altera/13.1/quartus/eda/sim_lib/cycloneive_atoms.v 
 # -- Compiling UDP CYCLONEIVE_PRIM_DFFE
 # -- Compiling UDP CYCLONEIVE_PRIM_DFFEAS
 # -- Compiling UDP CYCLONEIVE_PRIM_DFFEAS_HIGH
@@ -538,7 +538,7 @@
 # 	cycloneive_jtag
 # 	cycloneive_crcblock
 # 	cycloneive_oscillator
-# End time: 15:04:51 on Nov 14,2019, Elapsed time: 0:00:00
+# End time: 18:50:42 on Nov 16,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -552,39 +552,59 @@
 # 
 # vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/rtl {D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_byte.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 15:04:52 on Nov 14,2019
+# Start time: 18:50:43 on Nov 16,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/uart_rx/rtl" D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_byte.v 
 # -- Compiling module uart_rx_byte
 # 
 # Top level modules:
 # 	uart_rx_byte
-# End time: 15:04:52 on Nov 14,2019, Elapsed time: 0:00:00
+# End time: 18:50:43 on Nov 16,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/ip/issp {D:/gitwork/FPFA_EXC/uart_rx/prj/ip/issp/issp_uart_recv.v}
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:50:43 on Nov 16,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/ip/issp" D:/gitwork/FPFA_EXC/uart_rx/prj/ip/issp/issp_uart_recv.v 
+# -- Compiling module issp_uart_recv
+# 
+# Top level modules:
+# 	issp_uart_recv
+# End time: 18:50:43 on Nov 16,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/rtl {D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_top.v}
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:50:43 on Nov 16,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/uart_rx/rtl" D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_top.v 
+# -- Compiling module uart_rx_top
+# 
+# Top level modules:
+# 	uart_rx_top
+# End time: 18:50:43 on Nov 16,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench {D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench/uart_rx_byte_tb.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 15:04:52 on Nov 14,2019
+# Start time: 18:50:43 on Nov 16,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench" D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench/uart_rx_byte_tb.v 
 # -- Compiling module uart_rx_byte_tb
 # 
 # Top level modules:
 # 	uart_rx_byte_tb
-# End time: 15:04:52 on Nov 14,2019, Elapsed time: 0:00:00
+# End time: 18:50:43 on Nov 16,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench {D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench/uart_tx_byte.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 15:04:52 on Nov 14,2019
+# Start time: 18:50:43 on Nov 16,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench" D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench/uart_tx_byte.v 
 # -- Compiling module uart_tx_byte
 # 
 # Top level modules:
 # 	uart_tx_byte
-# End time: 15:04:52 on Nov 14,2019, Elapsed time: 0:00:00
+# End time: 18:50:43 on Nov 16,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  uart_rx_byte_tb
 # vsim -gui "+altera" -l msim_transcript -do "uart_rx_byte_run_msim_rtl_verilog.do" 
-# Start time: 15:04:53 on Nov 14,2019
+# Start time: 18:50:43 on Nov 16,2019
 # ** Note: (vsim-3812) Design is being optimized...
 # 
 # Loading work.uart_rx_byte_tb(fast)
@@ -598,473 +618,8 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Note: $stop    : D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench/uart_rx_byte_tb.v(55)
-#    Time: 298770 ns  Iteration: 0  Instance: /uart_rx_byte_tb
-# Break in Module uart_rx_byte_tb at D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench/uart_rx_byte_tb.v line 55
-add wave -position insertpoint sim:/uart_rx_byte_tb/u_uart_rx_byte/*
-restart
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# 
-# Loading work.uart_rx_byte_tb(fast)
-# Loading work.uart_tx_byte(fast)
-# Loading work.uart_rx_byte(fast)
-vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v
-# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 15:12:24 on Nov 14,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v 
-# -- Compiling module uart_rx_byte_tb
-# 
-# Top level modules:
-# 	uart_rx_byte_tb
-# End time: 15:12:24 on Nov 14,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-run -all
-# ** Note: $stop    : D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench/uart_rx_byte_tb.v(55)
-#    Time: 298770 ns  Iteration: 0  Instance: /uart_rx_byte_tb
-# Break in Module uart_rx_byte_tb at D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench/uart_rx_byte_tb.v line 55
-add wave -position insertpoint  \
-sim:/uart_rx_byte_tb/u_uart_rx_byte/uart_byte_r
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# 
-# Loading work.uart_rx_byte_tb(fast)
-# Loading work.uart_tx_byte(fast)
-# Loading work.uart_rx_byte(fast)
-run -all
-# ** Note: $stop    : D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v(54)
-#    Time: 298770 ns  Iteration: 0  Instance: /uart_rx_byte_tb
-# Break in Module uart_rx_byte_tb at D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v line 54
-# Causality operation skipped due to absence of debug database file
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-restart
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# 
-# Loading work.uart_rx_byte_tb(fast)
-# Loading work.uart_tx_byte(fast)
-# Loading work.uart_rx_byte(fast)
-run -all
-# ** Note: $stop    : D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v(54)
-#    Time: 298770 ns  Iteration: 0  Instance: /uart_rx_byte_tb
-# Break in Module uart_rx_byte_tb at D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v line 54
-vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_byte.v
-# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 15:40:53 on Nov 14,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_byte.v 
-# -- Compiling module uart_rx_byte
-# 
-# Top level modules:
-# 	uart_rx_byte
-# End time: 15:40:53 on Nov 14,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# 
-# Loading work.uart_rx_byte_tb(fast)
-# Loading work.uart_tx_byte(fast)
-# Loading work.uart_rx_byte(fast)
-run -all
-# ** Note: $stop    : D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v(54)
-#    Time: 298770 ns  Iteration: 0  Instance: /uart_rx_byte_tb
-# Break in Module uart_rx_byte_tb at D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v line 54
-vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_byte.v
-# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 15:56:18 on Nov 14,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_byte.v 
-# -- Compiling module uart_rx_byte
-# 
-# Top level modules:
-# 	uart_rx_byte
-# End time: 15:56:18 on Nov 14,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# 
-# Loading work.uart_rx_byte_tb(fast)
-# Loading work.uart_tx_byte(fast)
-# Loading work.uart_rx_byte(fast)
-run -all
-# ** Note: $stop    : D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v(54)
-#    Time: 298770 ns  Iteration: 0  Instance: /uart_rx_byte_tb
-# Break in Module uart_rx_byte_tb at D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v line 54
-add wave -position insertpoint  \
-sim:/uart_rx_byte_tb/u_uart_rx_byte/uart_rx_byte_temp
-vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v
-# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 16:00:10 on Nov 14,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v 
-# -- Compiling module uart_rx_byte_tb
-# 
-# Top level modules:
-# 	uart_rx_byte_tb
-# End time: 16:00:10 on Nov 14,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# 
-# Loading work.uart_rx_byte_tb(fast)
-# Loading work.uart_tx_byte(fast)
-# Loading work.uart_rx_byte(fast)
-run -all
-# ** Note: $stop    : D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v(54)
-#    Time: 595770 ns  Iteration: 0  Instance: /uart_rx_byte_tb
-# Break in Module uart_rx_byte_tb at D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v line 54
-vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_byte.v
-# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 16:02:37 on Nov 14,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_byte.v 
-# -- Compiling module uart_rx_byte
-# 
-# Top level modules:
-# 	uart_rx_byte
-# End time: 16:02:37 on Nov 14,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v
-# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 16:02:37 on Nov 14,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v 
-# -- Compiling module uart_rx_byte_tb
-# 
-# Top level modules:
-# 	uart_rx_byte_tb
-# End time: 16:02:37 on Nov 14,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# 
-# Loading work.uart_rx_byte_tb(fast)
-# Loading work.uart_tx_byte(fast)
-# Loading work.uart_rx_byte(fast)
-run -all
-# ** Note: $stop    : D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v(54)
-#    Time: 595770 ns  Iteration: 0  Instance: /uart_rx_byte_tb
-# Break in Module uart_rx_byte_tb at D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v line 54
-vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_byte.v
-# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 16:03:41 on Nov 14,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_byte.v 
-# -- Compiling module uart_rx_byte
-# 
-# Top level modules:
-# 	uart_rx_byte
-# End time: 16:03:41 on Nov 14,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v
-# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 16:03:41 on Nov 14,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v 
-# -- Compiling module uart_rx_byte_tb
-# 
-# Top level modules:
-# 	uart_rx_byte_tb
-# End time: 16:03:41 on Nov 14,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# 
-# Loading work.uart_rx_byte_tb(fast)
-# Loading work.uart_tx_byte(fast)
-# Loading work.uart_rx_byte(fast)
-run -all
-# ** Note: $stop    : D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v(54)
-#    Time: 595770 ns  Iteration: 0  Instance: /uart_rx_byte_tb
-# Break in Module uart_rx_byte_tb at D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v line 54
-vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_byte.v
-# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 16:05:19 on Nov 14,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_byte.v 
-# -- Compiling module uart_rx_byte
-# 
-# Top level modules:
-# 	uart_rx_byte
-# End time: 16:05:19 on Nov 14,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v
-# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 16:05:19 on Nov 14,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v 
-# -- Compiling module uart_rx_byte_tb
-# 
-# Top level modules:
-# 	uart_rx_byte_tb
-# End time: 16:05:19 on Nov 14,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# 
-# Loading work.uart_rx_byte_tb(fast)
-# Loading work.uart_tx_byte(fast)
-# Loading work.uart_rx_byte(fast)
-run -all
-# ** Note: $stop    : D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v(54)
-#    Time: 595770 ns  Iteration: 0  Instance: /uart_rx_byte_tb
-# Break in Module uart_rx_byte_tb at D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v line 54
-vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_byte.v
-# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 16:08:15 on Nov 14,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_byte.v 
-# -- Compiling module uart_rx_byte
-# 
-# Top level modules:
-# 	uart_rx_byte
-# End time: 16:08:15 on Nov 14,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v
-# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 16:08:15 on Nov 14,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v 
-# -- Compiling module uart_rx_byte_tb
-# 
-# Top level modules:
-# 	uart_rx_byte_tb
-# End time: 16:08:15 on Nov 14,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# 
-# Loading work.uart_rx_byte_tb(fast)
-# Loading work.uart_tx_byte(fast)
-# Loading work.uart_rx_byte(fast)
-run -all
-# ** Note: $stop    : D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v(54)
-#    Time: 595770 ns  Iteration: 0  Instance: /uart_rx_byte_tb
-# Break in Module uart_rx_byte_tb at D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v line 54
-vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_byte.v
-# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 16:19:55 on Nov 14,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_byte.v 
-# -- Compiling module uart_rx_byte
-# 
-# Top level modules:
-# 	uart_rx_byte
-# End time: 16:19:55 on Nov 14,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v
-# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 16:19:55 on Nov 14,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v 
-# -- Compiling module uart_rx_byte_tb
-# 
-# Top level modules:
-# 	uart_rx_byte_tb
-# End time: 16:19:55 on Nov 14,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# 
-# Loading work.uart_rx_byte_tb(fast)
-# Loading work.uart_tx_byte(fast)
-# Loading work.uart_rx_byte(fast)
-# Warning in wave window restart: (vish-4014) No objects found matching '/uart_rx_byte_tb/u_uart_rx_byte/uart_rx_byte_temp'. 
-run -all
-# ** Note: $stop    : D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v(54)
-#    Time: 595770 ns  Iteration: 0  Instance: /uart_rx_byte_tb
-# Break in Module uart_rx_byte_tb at D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v line 54
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_byte.v
-# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 16:24:21 on Nov 14,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/rtl/uart_rx_byte.v 
-# -- Compiling module uart_rx_byte
-# 
-# Top level modules:
-# 	uart_rx_byte
-# End time: 16:24:21 on Nov 14,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v
-# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 16:24:21 on Nov 14,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v 
-# -- Compiling module uart_rx_byte_tb
-# 
-# Top level modules:
-# 	uart_rx_byte_tb
-# End time: 16:24:22 on Nov 14,2019, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# 
-# Loading work.uart_rx_byte_tb(fast)
-# Loading work.uart_tx_byte(fast)
-# Loading work.uart_rx_byte(fast)
-run -all
-# ** Note: $stop    : D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v(60)
+# ** Note: $stop    : D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench/uart_rx_byte_tb.v(60)
 #    Time: 694290 ns  Iteration: 0  Instance: /uart_rx_byte_tb
-# Break in Module uart_rx_byte_tb at D:/gitwork/FPFA_EXC/uart_rx/testbench/uart_rx_byte_tb.v line 60
-# End time: 16:49:12 on Nov 14,2019, Elapsed time: 1:44:19
-# Errors: 179, Warnings: 1
+# Break in Module uart_rx_byte_tb at D:/gitwork/FPFA_EXC/uart_rx/prj/../testbench/uart_rx_byte_tb.v line 60
+# End time: 19:00:46 on Nov 16,2019, Elapsed time: 0:10:03
+# Errors: 0, Warnings: 0
