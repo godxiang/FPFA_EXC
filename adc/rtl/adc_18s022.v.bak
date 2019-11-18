@@ -1,0 +1,13 @@
+
+/**********************************************************\
+	Filename		:	 adc_18s022.v
+	Author  	   :   eric_xiang
+	Description :   adc18s022 drive source code
+	Revision		:   2019-11-18
+	Company		:   personal
+\**********************************************************/
+
+module adc_18s022();
+
+endmodule
+
