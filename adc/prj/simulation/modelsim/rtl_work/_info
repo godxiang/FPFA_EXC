@@ -1,0 +1,60 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/gitwork/FPFA_EXC/adc/prj/simulation/modelsim
+T_opt
+!s110 1574326214
+VHgBFzZd2ZXngSTU@^=lB]2
+04 13 4 work adc_18s022_tb fast 0
+=7-acb57d41bd53-5dd64fc6-25d-1ed4
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+n@_opt
+OL;O;10.4;61
+vadc_18s022
+Z1 !s110 1574326211
+!i10b 1
+!s100 1=F:YK337kW>5^z4m09JT0
+I?MH1=0@<MGDWfiCHNGQ:h2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1574326184
+8D:/gitwork/FPFA_EXC/adc/rtl/adc_18s022.v
+FD:/gitwork/FPFA_EXC/adc/rtl/adc_18s022.v
+L0 10
+Z3 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1574326211.733000
+!s107 D:/gitwork/FPFA_EXC/adc/rtl/adc_18s022.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/gitwork/FPFA_EXC/adc/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/gitwork/FPFA_EXC/adc/rtl/adc_18s022.v|
+!i113 0
+Z4 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/adc/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vadc_18s022_tb
+R1
+!i10b 1
+!s100 ^M:iTHgX]2cHNPncOT:0O3
+IUF=M4_>DXRl[TDEj5gbT?3
+R2
+R0
+w1574323858
+8D:/gitwork/FPFA_EXC/adc/testbench/adc_18s022_tb.v
+FD:/gitwork/FPFA_EXC/adc/testbench/adc_18s022_tb.v
+L0 6
+R3
+r1
+!s85 0
+31
+!s108 1574326211.824000
+!s107 D:/gitwork/FPFA_EXC/adc/testbench/adc_18s022_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/gitwork/FPFA_EXC/adc/prj/../testbench|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/gitwork/FPFA_EXC/adc/testbench/adc_18s022_tb.v|
+!i113 0
+R4
+!s92 -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/adc/prj/../testbench -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact

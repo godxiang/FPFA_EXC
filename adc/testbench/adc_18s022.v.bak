@@ -1,0 +1,15 @@
+
+`timesacle 1ns/1ns
+
+`defien Clk_period 20
+
+module adc_18s022_tb;
+
+
+
+
+
+endmodule
+
+
+
