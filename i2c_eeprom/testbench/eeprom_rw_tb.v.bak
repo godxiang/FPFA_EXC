@@ -1,0 +1,12 @@
+`timescale 1ns/1ns
+
+`define clk_period 20
+
+module eeprom_rw_tb();
+
+
+
+
+
+
+endmodule

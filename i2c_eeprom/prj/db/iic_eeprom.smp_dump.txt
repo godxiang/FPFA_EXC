@@ -1,0 +1,11 @@
+
+State Machine - |eeprom_rw|iic_drv:u_iic_drv|cur_state
+Name cur_state.ST_DONE cur_state.ST_RDDATA cur_state.ST_RDADDR cur_state.ST_WRDATA cur_state.ST_DEV8ADDR cur_state.ST_DEV16ADDR cur_state.ST_SLADDR cur_state.ST_IDLE 
+cur_state.ST_IDLE 0 0 0 0 0 0 0 0 
+cur_state.ST_SLADDR 0 0 0 0 0 0 1 1 
+cur_state.ST_DEV16ADDR 0 0 0 0 0 1 0 1 
+cur_state.ST_DEV8ADDR 0 0 0 0 1 0 0 1 
+cur_state.ST_WRDATA 0 0 0 1 0 0 0 1 
+cur_state.ST_RDADDR 0 0 1 0 0 0 0 1 
+cur_state.ST_RDDATA 0 1 0 0 0 0 0 1 
+cur_state.ST_DONE 1 0 0 0 0 0 0 1 

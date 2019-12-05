@@ -1,0 +1,131 @@
+Flow report for iic_eeprom
+Thu Dec 05 11:55:18 2019
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Thu Dec 05 11:55:18 2019       ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
+; Revision Name                      ; iic_eeprom                                  ;
+; Top-level Entity Name              ; eeprom_rw                                   ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE10F17C8                                ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 132                                         ;
+;     Total combinational functions  ; 132                                         ;
+;     Dedicated logic registers      ; 39                                          ;
+; Total registers                    ; 39                                          ;
+; Total pins                         ; 40                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 12/05/2019 11:55:16 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; iic_eeprom          ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                            ;
++--------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
++--------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 52848292155467.157551811500720        ; --            ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; iic_drv_tb     ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; eeprom_rw_tb   ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; eeprom_rw_tb                          ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim (Verilog)                    ; <None>        ; --          ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; ../testbench/iic_drv_tb.v             ; --            ; --          ; iic_drv_tb     ;
+; EDA_TEST_BENCH_FILE                  ; ../testbench/eeprom_rw_tb.v           ; --            ; --          ; eeprom_rw_tb   ;
+; EDA_TEST_BENCH_FILE                  ; ../testbench/24LC64.v                 ; --            ; --          ; eeprom_rw_tb   ;
+; EDA_TEST_BENCH_MODULE_NAME           ; iic_drv_tb                            ; --            ; --          ; iic_drv_tb     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; eeprom_rw_tb                          ; --            ; --          ; eeprom_rw_tb   ;
+; EDA_TEST_BENCH_NAME                  ; iic_drv_tb                            ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; eeprom_rw_tb                          ; --            ; --          ; eda_simulation ;
+; EDA_TIME_SCALE                       ; 1 ps                                  ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                    ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                     ; --            ; --          ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE          ; 1.2V                                  ; --            ; --          ; --             ;
+; PARTITION_COLOR                      ; 16764057                              ; --            ; eeprom_rw   ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --            ; eeprom_rw   ; Top            ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --            ; eeprom_rw   ; Top            ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                          ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                     ; eeprom_rw                             ; iic_eeprom    ; --          ; --             ;
++--------------------------------------+---------------------------------------+---------------+-------------+----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:03     ; 1.0                     ; 468 MB              ; 00:00:03                           ;
+; Total                ; 00:00:03     ; --                      ; --                  ; 00:00:03                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Flow OS Summary                                                                   ;
++----------------------+------------------+-----------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++----------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis ; G7BYPV26VAPGVNK  ; Windows 7 ; 6.1        ; x86_64         ;
++----------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off iic_eeprom -c iic_eeprom
+
+
+

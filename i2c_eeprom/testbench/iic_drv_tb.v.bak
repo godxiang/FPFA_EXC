@@ -1,0 +1,49 @@
+`timescale 1ns/1ns
+
+`define clk_period 20
+
+module iic_drv_tb();
+
+reg  Clk;								// 输入时钟 50MHZ
+reg  Rst_n;								// 外部复位信号
+reg  IIC_en;							// IIC 使能信号
+reg  [6:0]IIC_slave_addr;			// IIC从机地址
+reg  [15:0]IIC_dev_addr;			// IIC设备内地址
+reg  IIC_bit_sel;						// IIC设备内地址位选择  8/16  0:8  1:16
+reg  IIC_rh_wl;						// IIC读写控制位 0：读 1：写
+reg  [7:0]IIC_write_data;			// IIC写入的数据
+
+wire [7:0]IIC_read_data;			// IIC读出的数据
+wire IIC_done;							// IIC读取结束信号
+wire IIC_SCL;							// IIC时钟线  
+ 
+wire IIC_SDA;						   // IIC数据线 双向
+
+
+
+iic_drv u_iic_drv(
+	.Clk(),
+	.Rst_n(),
+
+	.IIC_en(),
+	.IIC_done(),
+
+	.IIC_slave_addr(),
+	.IIC_dev_addr(),
+	.IIC_bit_sel(),
+
+	.IIC_rh_wl(),
+	.IIC_write_data(),
+	.IIC_read_data(),
+
+	.IIC_SCL(),
+	.IIC_SDA(),
+
+);
+
+
+
+endmodule
+
+
+

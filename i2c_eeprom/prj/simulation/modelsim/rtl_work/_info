@@ -1,0 +1,103 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/gitwork/FPFA_EXC/i2c_eeprom/prj/simulation/modelsim
+T_opt
+Z1 !s110 1575534029
+VPWo@PH[W08nR0nz@IOZCa1
+04 12 4 work eeprom_rw_tb fast 0
+=1-acb57d41bd53-5de8bdcd-1ae-1c78
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+n@_opt
+OL;O;10.4;61
+veeprom_rw
+Z2 !s110 1575534028
+!i10b 1
+!s100 g:R`al:]`LGX3fSo3lagi2
+I73FPM?AH140=VfFL?Jc9Y2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1575449307
+8D:/gitwork/FPFA_EXC/i2c_eeprom/rtl/eeprom_rw.v
+FD:/gitwork/FPFA_EXC/i2c_eeprom/rtl/eeprom_rw.v
+L0 2
+Z4 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1575534028.746000
+!s107 D:/gitwork/FPFA_EXC/i2c_eeprom/rtl/eeprom_rw.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/gitwork/FPFA_EXC/i2c_eeprom/rtl|D:/gitwork/FPFA_EXC/i2c_eeprom/rtl/eeprom_rw.v|
+!i113 0
+Z5 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 !s92 -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/i2c_eeprom/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+veeprom_rw_tb
+R2
+!i10b 1
+!s100 1koffCZQj6d>nk8oBLkJU0
+IJ35UHeC6dnOm;O4R3mGWN3
+R3
+R0
+w1575532739
+8D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench/eeprom_rw_tb.v
+FD:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench/eeprom_rw_tb.v
+L0 5
+R4
+r1
+!s85 0
+31
+!s108 1575534028.986000
+!s107 D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench/eeprom_rw_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench|D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench/eeprom_rw_tb.v|
+!i113 0
+R5
+Z7 !s92 -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+viic_drv
+R2
+!i10b 1
+!s100 m_`ojOP6R8A5gW?za=Xm>2
+ITd7z]3?`S]>N?XM5YLW@20
+R3
+R0
+w1575514269
+8D:/gitwork/FPFA_EXC/i2c_eeprom/rtl/iic_drv.v
+FD:/gitwork/FPFA_EXC/i2c_eeprom/rtl/iic_drv.v
+L0 2
+R4
+r1
+!s85 0
+31
+!s108 1575534028.854000
+!s107 D:/gitwork/FPFA_EXC/i2c_eeprom/rtl/iic_drv.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/gitwork/FPFA_EXC/i2c_eeprom/rtl|D:/gitwork/FPFA_EXC/i2c_eeprom/rtl/iic_drv.v|
+!i113 0
+R5
+R6
+vM24LC64
+R1
+!i10b 1
+!s100 ifDmF;zT8aEo`Ug<`SgW=2
+IaN>GDj^D`^[>ZFkU3hBQ80
+R3
+R0
+w1233738672
+8D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench/24LC64.v
+FD:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench/24LC64.v
+L0 87
+R4
+r1
+!s85 0
+31
+!s108 1575534029.077000
+!s107 D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench/24LC64.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench|D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench/24LC64.v|
+!i113 0
+R5
+R7
+n@m24@l@c64
