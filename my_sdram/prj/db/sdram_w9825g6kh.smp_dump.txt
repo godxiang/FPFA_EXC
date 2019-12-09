@@ -1,0 +1,11 @@
+
+State Machine - |sdram_w9825g6kh|st_init
+Name st_init.INIT_DONE st_init.INIT_AF_DELAY st_init.INIT_AF st_init.INIT_SMR_DELAY st_init.INIT_SMR st_init.INIT_PRE_DELAY st_init.INIT_PRE st_init.INIT_200US_PAUSE 
+st_init.INIT_200US_PAUSE 0 0 0 0 0 0 0 0 
+st_init.INIT_PRE 0 0 0 0 0 0 1 1 
+st_init.INIT_PRE_DELAY 0 0 0 0 0 1 0 1 
+st_init.INIT_SMR 0 0 0 0 1 0 0 1 
+st_init.INIT_SMR_DELAY 0 0 0 1 0 0 0 1 
+st_init.INIT_AF 0 0 1 0 0 0 0 1 
+st_init.INIT_AF_DELAY 0 1 0 0 0 0 0 1 
+st_init.INIT_DONE 1 0 0 0 0 0 0 1 

@@ -310,10 +310,8 @@ always @(posedge Scl4x or negedge Rst_n) begin
 			end
 			ST_RDADDR: begin
 				case(scl4x_cnt)
-					8'd0: begin
-							sda_dir <= 1'b1;
-							IIC_SCL <= 1'b1;    
-					end
+					8'd0: sda_dir <= 1'b1;
+					8'd1:	IIC_SCL <= 1'b1;    
 					8'd3: sda_out <= 1'b0;
 					8'd5,8'd9,8'd13,8'd17,8'd21,8'd25,8'd29,8'd33,8'd37:  IIC_SCL <= 1'b0;
 					8'd7,8'd11,8'd15,8'd19,8'd23,8'd27,8'd31,8'd35,8'd39: IIC_SCL <= 1'b1;

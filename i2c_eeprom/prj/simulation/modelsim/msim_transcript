@@ -30,7 +30,7 @@
 #          Updated modelsim.ini.
 # vlog -vlog01compat -work altera_ver {d:/altera/13.1/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 16:20:22 on Dec 05,2019
+# Start time: 09:49:49 on Dec 06,2019
 # vlog -reportprogress 300 -vlog01compat -work altera_ver d:/altera/13.1/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -108,7 +108,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 16:20:22 on Dec 05,2019, Elapsed time: 0:00:00
+# End time: 09:49:49 on Dec 06,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -120,7 +120,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {d:/altera/13.1/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 16:20:23 on Dec 05,2019
+# Start time: 09:49:49 on Dec 06,2019
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver d:/altera/13.1/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -184,7 +184,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 16:20:23 on Dec 05,2019, Elapsed time: 0:00:00
+# End time: 09:49:50 on Dec 06,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -196,7 +196,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {d:/altera/13.1/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 16:20:24 on Dec 05,2019
+# Start time: 09:49:50 on Dec 06,2019
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver d:/altera/13.1/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -238,7 +238,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 16:20:24 on Dec 05,2019, Elapsed time: 0:00:00
+# End time: 09:49:51 on Dec 06,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -250,7 +250,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {d:/altera/13.1/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 16:20:24 on Dec 05,2019
+# Start time: 09:49:51 on Dec 06,2019
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver d:/altera/13.1/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -375,7 +375,7 @@
 # 	altserial_flash_loader
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 16:20:25 on Dec 05,2019, Elapsed time: 0:00:01
+# End time: 09:49:52 on Dec 06,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -387,7 +387,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {d:/altera/13.1/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 16:20:26 on Dec 05,2019
+# Start time: 09:49:53 on Dec 06,2019
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver d:/altera/13.1/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -450,7 +450,7 @@
 # 	altera_pll_reconfig_tasks
 # 	altera_syncram
 # 	altera_pll
-# End time: 16:20:27 on Dec 05,2019, Elapsed time: 0:00:01
+# End time: 09:49:53 on Dec 06,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cycloneive_ver
@@ -462,7 +462,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cycloneive_ver {d:/altera/13.1/quartus/eda/sim_lib/cycloneive_atoms.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 16:20:27 on Dec 05,2019
+# Start time: 09:49:54 on Dec 06,2019
 # vlog -reportprogress 300 -vlog01compat -work cycloneive_ver d:/altera/13.1/quartus/eda/sim_lib/cycloneive_atoms.v 
 # -- Compiling UDP CYCLONEIVE_PRIM_DFFE
 # -- Compiling UDP CYCLONEIVE_PRIM_DFFEAS
@@ -538,7 +538,7 @@
 # 	cycloneive_jtag
 # 	cycloneive_crcblock
 # 	cycloneive_oscillator
-# End time: 16:20:27 on Dec 05,2019, Elapsed time: 0:00:00
+# End time: 09:49:54 on Dec 06,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -552,49 +552,49 @@
 # 
 # vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/i2c_eeprom/rtl {D:/gitwork/FPFA_EXC/i2c_eeprom/rtl/eeprom_rw.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 16:20:28 on Dec 05,2019
+# Start time: 09:49:54 on Dec 06,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/i2c_eeprom/rtl" D:/gitwork/FPFA_EXC/i2c_eeprom/rtl/eeprom_rw.v 
 # -- Compiling module eeprom_rw
 # 
 # Top level modules:
 # 	eeprom_rw
-# End time: 16:20:28 on Dec 05,2019, Elapsed time: 0:00:00
+# End time: 09:49:55 on Dec 06,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/i2c_eeprom/rtl {D:/gitwork/FPFA_EXC/i2c_eeprom/rtl/iic_drv.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 16:20:28 on Dec 05,2019
+# Start time: 09:49:55 on Dec 06,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/i2c_eeprom/rtl" D:/gitwork/FPFA_EXC/i2c_eeprom/rtl/iic_drv.v 
 # -- Compiling module iic_drv
 # 
 # Top level modules:
 # 	iic_drv
-# End time: 16:20:28 on Dec 05,2019, Elapsed time: 0:00:00
+# End time: 09:49:55 on Dec 06,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench {D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench/eeprom_rw_tb.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 16:20:28 on Dec 05,2019
+# Start time: 09:49:55 on Dec 06,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench" D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench/eeprom_rw_tb.v 
 # -- Compiling module eeprom_rw_tb
 # 
 # Top level modules:
 # 	eeprom_rw_tb
-# End time: 16:20:28 on Dec 05,2019, Elapsed time: 0:00:00
+# End time: 09:49:55 on Dec 06,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench {D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench/24LC64.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 16:20:29 on Dec 05,2019
+# Start time: 09:49:55 on Dec 06,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench" D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench/24LC64.v 
 # -- Compiling module M24LC64
 # 
 # Top level modules:
 # 	M24LC64
-# End time: 16:20:29 on Dec 05,2019, Elapsed time: 0:00:00
+# End time: 09:49:55 on Dec 06,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  eeprom_rw_tb
 # vsim -gui "+altera" -l msim_transcript -do "iic_eeprom_run_msim_rtl_verilog.do" 
-# Start time: 16:20:29 on Dec 05,2019
+# Start time: 09:49:55 on Dec 06,2019
 # ** Note: (vsim-3812) Design is being optimized...
 # 
 # ** Note: (vopt-143) Recognized 1 FSM in module "iic_drv(fast)".
@@ -620,24 +620,58 @@
 # ** Note: $stop    : D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench/eeprom_rw_tb.v(69)
 #    Time: 1243190 ns  Iteration: 0  Instance: /eeprom_rw_tb
 # Break in Module eeprom_rw_tb at D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench/eeprom_rw_tb.v line 69
-add wave -position insertpoint sim:/eeprom_rw_tb/u_eeprom_rw/u_iic_drv/*
+vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/i2c_eeprom/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/i2c_eeprom/rtl/eeprom_rw.v
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 09:56:48 on Dec 06,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/i2c_eeprom/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/i2c_eeprom/rtl/eeprom_rw.v 
+# -- Compiling module eeprom_rw
+# 
+# Top level modules:
+# 	eeprom_rw
+# End time: 09:56:48 on Dec 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/i2c_eeprom/testbench/eeprom_rw_tb.v
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 09:56:48 on Dec 06,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/i2c_eeprom/testbench/eeprom_rw_tb.v 
+# -- Compiling module eeprom_rw_tb
+# 
+# Top level modules:
+# 	eeprom_rw_tb
+# End time: 09:56:48 on Dec 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/i2c_eeprom/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/i2c_eeprom/rtl/iic_drv.v
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 09:56:48 on Dec 06,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/i2c_eeprom/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/i2c_eeprom/rtl/iic_drv.v 
+# -- Compiling module iic_drv
+# 
+# Top level modules:
+# 	iic_drv
+# End time: 09:56:48 on Dec 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/i2c_eeprom/testbench/24LC64.v
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 09:56:48 on Dec 06,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/gitwork/FPFA_EXC/i2c_eeprom/testbench/24LC64.v 
+# -- Compiling module M24LC64
+# 
+# Top level modules:
+# 	M24LC64
+# End time: 09:56:48 on Dec 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 restart
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "iic_drv(fast)".
 # 
 # Loading work.eeprom_rw_tb(fast)
 # Loading work.eeprom_rw(fast)
 # Loading work.iic_drv(fast)
 # Loading work.M24LC64(fast)
 run -all
-# ** Error: D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench/24LC64.v(520): $width( negedge SCL:671190 ns, :672190 ns, 1300 ns );
-#    Time: 672190 ns  Iteration: 3  Instance: /eeprom_rw_tb/u_M24LC64
-# ** Error: D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench/24LC64.v(520): $width( negedge SCL:898190 ns, :899190 ns, 1300 ns );
-#    Time: 899190 ns  Iteration: 3  Instance: /eeprom_rw_tb/u_M24LC64
-# ** Error: D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench/24LC64.v(520): $width( negedge SCL:1125190 ns, :1126190 ns, 1300 ns );
-#    Time: 1126190 ns  Iteration: 3  Instance: /eeprom_rw_tb/u_M24LC64
-# ** Note: $stop    : D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench/eeprom_rw_tb.v(69)
+# ** Note: $stop    : D:/gitwork/FPFA_EXC/i2c_eeprom/testbench/eeprom_rw_tb.v(69)
 #    Time: 1243190 ns  Iteration: 0  Instance: /eeprom_rw_tb
-# Break in Module eeprom_rw_tb at D:/gitwork/FPFA_EXC/i2c_eeprom/prj/../testbench/eeprom_rw_tb.v line 69
-add wave -position insertpoint sim:/eeprom_rw_tb/u_M24LC64/*
-# End time: 16:33:51 on Dec 05,2019, Elapsed time: 0:13:22
-# Errors: 6, Warnings: 0
+# Break in Module eeprom_rw_tb at D:/gitwork/FPFA_EXC/i2c_eeprom/testbench/eeprom_rw_tb.v line 69
+# End time: 09:59:22 on Dec 06,2019, Elapsed time: 0:09:27
+# Errors: 3, Warnings: 0
