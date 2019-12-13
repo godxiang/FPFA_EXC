@@ -1,1 +1,4 @@
-Info (10281): Verilog HDL Declaration information at sdram_w9825g6kh.v(41): object "INIT_200US" differs only in case from object "init_200us" in the same scope
+Warning (10273): Verilog HDL warning at sdr.v(971): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at sdr.v(974): extended using "x" or "z"
+Warning (10268): Verilog HDL information at sdr.v(187): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at sdram_w9825g6kh.v(44): object "INIT_200US" differs only in case from object "init_200us" in the same scope

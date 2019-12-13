@@ -1,0 +1,82 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/gitwork/FPFA_EXC/my_sdram/prj/simulation/modelsim
+T_opt
+!s110 1575946001
+VLB8MlZ4fi98MCDPE][RbT0
+04 13 4 work sdram_init_tb fast 0
+=5-acb57d41bd53-5def0710-370-203c
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+n@_opt
+OL;O;10.4;61
+vsdr
+Z1 !s110 1575945993
+!i10b 1
+!s100 <hH^Tz5YEEz6h^U`^ehgP2
+IHP2T992jWB51;Ga9a9z`[3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1529541570
+8D:/gitwork/FPFA_EXC/my_sdram/testbench/sdr.v
+FD:/gitwork/FPFA_EXC/my_sdram/testbench/sdr.v
+Fsdr_parameters.h
+L0 48
+Z3 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1575945993.476000
+!s107 sdr_parameters.h|D:/gitwork/FPFA_EXC/my_sdram/testbench/sdr.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/gitwork/FPFA_EXC/my_sdram/prj/../testbench|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/gitwork/FPFA_EXC/my_sdram/testbench/sdr.v|
+!i113 0
+Z4 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z5 !s92 -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/my_sdram/prj/../testbench -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vsdram_init_tb
+R1
+!i10b 1
+!s100 DffVMgJf0261V6D3MzYVU3
+I]Cakjb6o61:WNT1[Ua=mD2
+R2
+R0
+w1575945015
+8D:/gitwork/FPFA_EXC/my_sdram/testbench/sdram_init_tb.v
+FD:/gitwork/FPFA_EXC/my_sdram/testbench/sdram_init_tb.v
+L0 6
+R3
+r1
+!s85 0
+31
+!s108 1575945993.639000
+!s107 D:/gitwork/FPFA_EXC/my_sdram/testbench/sdram_init_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/gitwork/FPFA_EXC/my_sdram/prj/../testbench|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/gitwork/FPFA_EXC/my_sdram/testbench/sdram_init_tb.v|
+!i113 0
+R4
+R5
+vsdram_w9825g6kh
+R1
+!i10b 1
+!s100 V@RnWe<=3blFJe]QSZE_31
+I6QJhaz^?gj9G8`NP;2lH00
+R2
+R0
+w1575945990
+8D:/gitwork/FPFA_EXC/my_sdram/rtl/sdram_w9825g6kh.v
+FD:/gitwork/FPFA_EXC/my_sdram/rtl/sdram_w9825g6kh.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1575945993.756000
+!s107 D:/gitwork/FPFA_EXC/my_sdram/rtl/sdram_w9825g6kh.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/gitwork/FPFA_EXC/my_sdram/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/gitwork/FPFA_EXC/my_sdram/rtl/sdram_w9825g6kh.v|
+!i113 0
+R4
+!s92 -vlog01compat -work work +incdir+D:/gitwork/FPFA_EXC/my_sdram/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact

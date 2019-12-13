@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sdram_w9825g6kh
-Mon Dec 09 17:35:16 2019
+Tue Dec 10 10:20:43 2019
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -47,7 +47,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Dec 09 17:35:16 2019       ;
+; Analysis & Synthesis Status        ; Successful - Tue Dec 10 10:20:43 2019       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; sdram_w9825g6kh                             ;
 ; Top-level Entity Name              ; sdram_w9825g6kh                             ;
@@ -56,7 +56,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 63                                          ;
 ;     Dedicated logic registers      ; 44                                          ;
 ; Total registers                    ; 44                                          ;
-; Total pins                         ; 41                                          ;
+; Total pins                         ; 42                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -186,9 +186,9 @@ applicable agreement for further details.
 ;                                             ;               ;
 ; Total combinational functions               ; 63            ;
 ; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 23            ;
-;     -- 3 input functions                    ; 11            ;
-;     -- <=2 input functions                  ; 29            ;
+;     -- 4 input functions                    ; 22            ;
+;     -- 3 input functions                    ; 13            ;
+;     -- <=2 input functions                  ; 28            ;
 ;                                             ;               ;
 ; Logic elements by mode                      ;               ;
 ;     -- normal mode                          ; 40            ;
@@ -198,12 +198,12 @@ applicable agreement for further details.
 ;     -- Dedicated logic registers            ; 44            ;
 ;     -- I/O registers                        ; 0             ;
 ;                                             ;               ;
-; I/O pins                                    ; 41            ;
+; I/O pins                                    ; 42            ;
 ; Embedded Multiplier 9-bit elements          ; 0             ;
 ; Maximum fan-out node                        ; REF_CLK~input ;
 ; Maximum fan-out                             ; 44            ;
-; Total fan-out                               ; 395           ;
-; Average fan-out                             ; 2.09          ;
+; Total fan-out                               ; 397           ;
+; Average fan-out                             ; 2.08          ;
 +---------------------------------------------+---------------+
 
 
@@ -212,7 +212,7 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |sdram_w9825g6kh           ; 63 (63)           ; 44 (44)      ; 0           ; 0            ; 0       ; 0         ; 41   ; 0            ; |sdram_w9825g6kh    ; work         ;
+; |sdram_w9825g6kh           ; 63 (63)           ; 44 (44)      ; 0           ; 0            ; 0       ; 0         ; 42   ; 0            ; |sdram_w9825g6kh    ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -335,18 +335,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Mon Dec 09 17:35:08 2019
+    Info: Processing started: Tue Dec 10 10:20:36 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sdram_w9825g6kh -c sdram_w9825g6kh
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
+Info (12021): Found 1 design units, including 1 entities, in source file /gitwork/fpfa_exc/my_sdram/testbench/sdr.v
+    Info (12023): Found entity 1: sdr
 Info (12021): Found 1 design units, including 1 entities, in source file /gitwork/fpfa_exc/my_sdram/rtl/sdram_w9825g6kh.v
     Info (12023): Found entity 1: sdram_w9825g6kh
+Warning (10275): Verilog HDL Module Instantiation warning at sdram_init_tb.v(62): ignored dangling comma in List of Port Connections
+Warning (10275): Verilog HDL Module Instantiation warning at sdram_init_tb.v(76): ignored dangling comma in List of Port Connections
+Info (12021): Found 1 design units, including 1 entities, in source file /gitwork/fpfa_exc/my_sdram/testbench/sdram_init_tb.v
+    Info (12023): Found entity 1: sdram_init_tb
 Info (12127): Elaborating entity "sdram_w9825g6kh" for the top level hierarchy
-Warning (10240): Verilog HDL Always Construct warning at sdram_w9825g6kh.v(162): inferring latch(es) for variable "cnt_rst", which holds its previous value in one or more paths through the always construct
-Info (10264): Verilog HDL Case Statement information at sdram_w9825g6kh.v(200): all case item expressions in this case statement are onehot
-Warning (10034): Output port "DQM" at sdram_w9825g6kh.v(33) has no driver
-Warning (10034): Output port "DQ" at sdram_w9825g6kh.v(34) has no driver
-Warning (10034): Output port "CLK" at sdram_w9825g6kh.v(25) has no driver
-Info (10041): Inferred latch for "cnt_rst" at sdram_w9825g6kh.v(162)
+Warning (10240): Verilog HDL Always Construct warning at sdram_w9825g6kh.v(168): inferring latch(es) for variable "cnt_rst", which holds its previous value in one or more paths through the always construct
+Info (10264): Verilog HDL Case Statement information at sdram_w9825g6kh.v(206): all case item expressions in this case statement are onehot
+Warning (10034): Output port "DQM" at sdram_w9825g6kh.v(36) has no driver
+Warning (10034): Output port "DQ" at sdram_w9825g6kh.v(37) has no driver
+Warning (10034): Output port "CLK" at sdram_w9825g6kh.v(28) has no driver
+Info (10041): Inferred latch for "cnt_rst" at sdram_w9825g6kh.v(168)
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
@@ -379,14 +385,14 @@ Info (17049): 4 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file D:/gitwork/FPFA_EXC/my_sdram/prj/output_files/sdram_w9825g6kh.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 107 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 109 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 39 output pins
-    Info (21061): Implemented 66 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 29 warnings
+    Info (21059): Implemented 40 output pins
+    Info (21061): Implemented 67 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 31 warnings
     Info: Peak virtual memory: 477 megabytes
-    Info: Processing ended: Mon Dec 09 17:35:16 2019
-    Info: Elapsed time: 00:00:08
+    Info: Processing ended: Tue Dec 10 10:20:43 2019
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:02
 
 

@@ -10,6 +10,7 @@ reg  REF_CLK;
 reg  RST_N;
 
 
+wire SDRAM_INIT_DONE;
 wire CLK;
 wire CKE;
 wire CS_N;
@@ -27,10 +28,19 @@ initial REF_CLK = 1'b0;
 always #(`CLK100_PERIOD / 2) REF_CLK = ~REF_CLK;
 
 
+assign CLK = ~REF_CLK;
+
 initial begin
 
-	
+	RST_N <= 1'b0;	
+	#(10 * `CLK100_PERIOD) RST_N <= 1'b1;
 
+	#3000;
+	@(posedge SDRAM_INIT_DONE);
+	
+	#30000;
+	
+	$stop;
 
 end
 
@@ -39,6 +49,8 @@ sdram_w9825g6kh u_sdram_w9825g6kh(
 	.REF_CLK(REF_CLK),
 	.RST_N(RST_N),
 
+	.SDRAM_INIT_DONE(SDRAM_INIT_DONE),
+	
 	.CLK(CLK),
 	.CKE(CKE),
 	.CS_N(CS_N),
@@ -48,7 +60,7 @@ sdram_w9825g6kh u_sdram_w9825g6kh(
 	.A(A),
 	.BS(BS),
 	.DQM(DQM),
-	.DQ(DQ), 
+	.DQ(DQ)
 );
 
 
@@ -62,5 +74,8 @@ sdr u_sdr(
 	.Ras_n(RAS_N), 
 	.Cas_n(CAS_N),  
 	.We_n(WE_N), 
-	.Dqm(DQM), 
+	.Dqm(DQM)
 );
+
+
+endmodule
